@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<script src="js/action.js"></script>
+<title>Painel</title>
+</head>
+<body>
+
+  <div class="page">
+    <div class="app-layout">
+
+      <aside class="sidebar" id="sidebar">
+          <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo"></a>
+
+          <div class="divider"></div>
+
+          <div class="nav">
+              <ul class="nav-list">
+                  <li><a class="nav-link" href="/perfil.html"><span class="icon icon-perfil"></span>Perfil</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-depositar"></span>Depositar</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-sacar"></span>Sacar</a></li>
+                  <li><a class="nav-link active" href="#"><span class="icon icon-jogar"></span>Jogar</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-carrinho"></span>Carrinho</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-bilhetes"></span>Bilhetes</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-resultados"></span>Resultados</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-classificacao"></span>Classificação</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-cotacao"></span>Cotação</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-regras-jogo"></span>Regras do Jogo</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-regras-bolao"></span>Regras Bolão JC</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-extratos"></span>Extratos</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-guia"></span>Guia do Jogo</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-tutoriais"></span>Tutoriais</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-marketing"></span>Marketing</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-sair"></span>Sair</a></li>
+              </ul>
+          </div>
+      </aside>
+
+        <main class="main">
+
+          <header class="card header">
+              <div class="row">
+
+                  <div class="col header-user">
+                      <div class="avatar"><span class="icon icon-avatar"></span></div>
+                      <div class="header-greeting">
+                      <span class="hello">Olá, (62) 99974-12</span>
+                      <span class="sub">Boa Sorte!</span>
+                      </div>
+                  </div>
+
+                  <div class="col-fixed header-actions">
+                      <div class="balance-pill">
+                      <div class="icon-circle"><span class="icon icon-wallet"></span></div>
+                      <div class="balance-text">
+                          <span class="label">Saldo disponível</span>
+                          <span class="value">R$ 1.187,16</span>
+                      </div>
+                      <span class="icon icon-refresh refresh"></span>
+                      </div>
+
+                      <button class="btn btn-green">
+                      <span class="icon icon-plus"></span>
+                      Depositar
+                      </button>
+
+                      <button class="btn btn-outline-green">
+                      <span class="icon icon-withdraw"></span>
+                      Sacar
+                      </button>
+                  </div>
+
+              </div>
+          </header>
+
+          <header class="mobile-header">
+            <div class="mobile-header-top">
+              <img src="img/logo.png" class="mobile-logo" alt="Logo">
+
+              <div class="mobile-balance">
+                <span class="icon icon-wallet"></span>
+                <div>
+                  <small>Saldo disponível</small>
+                </div>
+              </div>
+
+              <div class="mobile-value">R$103,00</div>
+
+              <button class="mobile-refresh">
+                <span class="icon icon-refresh"></span>
+              </button>
+
+              <button class="mobile-menu" id="mobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+
+            <div class="mobile-header-actions">
+              <button class="mobile-btn depositar">
+                <span class="icon icon-depositar"></span>
+                Depositar
+              </button>
+
+              <button class="mobile-btn sacar">
+                <span class="icon icon-sacar"></span>
+                Sacar
+              </button>
+            </div>
+
+           
+          </header>
+
+          <div class="mobile-greeting">
+            <strong>Olá, (62) 99974-12</strong>
+            <span>Boa Sorte!</span>
+          </div>
+
+          <div class="row">
+            <div class="col card card-countdown" data-target="2026-07-08T20:00:00">
+                <div class="countdown-content">
+
+                    <span class="countdown-label">
+                        <span class="icon"></span>
+                        PRÓXIMO SORTEIO PTV
+                    </span>
+
+                    <h2>Contagem Regressiva</h2>
+
+                    <p>Acompanhe o próximo sorteio ao vivo</p>
+
+                    <div class="countdown">
+
+                        <div class="time-box">
+                            <strong>00</strong>
+                            <span>HORAS</span>
+                        </div>
+
+                        <div class="separator">:</div>
+
+                        <div class="time-box">
+                            <strong>08</strong>
+                            <span>MIN</span>
+                        </div>
+
+                        <div class="separator">:</div>
+
+                        <div class="time-box">
+                            <strong>11</strong>
+                            <span>SEG</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="bottom-line"></div>
+            </div>
+            <div class="col card card-prize">
+
+                <div class="prize-content">
+
+                    <span class="prize-label">
+                        <span class="icon"></span>
+                        PRÊMIO ACUMULADO
+                    </span>
+
+                    <h2>Prêmio Bolão JC</h2>
+
+                    <p>Atualizado em tempo real</p>
+
+                    <div class="prize-value">
+                        <span class="currency">R$</span>
+                        <span class="amount">29.099</span><span class="cents">,04</span>
+                    </div>
+
+                    <div class="prize-total">
+                        <span class="icon-total"></span>
+                        TOTAL ACUMULADO
+                    </div>
+
+                </div>
+
+                <div class="bottom-line"></div>
+
+            </div>
+          </div>
+
+          <section class="referral-page">
+
+            <section class="referral-hero">
+              <div class="referral-hero-copy">
+                <h1>Convide amigos e ganhe créditos!</h1>
+                <p>Compartilhe seu link exclusivo e ganhe <strong>10% de crédito</strong> sobre tudo que seus amigos apostarem.</p>
+              </div>
+
+              <img src="img/banner-indique-ganhe.png" alt="" class="referral-hero-image">
+            </section>
+
+            <section class="card referral-card">
+              <div class="referral-section-title">
+                <span class="referral-section-icon blue"><span class="icon icon-pergunta"></span></span>
+                <h2>Como funciona</h2>
+              </div>
+
+              <div class="referral-steps">
+                <article class="blue">
+                  <span>1</span>
+                  <strong>Compartilhe seu link exclusivo</strong>
+                </article>
+
+                <article class="green">
+                  <span>2</span>
+                  <strong>Seu amigo cria a conta e começa a jogar</strong>
+                </article>
+
+                <article class="yellow">
+                  <span>3</span>
+                  <strong>Você recebe 10% de crédito sobre tudo que ele apostar</strong>
+                </article>
+
+                <article class="purple">
+                  <span>4</span>
+                  <strong>Retire via PIX ou use os créditos para jogar</strong>
+                </article>
+              </div>
+            </section>
+
+            <section class="card referral-card">
+              <div class="referral-section-title">
+                <span class="referral-section-icon blue"><span class="icon icon-arrow-up-right"></span></span>
+                <h2>Seu link de convite</h2>
+              </div>
+
+              <div class="referral-link-row">
+                <input id="referralLink" type="text" readonly value="https://www.jogocapital.com.br/cadastro?ref=JOA0123">
+                <button id="copyReferralLink" type="button">COPIAR</button>
+              </div>
+
+              <div class="referral-share">
+                <span>ou compartilhe diretamente:</span>
+
+                <div class="referral-share-buttons">
+                  <a class="whatsapp" href="#">WhatsApp</a>
+                  <a class="facebook" href="#">Facebook</a>
+                  <a class="instagram" href="#">Instagram</a>
+                  <a class="more" href="#">Mais opções</a>
+                </div>
+              </div>
+            </section>
+
+            <section class="card referral-card">
+              <div class="referral-section-title">
+                <span class="referral-section-icon blue"><span class="icon icon-medal"></span></span>
+                <h2>Seus resultados</h2>
+              </div>
+
+              <div class="referral-results">
+                <article class="green">
+                  <small>Amigos convidados</small>
+                  <strong>23</strong>
+                  <span>Total de amigos</span>
+                </article>
+
+                <article class="blue">
+                  <small>Amigos ativos</small>
+                  <strong>12</strong>
+                  <span>Já apostaram</span>
+                </article>
+
+                <article class="yellow">
+                  <small>Créditos ganhos</small>
+                  <strong>R$ 125,60</strong>
+                  <span>Total acumulado</span>
+                </article>
+
+                <article class="purple">
+                  <small>Créditos disponíveis</small>
+                  <strong>R$ 78,40</strong>
+                  <span>Para sacar ou usar</span>
+                </article>
+              </div>
+            </section>
+
+            <section class="referral-level">
+              <span class="referral-level-icon"><span class="icon icon-crown"></span></span>
+
+              <div class="referral-level-content">
+                <div class="referral-level-head">
+                  <strong>Nível Ouro</strong>
+                  <span>Faltam 7 amigos ativos para o próximo nível (Prata)</span>
+                  <b>12 / 19</b>
+                </div>
+
+                <div class="referral-progress">
+                  <span style="width:56%"></span>
+                </div>
+              </div>
+            </section>
+
+            <section class="referral-friends-section">
+              <div class="referral-friends-head">
+                <div class="referral-section-title">
+                  <span class="referral-section-icon blue"><span class="icon icon-amigos-recentes"></span></span>
+                  <h2>Amigos recentes</h2>
+                </div>
+
+                <a href="#" class="referral-rules-btn">VER REGRAS COMPLETAS</a>
+              </div>
+
+              <div class="card referral-friends-card">
+                <div class="referral-friend">
+                  <strong>Lucas Silva</strong>
+                  <span>08/05/2024</span>
+                  <span class="active">Ativo</span>
+                  <b>R$ 12,35</b>
+                </div>
+
+                <div class="referral-friend">
+                  <strong>Mariana Souza</strong>
+                  <span>07/05/2024</span>
+                  <span class="active">Ativo</span>
+                  <b>R$ 8,70</b>
+                </div>
+
+                <div class="referral-friend">
+                  <strong>Pedro Santos</strong>
+                  <span>06/05/2024</span>
+                  <span class="pending">Pendente</span>
+                  <b>R$ 0,00</b>
+                </div>
+
+                <div class="referral-friend">
+                  <strong>Gabriel Lima</strong>
+                  <span>05/05/2024</span>
+                  <span class="active">Ativo</span>
+                  <b>R$ 15,10</b>
+                </div>
+
+                <div class="referral-friend">
+                  <strong>Ana Clara</strong>
+                  <span>04/05/2024</span>
+                  <span class="active">Ativo</span>
+                  <b>R$ 10,45</b>
+                </div>
+              </div>
+
+              <a class="referral-see-all" href="#">Ver todos</a>
+            </section>
+
+            <section class="referral-cta">
+              <span class="referral-cta-icon"><span class="icon icon-share"></span></span>
+
+              <div>
+                <strong>Quanto mais amigos, mais você ganha!</strong>
+                <p>Continue convidando e ganhe ainda mais créditos para jogar.</p>
+              </div>
+
+              <a href="#">CONVIDAR AMIGOS AGORA</a>
+            </section>
+
+          </section>
+
+        </main>
+
+      </div>
+  </div>
+
+  <footer class="footer-bar">
+    <div class="footer">
+      <div class="footer-item">
+        <span class="footer-dot green"></span>
+        Ambiente seguro &amp; criptografado
+      </div>
+      <div class="footer-item red">
+        <span class="footer-dot red"></span>
+        Proibido para menores
+      </div>
+      <div class="footer-item orange">
+        <span class="footer-dot orange"></span>
+        Jogue com responsabilidade
+      </div>
+    </div>
+  </footer>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+</body>
+</html>

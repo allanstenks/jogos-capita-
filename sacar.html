@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<script src="js/action.js"></script>
+<title>Painel</title>
+</head>
+<body>
+
+  <div class="page">
+    <div class="app-layout">
+
+      <aside class="sidebar" id="sidebar">
+          <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo"></a>
+
+          <div class="divider"></div>
+
+          <div class="nav">
+              <ul class="nav-list">
+                  <li><a class="nav-link" href="/perfil.html"><span class="icon icon-perfil"></span>Perfil</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-depositar"></span>Depositar</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-sacar"></span>Sacar</a></li>
+                  <li><a class="nav-link active" href="#"><span class="icon icon-jogar"></span>Jogar</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-carrinho"></span>Carrinho</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-bilhetes"></span>Bilhetes</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-resultados"></span>Resultados</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-classificacao"></span>Classificação</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-cotacao"></span>Cotação</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-regras-jogo"></span>Regras do Jogo</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-regras-bolao"></span>Regras Bolão JC</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-extratos"></span>Extratos</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-guia"></span>Guia do Jogo</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-tutoriais"></span>Tutoriais</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-marketing"></span>Marketing</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-sair"></span>Sair</a></li>
+              </ul>
+          </div>
+      </aside>
+
+        <main class="main">
+
+          <header class="card header">
+              <div class="row">
+
+                  <div class="col header-user">
+                      <div class="avatar"><span class="icon icon-avatar"></span></div>
+                      <div class="header-greeting">
+                      <span class="hello">Olá, (62) 99974-12</span>
+                      <span class="sub">Boa Sorte!</span>
+                      </div>
+                  </div>
+
+                  <div class="col-fixed header-actions">
+                      <div class="balance-pill">
+                      <div class="icon-circle"><span class="icon icon-wallet"></span></div>
+                      <div class="balance-text">
+                          <span class="label">Saldo disponível</span>
+                          <span class="value">R$ 1.187,16</span>
+                      </div>
+                      <span class="icon icon-refresh refresh"></span>
+                      </div>
+
+                      <button class="btn btn-green">
+                      <span class="icon icon-plus"></span>
+                      Depositar
+                      </button>
+
+                      <button class="btn btn-outline-green">
+                      <span class="icon icon-withdraw"></span>
+                      Sacar
+                      </button>
+                  </div>
+
+              </div>
+          </header>
+
+          <header class="mobile-header">
+            <div class="mobile-header-top">
+              <img src="img/logo.png" class="mobile-logo" alt="Logo">
+
+              <div class="mobile-balance">
+                <span class="icon icon-wallet"></span>
+                <div>
+                  <small>Saldo disponível</small>
+                </div>
+              </div>
+
+              <div class="mobile-value">R$103,00</div>
+
+              <button class="mobile-refresh">
+                <span class="icon icon-refresh"></span>
+              </button>
+
+              <button class="mobile-menu" id="mobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+
+            <div class="mobile-header-actions">
+              <button class="mobile-btn depositar">
+                <span class="icon icon-depositar"></span>
+                Depositar
+              </button>
+
+              <button class="mobile-btn sacar">
+                <span class="icon icon-sacar"></span>
+                Sacar
+              </button>
+            </div>
+
+           
+          </header>
+
+          <section class="withdraw-page">
+
+            <div class="withdraw-header">
+              <div class="withdraw-title">
+                <div class="withdraw-title-icon">
+                  <span class="icon icon-pix"></span>
+                </div>
+                <div>
+                  <h1>Sacar via Pix</h1>
+                  <p>Depósito rápido, seguro e com confirmação em poucos instantes.</p>
+                </div>
+              </div>
+
+              <div class="withdraw-safe">
+
+                  <div class="withdraw-safe-icon">
+                      <span class="icon icon-lock"></span>
+                  </div>
+
+                  <div class="withdraw-safe-info">
+                      <strong>Ambiente seguro</strong>
+                      <span>Seus dados protegidos</span>
+                  </div>
+
+              </div>
+            </div>
+
+            <div class="withdraw-banner">
+
+                <div class="withdraw-banner-info">
+
+                    <div class="withdraw-banner-title">
+                        <span class="icon icon-lightning"></span>
+                        <strong>Saque rápido e seguro</strong>
+                    </div>
+
+                    <p>O valor será transferido via PIX em até 1 hora, dentro do horário operacional.</p>
+
+                </div>
+
+                <div class="withdraw-pix-badge">
+                    <span class="icon icon-pix"></span>
+                    PIX
+                </div>
+
+            </div>
+
+            <div class="card withdraw-balance-card">
+
+                <div class="withdraw-balance">
+
+                    <span>Saldo disponível</span>
+
+                    <strong>
+                        <span>R$</span> 30.278<span>,32</span>
+                    </strong>
+
+                    <small>
+                        <span class="icon icon-circle"></span>
+                        Saldo atualizado
+                    </small>
+
+                </div>
+
+                <div class="withdraw-hours">
+
+                    <h3>
+                        <span class="icon icon-clock"></span>
+                        Horário de saques
+                    </h3>
+
+                    <div>
+                        <span>Seg a Sáb</span>
+                        <strong>08:00h às 21h</strong>
+                    </div>
+
+                    <div>
+                        <span>Domingos</span>
+                        <strong>08:00h às 17h</strong>
+                    </div>
+
+                    <small>
+                        <span class="icon icon-circle"></span>
+                        Operacional agora
+                    </small>
+
+                </div>
+
+            </div>
+
+            <div class="card withdraw-card">
+              <div class="withdraw-card-title">
+                <span class="icon icon-wallet"></span>
+                <strong>Valor do saque</strong>
+              </div>
+
+              <small>Valor mínimo: R$ 1,00</small>
+
+              <div class="withdraw-amount-box">
+                <span>R$</span>
+                <input type="text" value="0,00">
+              </div>
+
+              <div class="amount-options withdraw-options">
+                <button type="button">R$ 50</button>
+                <button type="button">R$ 100</button>
+                <button type="button">R$ 200</button>
+                <button type="button">R$ 500</button>
+                <button type="button">R$ 1000</button>
+                <button type="button">Outro valor</button>
+              </div>
+            </div>
+
+            <div class="card withdraw-card">
+              <div class="withdraw-card-title">
+                <span class="icon icon-key"></span>
+                <strong>Selecione a chave PIX</strong>
+              </div>
+
+              <div class="pix-key-grid">
+                <button class="pix-key-option">
+                    <div class="pix-key-icon">
+                        <span class="icon icon-cpf"></span>
+                    </div>
+                    <span>CPF</span>
+                </button>
+                <button class="pix-key-option">
+                    <div class="pix-key-icon">
+                        <span class="icon icon-phone"></span>
+                    </div>
+                    <span>Celular</span>
+                </button>
+
+                <button class="pix-key-option">
+                    <div class="pix-key-icon">
+                        <span class="icon icon-email"></span>
+                    </div>
+                    <span>E-mail</span>
+                </button>
+
+                <button class="pix-key-option">
+                    <div class="pix-key-icon">
+                        <span class="icon icon-key"></span>
+                    </div>
+                    <span>Chave aleatória</span>
+                </button>
+              </div>
+
+              <div class="form-control withdraw-pix-input">
+                <input type="text" placeholder="Digite sua chave PIX">
+              </div>
+
+              <p class="withdraw-warning">
+                  <span class="icon icon-warning"></span>
+                  Confira atentamente a chave PIX antes de solicitar o saque.
+              </p>
+            </div>
+
+            <div class="withdraw-important">
+             <div class="withdraw-important-title">
+                <span class="icon icon-check-circle"></span>
+                <strong>Importante</strong>
+            </div>
+              <ul>
+                <li>Saques realizados até as 21:00 são processados no mesmo dia.</li>
+                <li>Após as 21:00, o processamento será no próximo dia útil.</li>
+                <li>O valor será transferido para a chave PIX informada.</li>
+              </ul>
+            </div>
+
+            <div class="withdraw-security">
+              <span class="icon icon-lock"></span>
+              Seus dados estão protegidos com criptografia de ponta a ponta.
+            </div>
+
+            <div class="withdraw-actions">
+              <button class="withdraw-submit" type="button">SOLICITAR SAQUE</button>
+              <button class="withdraw-cancel" type="button">CANCELAR</button>
+            </div>
+
+          </section>
+
+        </main>
+
+      </div>
+  </div>
+
+  <footer class="footer-bar">
+    <div class="footer">
+      <div class="footer-item">
+        <span class="footer-dot green"></span>
+        Ambiente seguro &amp; criptografado
+      </div>
+      <div class="footer-item red">
+        <span class="footer-dot red"></span>
+        Proibido para menores
+      </div>
+      <div class="footer-item orange">
+        <span class="footer-dot orange"></span>
+        Jogue com responsabilidade
+      </div>
+    </div>
+  </footer>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+</body>
+</html>

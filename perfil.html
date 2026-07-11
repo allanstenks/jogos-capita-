@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<script src="js/action.js"></script>
+<title>Painel</title>
+</head>
+<body>
+
+  <div class="page">
+    <div class="app-layout">
+
+      <aside class="sidebar" id="sidebar">
+          <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo"></a>
+
+          <div class="divider"></div>
+
+          <div class="nav">
+              <ul class="nav-list">
+                  <li><a class="nav-link" href="/perfil.html"><span class="icon icon-perfil"></span>Perfil</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-depositar"></span>Depositar</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-sacar"></span>Sacar</a></li>
+                  <li><a class="nav-link active" href="#"><span class="icon icon-jogar"></span>Jogar</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-carrinho"></span>Carrinho</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-bilhetes"></span>Bilhetes</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-resultados"></span>Resultados</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-classificacao"></span>Classificação</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-cotacao"></span>Cotação</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-regras-jogo"></span>Regras do Jogo</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-regras-bolao"></span>Regras Bolão JC</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-extratos"></span>Extratos</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-guia"></span>Guia do Jogo</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-tutoriais"></span>Tutoriais</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-marketing"></span>Marketing</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-sair"></span>Sair</a></li>
+              </ul>
+          </div>
+      </aside>
+
+        <main class="main">
+
+          <header class="card header">
+              <div class="row">
+
+                  <div class="col header-user">
+                      <div class="avatar"><span class="icon icon-avatar"></span></div>
+                      <div class="header-greeting">
+                      <span class="hello">Olá, (62) 99974-12</span>
+                      <span class="sub">Boa Sorte!</span>
+                      </div>
+                  </div>
+
+                  <div class="col-fixed header-actions">
+                      <div class="balance-pill">
+                      <div class="icon-circle"><span class="icon icon-wallet"></span></div>
+                      <div class="balance-text">
+                          <span class="label">Saldo disponível</span>
+                          <span class="value">R$ 1.187,16</span>
+                      </div>
+                      <span class="icon icon-refresh refresh"></span>
+                      </div>
+
+                      <button class="btn btn-green">
+                      <span class="icon icon-plus"></span>
+                      Depositar
+                      </button>
+
+                      <button class="btn btn-outline-green">
+                      <span class="icon icon-withdraw"></span>
+                      Sacar
+                      </button>
+                  </div>
+
+              </div>
+          </header>
+
+          <header class="mobile-header">
+            <div class="mobile-header-top">
+              <img src="img/logo.png" class="mobile-logo" alt="Logo">
+
+              <div class="mobile-balance">
+                <span class="icon icon-wallet"></span>
+                <div>
+                  <small>Saldo disponível</small>
+                </div>
+              </div>
+
+              <div class="mobile-value">R$103,00</div>
+
+              <button class="mobile-refresh">
+                <span class="icon icon-refresh"></span>
+              </button>
+
+              <button class="mobile-menu" id="mobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+
+            <div class="mobile-header-actions">
+              <button class="mobile-btn depositar">
+                <span class="icon icon-depositar"></span>
+                Depositar
+              </button>
+
+              <button class="mobile-btn sacar">
+                <span class="icon icon-sacar"></span>
+                Sacar
+              </button>
+            </div>
+
+           
+          </header>
+
+          <div class="mobile-greeting">
+            <strong>Olá, (62) 99974-12</strong>
+            <span>Boa Sorte!</span>
+          </div>
+
+         <div class="row">
+            <div class="col card card-countdown" data-target="2026-07-08T20:00:00">
+                <div class="countdown-content">
+
+                    <span class="countdown-label">
+                        <span class="icon"></span>
+                        PRÓXIMO SORTEIO PTV
+                    </span>
+
+                    <h2>Contagem Regressiva</h2>
+
+                    <p>Acompanhe o próximo sorteio ao vivo</p>
+
+                    <div class="countdown">
+
+                        <div class="time-box">
+                            <strong>00</strong>
+                            <span>HORAS</span>
+                        </div>
+
+                        <div class="separator">:</div>
+
+                        <div class="time-box">
+                            <strong>08</strong>
+                            <span>MIN</span>
+                        </div>
+
+                        <div class="separator">:</div>
+
+                        <div class="time-box">
+                            <strong>11</strong>
+                            <span>SEG</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="bottom-line"></div>
+            </div>
+            <div class="col card card-prize">
+
+                <div class="prize-content">
+
+                    <span class="prize-label">
+                        <span class="icon"></span>
+                        PRÊMIO ACUMULADO
+                    </span>
+
+                    <h2>Prêmio Bolão JC</h2>
+
+                    <p>Atualizado em tempo real</p>
+
+                    <div class="prize-value">
+                        <span class="currency">R$</span>
+                        <span class="amount">29.099</span><span class="cents">,04</span>
+                    </div>
+
+                    <div class="prize-total">
+                        <span class="icon-total"></span>
+                        TOTAL ACUMULADO
+                    </div>
+
+                </div>
+
+                <div class="bottom-line"></div>
+
+            </div>
+          </div>
+
+          <section class="profile-page">
+
+            <div class="profile-title">
+              <div class="profile-title-icon">
+                <span class="icon icon-perfil"></span>
+              </div>
+
+              <div>
+                <h1>Meu Perfil</h1>
+                <p>Gerencie suas informações pessoais, de acesso e financeiras.</p>
+              </div>
+            </div>
+
+            <div class="card profile-card">
+              <div class="profile-card-header">
+                <div class="profile-card-title">
+                  <span class="icon icon-perfil"></span>
+                  <h3>Dados Pessoais</h3>
+                </div>
+
+                <button class="profile-edit-btn">
+                  <span class="icon icon-editar"></span>
+                  Editar
+                </button>
+              </div>
+
+              <div class="profile-form-grid">
+                <div class="form-group">
+                  <label>Nome</label>
+                  <div class="form-control">
+                    <span class="icon icon-perfil"></span>
+                    <input type="text" value="Marcelino Gomes da Silva" disabled>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label>CPF</label>
+                  <div class="form-control">
+                    <span class="icon icon-cpf"></span>
+                    <input type="text" value="123.456.789-00" disabled>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label>Data de Nascimento</label>
+                  <div class="form-control">
+                    <span class="icon icon-calendar"></span>
+                    <input type="text" value="12/05/1985" disabled>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label>Telefone</label>
+                  <div class="form-control">
+                    <span class="icon icon-phone"></span>
+                    <input type="text" value="(62) 99974-1200" disabled>
+                  </div>
+                </div>
+
+                <div class="form-group full">
+                  <label>E-mail</label>
+                  <div class="form-control">
+                    <span class="icon icon-email"></span>
+                    <input type="email" value="marcelino@email.com" disabled>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card password-card">
+                <button class="password-toggle" type="button">
+                    <div class="profile-card-title">
+                        <span class="profile-icon-soft icon-lock-soft"></span>
+                        <div>
+                            <h3>Alterar Senha</h3>
+                            <small>Mantenha sua conta segura</small>
+                        </div>
+                    </div>
+                    <span class="password-arrow">
+                        <span class="icon icon-down"></span>
+                    </span>
+
+                </button>
+                <div class="password-content">
+                    <div class="password-open-card">
+                        <div class="password-form-side">
+                            <div class="password-fields">
+                                <div class="form-group">
+                                    <label>Senha atual</label>
+                                    <div class="form-control">
+                                        <span class="icon icon-lock"></span>
+                                        <input type="password" placeholder="••••••••">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Nova senha</label>
+
+                                    <div class="form-control">
+                                        <span class="icon icon-lock"></span>
+                                        <input type="password" placeholder="••••••••">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Confirmar nova senha</label>
+
+                                    <div class="form-control">
+                                        <span class="icon icon-lock"></span>
+                                        <input type="password" placeholder="••••••••">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <button class="password-update-btn">
+                                ATUALIZAR SENHA
+                            </button>
+
+                        </div>
+
+                        <div class="password-security-box">
+                            <div class="security-icon">
+                                <span class="icon icon-shield"></span>
+                            </div>
+                            <p>
+                                Sua senha é<br>
+                                <strong>criptografada</strong><br>
+                                e segura
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card profile-card">
+              <div class="profile-card-header">
+                <div class="profile-card-title">
+                  <span class="icon icon-card"></span>
+                  <h3>Dados Financeiros / PIX</h3>
+                </div>
+              </div>
+
+              <div class="profile-form-grid finance-grid">
+                <div class="form-group">
+                  <label>Banco</label>
+                  <div class="form-control">
+                    <input type="text" placeholder="Ex: Nubank, Itaú...">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label>Agência</label>
+                  <div class="form-control">
+                    <input type="text" placeholder="0000">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label>Conta</label>
+                  <div class="form-control">
+                    <input type="text" placeholder="00000-0">
+                  </div>
+                </div>
+
+                <div class="form-group span-2">
+                  <label>Titular</label>
+                  <div class="form-control">
+                    <span class="icon icon-perfil"></span>
+                    <input type="text" value="Marcelino Gomes da Silva">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label>CPF Titular</label>
+                  <div class="form-control">
+                    <span class="icon icon-cpf"></span>
+                    <input type="text" value="123.456.789-00">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label>Selecione a chave</label>
+                  <div class="form-control select-control">
+                    <select>
+                      <option>Selecione a chave...</option>
+                      <option>CPF</option>
+                      <option>E-mail</option>
+                      <option>Telefone</option>
+                      <option>Chave aleatória</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group span-2">
+                  <label>Digite seu PIX</label>
+                  <div class="form-control">
+                    <span class="pix-icon">❖</span>
+                    <input type="text" placeholder="CPF, e-mail, telefone ou chave aleatória...">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="profile-actions">
+              <button class="profile-save">SALVAR ALTERAÇÕES</button>
+              <button class="profile-cancel">CANCELAR</button>
+            </div>
+
+          </section>
+
+        </main>
+
+      </div>
+  </div>
+
+  <footer class="footer-bar">
+    <div class="footer">
+      <div class="footer-item">
+        <span class="footer-dot green"></span>
+        Ambiente seguro &amp; criptografado
+      </div>
+      <div class="footer-item red">
+        <span class="footer-dot red"></span>
+        Proibido para menores
+      </div>
+      <div class="footer-item orange">
+        <span class="footer-dot orange"></span>
+        Jogue com responsabilidade
+      </div>
+    </div>
+  </footer>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+</body>
+</html>

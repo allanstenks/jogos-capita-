@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<script src="js/action.js"></script>
+<title>Painel</title>
+</head>
+<body>
+
+  <div class="page">
+    <div class="app-layout">
+
+      <aside class="sidebar" id="sidebar">
+          <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo"></a>
+
+          <div class="divider"></div>
+
+          <div class="nav">
+              <ul class="nav-list">
+                  <li><a class="nav-link" href="/perfil.html"><span class="icon icon-perfil"></span>Perfil</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-depositar"></span>Depositar</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-sacar"></span>Sacar</a></li>
+                  <li><a class="nav-link active" href="#"><span class="icon icon-jogar"></span>Jogar</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-carrinho"></span>Carrinho</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-bilhetes"></span>Bilhetes</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-resultados"></span>Resultados</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-classificacao"></span>Classificação</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-cotacao"></span>Cotação</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-regras-jogo"></span>Regras do Jogo</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-regras-bolao"></span>Regras Bolão JC</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-extratos"></span>Extratos</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-guia"></span>Guia do Jogo</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-tutoriais"></span>Tutoriais</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-marketing"></span>Marketing</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-sair"></span>Sair</a></li>
+              </ul>
+          </div>
+      </aside>
+
+        <main class="main">
+
+          <header class="card header">
+              <div class="row">
+
+                  <div class="col header-user">
+                      <div class="avatar"><span class="icon icon-avatar"></span></div>
+                      <div class="header-greeting">
+                      <span class="hello">Olá, (62) 99974-12</span>
+                      <span class="sub">Boa Sorte!</span>
+                      </div>
+                  </div>
+
+                  <div class="col-fixed header-actions">
+                      <div class="balance-pill">
+                      <div class="icon-circle"><span class="icon icon-wallet"></span></div>
+                      <div class="balance-text">
+                          <span class="label">Saldo disponível</span>
+                          <span class="value">R$ 1.187,16</span>
+                      </div>
+                      <span class="icon icon-refresh refresh"></span>
+                      </div>
+
+                      <button class="btn btn-green">
+                      <span class="icon icon-plus"></span>
+                      Depositar
+                      </button>
+
+                      <button class="btn btn-outline-green">
+                      <span class="icon icon-withdraw"></span>
+                      Sacar
+                      </button>
+                  </div>
+
+              </div>
+          </header>
+
+          <header class="mobile-header">
+            <div class="mobile-header-top">
+              <img src="img/logo.png" class="mobile-logo" alt="Logo">
+
+              <div class="mobile-balance">
+                <span class="icon icon-wallet"></span>
+                <div>
+                  <small>Saldo disponível</small>
+                </div>
+              </div>
+
+              <div class="mobile-value">R$103,00</div>
+
+              <button class="mobile-refresh">
+                <span class="icon icon-refresh"></span>
+              </button>
+
+              <button class="mobile-menu" id="mobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+
+            <div class="mobile-header-actions">
+              <button class="mobile-btn depositar">
+                <span class="icon icon-depositar"></span>
+                Depositar
+              </button>
+
+              <button class="mobile-btn sacar">
+                <span class="icon icon-sacar"></span>
+                Sacar
+              </button>
+            </div>
+
+           
+          </header>
+
+          <section class="quote-page">
+
+            <div class="quote-header">
+              <div class="quote-title-icon">
+                <span class="icon icon-cotacao"></span>
+              </div>
+
+              <div>
+                <h1>Cotação do Jogo do Bicho</h1>
+                <p>
+                  Confira abaixo a cotação padrão do Jogo do Bicho e veja quanto cada modalidade paga por real apostado.
+                  <a href="#">Use estas informações para planejar suas apostas.</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="quote-alert">
+              <span class="icon icon-warning"></span>
+              <div>
+                <strong>Importante</strong>
+                <p>Os valores apresentados são referentes a <b>R$ 1,00 apostado</b>.</p>
+              </div>
+            </div>
+
+            <div class="card quote-table-card">
+
+              <div class="quote-table-header">
+                <div class="quote-table-title">
+                  <span class="quote-table-icon">
+                    <span class="icon icon-tag"></span>
+                  </span>
+                  <strong>COTAÇÃO DO JOGO DO BICHO POR REAL APOSTADO (R$ 1,00)</strong>
+                </div>
+
+                <span class="quote-status">
+                    Cotação vigente
+                </span>
+              </div>
+
+<div class="quote-table-wrap">
+  <table class="quote-table">
+    <thead>
+      <tr>
+        <th>Modalidade</th>
+        <th>Paga</th>
+        <th>Descrição</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td><span class="quote-row-icon blue"><span class="icon icon-grupo"></span></span> Grupo</td>
+        <td><span class="quote-badge green">R$ 20,00</span></td>
+        <td>Aposta em um dos 25 bichos</td>
+      </tr>
+
+      <tr>
+        <td><span class="quote-row-icon green"><span class="icon icon-duque-grupo"></span></span> Duque do Grupo</td>
+        <td><span class="quote-badge green">R$ 21,75</span></td>
+        <td>Aposta em dois bichos, vale do 1º ao 5º prêmio</td>
+      </tr>
+
+      <tr>
+        <td><span class="quote-row-icon orange"><span class="icon icon-terno-grupo"></span></span> Terno de Grupo</td>
+        <td><span class="quote-badge green">R$ 150,00</span></td>
+        <td>Aposta em três bichos, vale do 1º ao 5º prêmio</td>
+      </tr>
+
+      <tr>
+        <td><span class="quote-row-icon purple"><span class="icon icon-dezena"></span></span> Dezena</td>
+        <td><span class="quote-badge green">R$ 80,00</span></td>
+        <td>Aposta em uma das 100 dezenas (00 a 99).</td>
+      </tr>
+
+      <tr>
+        <td><span class="quote-row-icon cyan"><span class="icon icon-duque-dezena"></span></span> Duque de Dezena</td>
+        <td><span class="quote-badge green">R$ 350,00</span></td>
+        <td>Aposta em duas dezenas de 0 a 99</td>
+      </tr>
+
+      <tr>
+        <td><span class="quote-row-icon blue"><span class="icon icon-duque-dezena-combinada"></span></span> Duque de Dezena Combinada</td>
+        <td><span class="quote-badge green">R$ 350,00</span></td>
+        <td>Dividido pela quantidade de combinações.</td>
+      </tr>
+
+      <tr>
+        <td><span class="quote-row-icon green"><span class="icon icon-terno-dezena"></span></span> Terno de Dezena</td>
+        <td><span class="quote-badge green">R$ 3.500,00</span></td>
+        <td>Aposta em três dezenas de 0 a 99</td>
+      </tr>
+
+      <tr>
+        <td><span class="quote-row-icon green"><span class="icon icon-terno-dezena-combinada"></span></span> Terno de Dezena Combinada</td>
+        <td><span class="quote-badge green">R$ 3.500,00</span></td>
+        <td>Dividido pela quantidade de combinações.</td>
+      </tr>
+
+      <tr>
+        <td><span class="quote-row-icon orange"><span class="icon icon-centena "></span></span>  Centena</td>
+        <td><span class="quote-badge green">R$ 800,00</span></td>
+        <td>Aposta em uma centena de 000 a 999</td>
+      </tr>
+
+      <tr>
+        <td><span class="quote-row-icon orange"><span class="icon icon-centena-inversao"></span></span> Centena Inversão</td>
+        <td><span class="quote-badge orange">Ver descrição</span></td>
+        <td>Prêmio dividido pela quantidade de inversões.</td>
+      </tr>
+
+      <tr>
+        <td><span class="quote-row-icon pink"><span class="icon icon-milhar"></span></span> Milhar</td>
+        <td><span class="quote-badge green">R$ 6.000,00</span></td>
+        <td>Aposta em uma milhar de 0000 a 9999</td>
+      </tr>
+
+      <tr>
+        <td><span class="quote-row-icon pink"><span class="icon icon-milhar-inversao"></span></span> Milhar Inversão</td>
+        <td><span class="quote-badge orange">Ver descrição</span></td>
+        <td>Prêmio dividido pela quantidade de inversões.</td>
+      </tr>
+
+      <tr>
+        <td><span class="quote-row-icon violet"><span class="icon icon-esquerda-direita"></span></span> Esquerda, meio e direita</td>
+        <td><span class="quote-badge green">R$ 100,00</span></td>
+        <td>Aposta em uma milhar, vale dezena esquerda, meio e direita</td>
+      </tr>
+
+      <tr>
+        <td><span class="quote-row-icon blue"><span class="icon icon-passe-vai"></span></span> Passe vai (cercado 1º ao 2º)</td>
+        <td><span class="quote-badge green">R$ 180,00</span></td>
+        <td>Aposta em dois bichos na ordem que vai sair 1º e 2º prêmio.</td>
+      </tr>
+
+      <tr>
+        <td><span class="quote-row-icon blue"><span class="icon icon-passe-vem"></span></span> Passe vai (cercado 1º ao 5º)</td>
+        <td><span class="quote-badge green">R$ 90,00</span></td>
+        <td>Aposta em dois bichos na ordem que vai sair do 1º ao 5º prêmio.</td>
+      </tr>
+
+      <tr>
+        <td><span class="quote-row-icon green"><span class="icon icon-passe-vai-vem"></span></span> Passe vai (cercado 1º ao 2º)</td>
+        <td><span class="quote-badge green">R$ 180,00</span></td>
+        <td>Outra combinação do passe do 1º para o 2º prêmio.</td>
+      </tr>
+
+      <tr>
+        <td><span class="quote-row-icon yellow"><span class="icon icon-passe-vai-vem"></span></span> Passe Vai Vem (cercado 1º ao 2º)</td>
+        <td><span class="quote-badge green">R$ 90,00</span></td>
+        <td>Aposta em dois bichos que vai sair em qualquer ordem do 1º ao 2º prêmio.</td>
+      </tr>
+
+      <tr>
+        <td><span class="quote-row-icon yellow"><span class="icon  icon-passe-vai-vem"></span></span> Passe Vai Vem (cercado 1º ao 5º)</td>
+        <td><span class="quote-badge green">R$ 45,00</span></td>
+        <td>Aposta em dois bichos que vai sair em qualquer ordem do 1º ao 5º prêmio.</td>
+      </tr>
+
+      <tr>
+        <td><span class="quote-row-icon gray"><span class="icon  icon-circle"></span></span> Unidade</td>
+        <td><span class="quote-badge green">R$ 8,00</span></td>
+        <td>Aposta em uma unidade de 0 a 9</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+              <div class="quote-table-footer">
+                <span class="icon icon-info"></span>
+                Cotações sujeitas a alterações. Consulte as regras vigentes antes de apostar.
+              </div>
+
+            </div>
+
+         <div class="card quote-options-card">
+
+          <div class="quote-options-title">
+            <span class="quote-options-icon">
+              <span class="icon icon-cercado"></span>
+            </span>
+
+            <strong>OPÇÕES DE CERCADO</strong>
+          </div>
+
+          <div class="quote-options-grid">
+
+            <div class="quote-option blue">
+              <span>1ºao5º</span>
+
+              <div>
+                <span>1º ao 5º</span>
+                <strong>Cercado do 1º ao 5º prêmio</strong>
+                <p>½ do valor do Grupo, Dezena, Centena ou Milhar</p>
+              </div>
+            </div>
+
+            <div class="quote-option green">
+              <span>1ºao7º</span>
+
+              <div>
+                <span>1º ao 7º</span>
+                <strong>Cercado do 1º ao 7º prêmio</strong>
+                <p>½ do valor do Grupo, Dezena, Centena ou Milhar</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+          </section>
+
+        </main>
+
+      </div>
+  </div>
+
+  <footer class="footer-bar">
+    <div class="footer">
+      <div class="footer-item">
+        <span class="footer-dot green"></span>
+        Ambiente seguro &amp; criptografado
+      </div>
+      <div class="footer-item red">
+        <span class="footer-dot red"></span>
+        Proibido para menores
+      </div>
+      <div class="footer-item orange">
+        <span class="footer-dot orange"></span>
+        Jogue com responsabilidade
+      </div>
+    </div>
+  </footer>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+</body>
+</html>

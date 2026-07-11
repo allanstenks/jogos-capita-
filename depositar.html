@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<script src="js/action.js"></script>
+<title>Painel</title>
+</head>
+<body>
+
+  <div class="page">
+    <div class="app-layout">
+
+      <aside class="sidebar" id="sidebar">
+          <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo"></a>
+
+          <div class="divider"></div>
+
+          <div class="nav">
+              <ul class="nav-list">
+                  <li><a class="nav-link" href="/perfil.html"><span class="icon icon-perfil"></span>Perfil</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-depositar"></span>Depositar</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-sacar"></span>Sacar</a></li>
+                  <li><a class="nav-link active" href="#"><span class="icon icon-jogar"></span>Jogar</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-carrinho"></span>Carrinho</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-bilhetes"></span>Bilhetes</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-resultados"></span>Resultados</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-classificacao"></span>Classificação</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-cotacao"></span>Cotação</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-regras-jogo"></span>Regras do Jogo</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-regras-bolao"></span>Regras Bolão JC</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-extratos"></span>Extratos</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-guia"></span>Guia do Jogo</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-tutoriais"></span>Tutoriais</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-marketing"></span>Marketing</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-sair"></span>Sair</a></li>
+              </ul>
+          </div>
+      </aside>
+
+        <main class="main">
+
+          <header class="card header">
+              <div class="row">
+
+                  <div class="col header-user">
+                      <div class="avatar"><span class="icon icon-avatar"></span></div>
+                      <div class="header-greeting">
+                      <span class="hello">Olá, (62) 99974-12</span>
+                      <span class="sub">Boa Sorte!</span>
+                      </div>
+                  </div>
+
+                  <div class="col-fixed header-actions">
+                      <div class="balance-pill">
+                      <div class="icon-circle"><span class="icon icon-wallet"></span></div>
+                      <div class="balance-text">
+                          <span class="label">Saldo disponível</span>
+                          <span class="value">R$ 1.187,16</span>
+                      </div>
+                      <span class="icon icon-refresh refresh"></span>
+                      </div>
+
+                      <button class="btn btn-green">
+                      <span class="icon icon-plus"></span>
+                      Depositar
+                      </button>
+
+                      <button class="btn btn-outline-green">
+                      <span class="icon icon-withdraw"></span>
+                      Sacar
+                      </button>
+                  </div>
+
+              </div>
+          </header>
+
+          <header class="mobile-header">
+            <div class="mobile-header-top">
+              <img src="img/logo.png" class="mobile-logo" alt="Logo">
+
+              <div class="mobile-balance">
+                <span class="icon icon-wallet"></span>
+                <div>
+                  <small>Saldo disponível</small>
+                </div>
+              </div>
+
+              <div class="mobile-value">R$103,00</div>
+
+              <button class="mobile-refresh">
+                <span class="icon icon-refresh"></span>
+              </button>
+
+              <button class="mobile-menu" id="mobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+
+            <div class="mobile-header-actions">
+              <button class="mobile-btn depositar">
+                <span class="icon icon-depositar"></span>
+                Depositar
+              </button>
+
+              <button class="mobile-btn sacar">
+                <span class="icon icon-sacar"></span>
+                Sacar
+              </button>
+            </div>
+
+           
+          </header>
+
+          <div class="mobile-greeting">
+            <strong>Olá, (62) 99974-12</strong>
+            <span>Boa Sorte!</span>
+          </div>
+
+          <section class="deposit-page" id="depositFlow">
+
+            <div class="deposit-steps">
+              <button class="step active" type="button" data-go-step="1">
+                <span>1</span> Método
+              </button>
+
+              <button class="step" type="button" data-go-step="2">
+                <span>2</span> Valor
+              </button>
+
+              <button class="step" type="button" data-go-step="3">
+                <span>3</span> Pagamento
+              </button>
+            </div>
+
+
+            <div class="deposit-step-content active" data-step="1">
+
+              <div class="deposit-title">
+                <div class="deposit-title-icon">
+                  <span class="icon icon-wallet"></span>
+                </div>
+                <div>
+                  <h1>Depositar Saldo</h1>
+                  <p>Escolha a forma de depósito.</p>
+                </div>
+              </div>
+
+              <div class="deposit-method-grid">
+
+                <a href="#" class="card deposit-method-card" data-go-step="2" data-method="pix">
+                  <div class="method-icon pix">
+                    <span class="icon icon-pix"></span>
+                  </div>
+
+                  <h3>PIX</h3>
+                  <p>Pagamento instantâneo</p>
+                  <small>24h por dia, todos os dias.</small>
+
+                  <span class="method-tag">RECOMENDADO</span>
+                </a>
+
+                <a href="#" class="card deposit-method-card" data-go-step="2"  data-method="transfer">
+                  <div class="method-icon bank">
+                    <span class="icon icon-bank"></span>
+                  </div>
+
+                  <h3>Transferência bancária</h3>
+                  <p>Entre bancos</p>
+                  <small>Pode levar até 5 minutos.</small>
+
+                  <span class="method-tag gray">TED / DOC</span>
+                </a>
+
+              </div>
+
+              <div class="deposit-security-alert">
+                <span class="icon icon-shield"></span>
+                <div>
+                  <strong>Depósitos processados em instantes</strong>
+                  <p>Transações protegidas com criptografia SSL 256-bits.</p>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="deposit-step-content" data-step="2" data-method-content="pix">
+
+              <div class="deposit-title">
+                <div class="deposit-title-icon">
+                  <span class="icon icon-pix"></span>
+                </div>
+                <div>
+                  <h1>Adicionar Saldo Via Pix</h1>
+                  <p>Depósito rápido, seguro e com confirmação em poucos instantes.</p>
+                </div>
+              </div>
+
+              <div class="deposit-method-grid">
+                <a href="#" class="card deposit-method-card selected">
+                  <div class="method-icon pix">
+                    <span class="icon icon-pix"></span>
+                  </div>
+                  <h3>PIX</h3>
+                  <p>Pagamento instantâneo</p>
+                  <small>24h por dia, todos os dias.</small>
+                  <span class="method-tag">RECOMENDADO</span>
+                </a>
+
+                <a href="#" class="card deposit-method-card" data-go-step="2"  data-method="transfer">
+                  <div class="method-icon bank">
+                    <span class="icon icon-bank"></span>
+                  </div>
+                  <h3>Transferência bancária</h3>
+                  <p>Entre bancos</p>
+                  <small>Pode levar até 5 minutos.</small>
+                  <span class="method-tag gray">TED / DOC</span>
+                </a>
+              </div>
+
+              <div class="card deposit-form-card" data-amount-selector>
+                <div class="deposit-box-title">
+                  <span class="icon icon-wallet"></span>
+                  <strong>Valor do depósito</strong>
+                </div>
+
+                <small>Pode depositar a partir de R$1,00</small>
+
+                <input
+                  type="text"
+                  class="deposit-amount-display"
+                  data-amount-input
+                  value="R$ 100,00"
+                  readonly
+                >
+
+                <div class="amount-options">
+                  <button type="button" data-amount="20">R$ 20</button>
+                  <button type="button" data-amount="50">R$ 50</button>
+                  <button type="button" data-amount="100" class="active">R$ 100</button>
+                  <button type="button" data-amount="200">R$ 200</button>
+                  <button type="button" data-amount="500">R$ 500</button>
+                </div>
+              </div>
+
+              <div class="card deposit-form-card">
+                <div class="deposit-box-title">
+                  <span class="icon icon-cpf"></span>
+                  <strong>CPF do titular</strong>
+                </div>
+
+                <div class="form-control">
+                  <input type="text" placeholder="000.000.000-00">
+                </div>
+              </div>
+
+              <div class="deposit-security-alert">
+                <span class="icon icon-shield"></span>
+                <div>
+                  <strong>Depósitos processados em instantes</strong>
+                  <p>Transações protegidas com criptografia SSL 256-bits.</p>
+                </div>
+              </div>
+
+              <div class="deposit-actions">
+                <button class="deposit-continue" type="button" data-next-step="3">CONTINUAR</button>
+                <button class="deposit-cancel">CANCELAR</button>
+              </div>
+
+            </div>
+
+            <div class="deposit-step-content" data-step="3">
+
+              <div class="deposit-title">
+                <div class="deposit-title-icon">
+                  <span class="icon icon-pix"></span>
+                </div>
+                <div>
+                  <h1>Realizar pagamento via Pix</h1>
+                  <p>Escaneie o QR Code com o app do seu banco.</p>
+                </div>
+              </div>
+
+              <div class="card pix-payment-card">
+
+                <div class="pix-qr-box">
+                  <img src="img/qrcode.png" alt="QR Code Pix">
+                  <span>PIX</span>
+                </div>
+
+                <div class="pix-copy-label">ou copie e cole o código PIX</div>
+
+                <div class="pix-copy-row">
+                  <input type="text" value="00020126580014BR.GOV.BCB.PIX0136..." readonly>
+                  <button type="button">
+                    <span class="icon icon-copy"></span>
+                    COPIAR
+                  </button>
+                </div>
+
+                <div class="pix-warning">
+                  <span class="icon icon-warning"></span>
+                  QR Code válido por <strong>30 minutos</strong>
+                </div>
+
+              </div>
+
+              <div class="card how-pay-card">
+                <h3>Como pagar</h3>
+
+                <div class="how-pay-steps">
+                  <div><span>1</span> Abra o app do seu banco</div>
+                  <div><span>2</span> Vá em PIX → Pagar</div>
+                  <div><span>3</span> Escaneie ou cole o código</div>
+                  <div><span>4</span> Confirme e aguarde o crédito</div>
+                </div>
+              </div>
+
+              <div class="pix-benefits">
+                <div class="pix-benefit">
+                  <span class="benefit-icon green"><span class="icon icon-lightning"></span></span>
+                  <div>
+                    <strong>Confirmação rápida</strong>
+                    <p>Seu saldo é creditado em instantes.</p>
+                  </div>
+                </div>
+
+                <div class="pix-benefit">
+                  <span class="benefit-icon blue"><span class="icon icon-shield"></span></span>
+                  <div>
+                    <strong>Pagamento 100% seguro</strong>
+                    <p>Seus dados protegidos com criptografia.</p>
+                  </div>
+                </div>
+
+                <div class="pix-benefit">
+                  <span class="benefit-icon green"><span class="icon icon-check"></span></span>
+                  <div>
+                    <strong>Crédito automático</strong>
+                    <p>Após a confirmação, o saldo estará disponível.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="deposit-security-alert">
+                <span class="icon icon-shield"></span>
+                <div>
+                  <strong>Depósitos processados em instantes</strong>
+                  <p>Transações protegidas com criptografia SSL 256-bits.</p>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="deposit-step-content" data-step="2" data-method-content="transfer">
+
+              <div class="deposit-title">
+                <div class="deposit-title-icon">
+                  <span class="icon icon-bank"></span>
+                </div>
+                <div>
+                  <h1>Transferência Instantânea</h1>
+                  <p>Envie seu saldo de forma rápida e segura.</p>
+                </div>
+              </div>
+
+              <div class="deposit-method-grid">
+                <a href="#" class="card deposit-method-card">
+                  <div class="method-icon pix">
+                    <span class="icon icon-pix"></span>
+                  </div>
+                  <h3>PIX</h3>
+                  <p>Pagamento instantâneo</p>
+                  <small>24h por dia, todos os dias.</small>
+                  <span class="method-tag">RECOMENDADO</span>
+                </a>
+
+                <a href="#" class="card deposit-method-card selected">
+                  <div class="method-icon bank">
+                    <span class="icon icon-bank"></span>
+                  </div>
+                  <h3>Transferência bancária</h3>
+                  <p>Entre bancos</p>
+                  <small>Pode levar até 5 minutos.</small>
+                  <span class="method-tag gray">TED / DOC</span>
+                </a>
+              </div>
+
+              <div class="transfer-info-alert">
+                <strong>Transferência instantânea via BANCO</strong>
+                <p>Seu saldo será creditado em instantes após a confirmação.</p>
+              </div>
+
+              <div class="card deposit-form-card">
+                <div class="profile-form-grid">
+                  <div class="form-group full">
+                    <label>Nome completo</label>
+                    <div class="form-control">
+                      <input type="text" placeholder="Seu nome completo">
+                    </div>
+                  </div>
+
+                  <div class="form-group full">
+                    <label>CPF</label>
+                    <div class="form-control">
+                      <input type="text" placeholder="000.000.000-00">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card deposit-form-card">
+                <div class="deposit-box-title">
+                  <strong>Selecione seu banco</strong>
+                </div>
+
+                <div class="bank-grid">
+                  <button>
+                      <span class="bank-icon icon-itau"></span>Itaú
+                  </button>
+                  <button>
+                      <span class="bank-icon icon-banco-brasil"></span>Banco do Brasil
+                  </button>
+                  <button>
+                      <span class="bank-icon icon-bradesco"></span>Bradesco
+                  </button>
+                  <button>
+                      <span class="bank-icon icon-santander"></span>Santander
+                  </button>
+                  <button>
+                      <span class="bank-icon icon-caixa"></span>Caixa
+                  </button>
+                  <button>
+                      <span class="bank-icon icon-nubank"></span>Nubank
+                  </button>
+                  <button>
+                      <span class="bank-icon icon-outros"></span>Outros
+                  </button>
+              </div>
+              </div>
+
+              <div class="card deposit-form-card">
+                <div class="deposit-box-title">
+                  <span class="icon icon-wallet"></span>
+                  <strong>Valor da transferência</strong>
+                </div>
+
+                <div class="deposit-amount-display">R$ 100,00</div>
+
+                <div class="amount-options">
+                  <button>R$ 10</button>
+                  <button>R$ 20</button>
+                  <button>R$ 50</button>
+                  <button class="active">R$ 100</button>
+                  <button>R$ 200</button>
+                  <button>Outro valor</button>
+                </div>
+              </div>
+
+              <div class="transfer-summary">
+                <div>
+                  <small>Você receberá em sua conta</small>
+                  <strong>R$ 0,00</strong>
+                </div>
+
+                <span class="transfer-summary-icon">
+                  <span class="icon icon-check"></span>
+                </span>
+              </div>
+
+              <div class="deposit-actions">
+                <button class="deposit-continue">CONFIRMAR TRANSFERÊNCIA</button>
+                <button class="deposit-cancel">CANCELAR</button>
+              </div>
+
+              <div class="transfer-important">
+                  <h3>Informações importantes</h3>
+                  <div class="transfer-important-grid">
+                      <span>
+                          <span class="icon icon-clock-green"></span>
+                          Transferência 24h por dia
+                      </span>
+                      <span>
+                          <span class="icon icon-lightning"></span>
+                          Crédito instantâneo
+                      </span>
+                      <span>
+                          <span class="icon icon-shield-green"></span>
+                          Ambiente 100% seguro
+                      </span>
+                      <span>
+                          <span class="icon icon-check-circle"></span>
+                          Sem taxas adicionais
+                      </span>
+                  </div>
+              </div>
+
+              <div class="deposit-security-alert">
+                <span class="icon icon-shield"></span>
+                <div>
+                  <strong>Segurança garantida</strong>
+                  <p>Suas informações estão protegidas com criptografia de ponta a ponta.</p>
+                </div>
+              </div>
+
+            </div>
+
+
+          </section>
+
+        </main>
+
+      </div>
+  </div>
+
+  <footer class="footer-bar">
+    <div class="footer">
+      <div class="footer-item">
+        <span class="footer-dot green"></span>
+        Ambiente seguro &amp; criptografado
+      </div>
+      <div class="footer-item red">
+        <span class="footer-dot red"></span>
+        Proibido para menores
+      </div>
+      <div class="footer-item orange">
+        <span class="footer-dot orange"></span>
+        Jogue com responsabilidade
+      </div>
+    </div>
+  </footer>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+</body>
+</html>

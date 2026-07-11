@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<script src="js/action.js"></script>
+<title>Painel</title>
+</head>
+<body>
+
+  <div class="page">
+    <div class="app-layout">
+
+      <aside class="sidebar" id="sidebar">
+          <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo"></a>
+
+          <div class="divider"></div>
+
+          <div class="nav">
+              <ul class="nav-list">
+                  <li><a class="nav-link" href="/perfil.html"><span class="icon icon-perfil"></span>Perfil</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-depositar"></span>Depositar</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-sacar"></span>Sacar</a></li>
+                  <li><a class="nav-link active" href="#"><span class="icon icon-jogar"></span>Jogar</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-carrinho"></span>Carrinho</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-bilhetes"></span>Bilhetes</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-resultados"></span>Resultados</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-classificacao"></span>Classificação</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-cotacao"></span>Cotação</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-regras-jogo"></span>Regras do Jogo</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-regras-bolao"></span>Regras Bolão JC</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-extratos"></span>Extratos</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-guia"></span>Guia do Jogo</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-tutoriais"></span>Tutoriais</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-marketing"></span>Marketing</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-sair"></span>Sair</a></li>
+              </ul>
+          </div>
+      </aside>
+
+        <main class="main">
+
+          <header class="card header">
+              <div class="row">
+
+                  <div class="col header-user">
+                      <div class="avatar"><span class="icon icon-avatar"></span></div>
+                      <div class="header-greeting">
+                      <span class="hello">Olá, (62) 99974-12</span>
+                      <span class="sub">Boa Sorte!</span>
+                      </div>
+                  </div>
+
+                  <div class="col-fixed header-actions">
+                      <div class="balance-pill">
+                      <div class="icon-circle"><span class="icon icon-wallet"></span></div>
+                      <div class="balance-text">
+                          <span class="label">Saldo disponível</span>
+                          <span class="value">R$ 1.187,16</span>
+                      </div>
+                      <span class="icon icon-refresh refresh"></span>
+                      </div>
+
+                      <button class="btn btn-green">
+                      <span class="icon icon-plus"></span>
+                      Depositar
+                      </button>
+
+                      <button class="btn btn-outline-green">
+                      <span class="icon icon-withdraw"></span>
+                      Sacar
+                      </button>
+                  </div>
+
+              </div>
+          </header>
+
+          <header class="mobile-header">
+            <div class="mobile-header-top">
+              <img src="img/logo.png" class="mobile-logo" alt="Logo">
+
+              <div class="mobile-balance">
+                <span class="icon icon-wallet"></span>
+                <div>
+                  <small>Saldo disponível</small>
+                </div>
+              </div>
+
+              <div class="mobile-value">R$103,00</div>
+
+              <button class="mobile-refresh">
+                <span class="icon icon-refresh"></span>
+              </button>
+
+              <button class="mobile-menu" id="mobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+
+            <div class="mobile-header-actions">
+              <button class="mobile-btn depositar">
+                <span class="icon icon-depositar"></span>
+                Depositar
+              </button>
+
+              <button class="mobile-btn sacar">
+                <span class="icon icon-sacar"></span>
+                Sacar
+              </button>
+            </div>
+
+           
+          </header>
+
+          <section class="statement-page">
+
+            <header class="statement-heading">
+              <span class="statement-heading-icon">
+                <span class="icon icon-statement"></span>
+              </span>
+
+              <div>
+                <h1>Meu Extrato</h1>
+                <p>Este é o seu extrato. Você pode visualizar todas as suas transações, prêmios, comissões e apostas realizadas em nossa plataforma.</p>
+              </div>
+            </header>
+
+            <section class="statement-summary">
+              <article class="statement-summary-card yellow">
+                <span class="statement-summary-icon"><span class="icon icon-money"></span></span>
+                <div>
+                  <small>Saldo Anterior</small>
+                  <strong>R$ 93,00</strong>
+                </div>
+              </article>
+
+              <article class="statement-summary-card green">
+                <span class="statement-summary-icon"><span class="icon icon-arrow-up"></span></span>
+                <div>
+                  <small>Entradas</small>
+                  <strong>R$ 93,00</strong>
+                </div>
+              </article>
+
+              <article class="statement-summary-card orange">
+                <span class="statement-summary-icon"><span class="icon icon-arrow-down"></span></span>
+                <div>
+                  <small>Saídas</small>
+                  <strong>R$ 0,00</strong>
+                </div>
+              </article>
+
+              <article class="statement-summary-card blue">
+                <span class="statement-summary-icon"><span class="icon icon-equal"></span></span>
+                <div>
+                  <small>Saldo atual</small>
+                  <strong>R$ 93,00</strong>
+                </div>
+              </article>
+            </section>
+
+            <section class="card statement-filter-card">
+              <form class="statement-filter" id="statementFilter">
+                <div class="statement-field statement-period">
+                  <label>Período de apuração</label>
+                  <div class="statement-date-range">
+                    <input type="text" value="01/05/2026" aria-label="Data inicial">
+                    <span>até</span>
+                    <input type="text" value="25/06/2026" aria-label="Data final">
+                  </div>
+                </div>
+
+                <div class="statement-field statement-type">
+                  <label for="statementType">Tipo de movimentação</label>
+                  <select id="statementType">
+                    <option>Todos</option>
+                    <option>Entradas</option>
+                    <option>Saídas</option>
+                    <option>Prêmios</option>
+                    <option>Comissões</option>
+                    <option>Apostas</option>
+                  </select>
+                </div>
+
+                <div class="statement-field statement-search">
+                  <label for="statementKeyword">Buscar por palavra-chave</label>
+                  <input id="statementKeyword" type="text" placeholder="Ex: Aposta, Saque...">
+                </div>
+
+                <div class="statement-filter-actions">
+                  <button class="statement-filter-btn" type="submit">Filtrar</button>
+                  <button class="statement-clear-btn" type="reset">Limpar</button>
+                </div>
+              </form>
+            </section>
+
+            <div class="statement-toolbar">
+              <button class="statement-tool-btn" type="button">
+                <span class="icon icon-export"></span>
+                Exportar extrato
+              </button>
+
+              <button class="statement-tool-btn" type="button">
+                <span class="icon icon-refresh"></span>
+                Atualizar extrato
+              </button>
+            </div>
+
+            <section class="card statement-table-card">
+              <div class="statement-table-title">
+                <h2>Transações</h2>
+              </div>
+
+              <div class="statement-table-wrap">
+                <table class="statement-table">
+                  <thead>
+                    <tr>
+                      <th>Data / Hora</th>
+                      <th>Descrição</th>
+                      <th>Tipo</th>
+                      <th>Valor</th>
+                      <th>Saldo</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td>
+                        <strong>01/05/2026</strong>
+                        <small>00:00:00</small>
+                      </td>
+                      <td>Saldo Anterior</td>
+                      <td><span class="statement-badge green">Saldo</span></td>
+                      <td></td>
+                      <td><strong>R$ 93,00</strong></td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <strong>25/06/2026</strong>
+                        <small>18:34:48</small>
+                      </td>
+                      <td>Saldo Atual</td>
+                      <td><span class="statement-badge green">Saldo</span></td>
+                      <td></td>
+                      <td><strong>R$ 93,00</strong></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+          </section>
+
+        </main>
+
+      </div>
+  </div>
+
+  <footer class="footer-bar">
+    <div class="footer">
+      <div class="footer-item">
+        <span class="footer-dot green"></span>
+        Ambiente seguro &amp; criptografado
+      </div>
+      <div class="footer-item red">
+        <span class="footer-dot red"></span>
+        Proibido para menores
+      </div>
+      <div class="footer-item orange">
+        <span class="footer-dot orange"></span>
+        Jogue com responsabilidade
+      </div>
+    </div>
+  </footer>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+</body>
+</html>

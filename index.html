@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<script src="js/action.js"></script>
+<title>Painel</title>
+<style>
+
+
+
+</style>
+</head>
+<body>
+
+  <div class="page">
+    <div class="app-layout">
+
+      <aside class="sidebar" id="sidebar">
+          <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo"></a>
+
+          <div class="divider"></div>
+
+          <div class="nav">
+              <ul class="nav-list">
+                  <li><a class="nav-link" href="/perfil.html"><span class="icon icon-perfil"></span>Perfil</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-depositar"></span>Depositar</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-sacar"></span>Sacar</a></li>
+                  <li><a class="nav-link active" href="#"><span class="icon icon-jogar"></span>Jogar</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-carrinho"></span>Carrinho</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-bilhetes"></span>Bilhetes</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-resultados"></span>Resultados</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-classificacao"></span>Classificação</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-cotacao"></span>Cotação</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-regras-jogo"></span>Regras do Jogo</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-regras-bolao"></span>Regras Bolão JC</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-extratos"></span>Extratos</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-guia"></span>Guia do Jogo</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-tutoriais"></span>Tutoriais</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-marketing"></span>Marketing</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-sair"></span>Sair</a></li>
+              </ul>
+          </div>
+      </aside>
+
+        <main class="main">
+
+          <header class="card header">
+              <div class="row">
+
+                  <div class="col header-user">
+                      <div class="avatar"><span class="icon icon-avatar"></span></div>
+                      <div class="header-greeting">
+                      <span class="hello">Olá, (62) 99974-12</span>
+                      <span class="sub">Boa Sorte!</span>
+                      </div>
+                  </div>
+
+                  <div class="col-fixed header-actions">
+                      <div class="balance-pill">
+                      <div class="icon-circle"><span class="icon icon-wallet"></span></div>
+                      <div class="balance-text">
+                          <span class="label">Saldo disponível</span>
+                          <span class="value">R$ 1.187,16</span>
+                      </div>
+                      <span class="icon icon-refresh refresh"></span>
+                      </div>
+
+                      <button class="btn btn-green">
+                      <span class="icon icon-plus"></span>
+                      Depositar
+                      </button>
+
+                      <button class="btn btn-outline-green">
+                      <span class="icon icon-withdraw"></span>
+                      Sacar
+                      </button>
+                  </div>
+
+              </div>
+          </header>
+
+          <header class="mobile-header">
+            <div class="mobile-header-top">
+              <img src="img/logo.png" class="mobile-logo" alt="Logo">
+
+              <div class="mobile-balance">
+                <span class="icon icon-wallet"></span>
+                <div>
+                  <small>Saldo disponível</small>
+                </div>
+              </div>
+
+              <div class="mobile-value">R$103,00</div>
+
+              <button class="mobile-refresh">
+                <span class="icon icon-refresh"></span>
+              </button>
+
+              <button class="mobile-menu" id="mobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+
+            <div class="mobile-header-actions">
+              <button class="mobile-btn depositar">
+                <span class="icon icon-depositar"></span>
+                Depositar
+              </button>
+
+              <button class="mobile-btn sacar">
+                <span class="icon icon-sacar"></span>
+                Sacar
+              </button>
+            </div>
+
+           
+          </header>
+
+          <div class="mobile-greeting">
+            <strong>Olá, (62) 99974-12</strong>
+            <span>Boa Sorte!</span>
+          </div>
+
+          <div class="row">
+            <div class="col card card-countdown" data-target="2026-07-08T20:00:00">
+                <div class="countdown-content">
+
+                    <span class="countdown-label">
+                        <span class="icon"></span>
+                        PRÓXIMO SORTEIO PTV
+                    </span>
+
+                    <h2>Contagem Regressiva</h2>
+
+                    <p>Acompanhe o próximo sorteio ao vivo</p>
+
+                    <div class="countdown">
+
+                        <div class="time-box">
+                            <strong>00</strong>
+                            <span>HORAS</span>
+                        </div>
+
+                        <div class="separator">:</div>
+
+                        <div class="time-box">
+                            <strong>08</strong>
+                            <span>MIN</span>
+                        </div>
+
+                        <div class="separator">:</div>
+
+                        <div class="time-box">
+                            <strong>11</strong>
+                            <span>SEG</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="bottom-line"></div>
+            </div>
+            <div class="col card card-prize">
+
+                <div class="prize-content">
+
+                    <span class="prize-label">
+                        <span class="icon"></span>
+                        PRÊMIO ACUMULADO
+                    </span>
+
+                    <h2>Prêmio Bolão JC</h2>
+
+                    <p>Atualizado em tempo real</p>
+
+                    <div class="prize-value">
+                        <span class="currency">R$</span>
+                        <span class="amount">29.099</span><span class="cents">,04</span>
+                    </div>
+
+                    <div class="prize-total">
+                        <span class="icon-total"></span>
+                        TOTAL ACUMULADO
+                    </div>
+
+                </div>
+
+                <div class="bottom-line"></div>
+
+            </div>
+          </div>
+
+          <div class="row">
+
+              <div class="col card action-card action-bet">
+
+                  <div class="action-title">
+                      <span class="icon-img icon-escolha"></span>
+                      <h3>Escolha sua aposta</h3>
+                  </div>
+
+                  <div class="action-grid">
+
+                      <a href="#" class="action-item blue">
+                          <span class="icon-img icon-combinadas"></span>
+                          <span>Combinadas</span>
+                      </a>
+
+                      <a href="#" class="action-item blue">
+                          <span class="icon-img icon-grupo"></span>
+                          <span>Grupo</span>
+                      </a>
+
+                      <a href="#" class="action-item blue">
+                          <span class="icon-img icon-dezena"></span>
+                          <span>Dezena</span>
+                      </a>
+
+                      <a href="#" class="action-item blue">
+                          <span class="icon-img icon-centenas"></span>
+                          <span>Centenas</span>
+                      </a>
+
+                      <a href="#" class="action-item blue">
+                          <span class="icon-img icon-milhar"></span>
+                          <span>Milhar</span>
+                      </a>
+
+                      <a href="#" class="action-item blue">
+                          <span class="icon-img icon-repetir"></span>
+                          <span>Repetir Aposta</span>
+                      </a>
+
+                  </div>
+
+              </div>
+
+              <div class="col card action-card action-access">
+
+                  <div class="action-title">
+                      <span class="icon-img icon-acesso"></span>
+                      <h3>Acesso rápido</h3>
+                  </div>
+
+                  <div class="action-grid">
+
+                      <a href="#" class="action-item green">
+                          <span class="icon-img icon-depositar1"></span>
+                          <span>Depositar</span>
+                      </a>
+
+                      <a href="#" class="action-item green">
+                          <span class="icon-img icon-carrinho1"></span>
+                          <span>Carrinho</span>
+                      </a>
+
+                      <a href="#" class="action-item green">
+                          <span class="icon-img icon-bilhetes1"></span>
+                          <span>Meus Bilhetes</span>
+                      </a>
+
+                      <a href="#" class="action-item green">
+                          <span class="icon-img icon-resultados1"></span>
+                          <span>Resultados</span>
+                      </a>
+
+                      <a href="#" class="action-item green">
+                          <span class="icon-img icon-classificacao1"></span>
+                          <span>Classificação</span>
+                      </a>
+
+                      <a href="#" class="action-item green">
+                          <span class="icon-img icon-cotacao1"></span>
+                          <span>Cotação</span>
+                      </a>
+
+                  </div>
+
+              </div>
+
+          </div>
+
+          <div class="card other-games-card">
+            <div class="other-games-title">
+              <span class="icon-img icon-outros-jogos"></span>
+              <h3>Outros jogos</h3>
+            </div>
+
+            <div class="other-games-grid">
+              <a href="#" class="game-item">
+                <span class="game-logo img-bolao-jc"></span>
+                <strong>Bolão JC</strong>
+              </a>
+
+              <a href="#" class="game-item">
+                <span class="game-logo img-super10"></span>
+                <strong>Super10</strong>
+              </a>
+
+              <a href="#" class="game-item">
+                <span class="game-logo img-seninha"></span>
+                <strong>Seninha</strong>
+              </a>
+
+              <a href="#" class="game-item">
+                <span class="game-logo img-quininha"></span>
+                <strong>Quininha</strong>
+              </a>
+
+              <a href="#" class="game-item">
+                <span class="game-logo img-jackpot"></span>
+                <strong>Jackpot</strong>
+              </a>
+            </div>
+          </div>
+
+          <div class="card recent-results-card">
+
+            <div class="recent-results-header">
+              <div class="recent-results-title">
+                <span class="icon-img icon-resultados-title"></span>
+                <h3>Resultados Recentes</h3>
+              </div>
+
+              <a href="#" class="see-all">
+                Ver todos
+                <span>›</span>
+              </a>
+            </div>
+
+            <div class="recent-results-grid">
+
+              <div class="result-card result-blue">
+                <div class="result-top">
+                  <div>
+                    <h4>Quininha</h4>
+                    <small>23/06/2025</small>
+                  </div>
+                  <span class="result-game result-quininha"></span>
+                </div>
+
+                <ul>
+                  <li><span>1º Prêmio</span><strong>54</strong></li>
+                  <li><span>2º Prêmio</span><strong>38</strong></li>
+                  <li><span>3º Prêmio</span><strong>17</strong></li>
+                </ul>
+
+                <a href="#" class="result-button">VER COMPLETO →</a>
+              </div>
+
+              <div class="result-card result-green">
+                <div class="result-top">
+                  <div>
+                    <h4>Seninha</h4>
+                    <small>23/06/2025</small>
+                  </div>
+                  <span class="result-game result-seninha"></span>
+                </div>
+
+                <ul>
+                  <li><span>1º Prêmio</span><strong>72</strong></li>
+                  <li><span>2º Prêmio</span><strong>45</strong></li>
+                  <li><span>3º Prêmio</span><strong>83</strong></li>
+                </ul>
+
+                <a href="#" class="result-button">VER COMPLETO →</a>
+              </div>
+
+              <div class="result-card result-cyan">
+                <div class="result-top">
+                  <div>
+                    <h4>PT - 14:00</h4>
+                    <small>23/06/2025</small>
+                  </div>
+                  <span class="result-game result-pt"></span>
+                </div>
+
+                <ul>
+                  <li><span>1º Prêmio</span><strong>7491</strong></li>
+                  <li><span>2º Prêmio</span><strong>2863</strong></li>
+                  <li><span>3º Prêmio</span><strong>5128</strong></li>
+                </ul>
+
+                <a href="#" class="result-button">VER COMPLETO →</a>
+              </div>
+
+              <div class="result-card result-orange">
+                <div class="result-top">
+                  <div>
+                    <h4>Jackpot</h4>
+                    <small>23/06/2025</small>
+                  </div>
+                  <span class="result-game result-jackpot"></span>
+                </div>
+
+                <ul>
+                  <li><span>1º Prêmio</span><strong>17</strong></li>
+                  <li><span>2º Prêmio</span><strong>63</strong></li>
+                  <li><span>3º Prêmio</span><strong>82</strong></li>
+                </ul>
+
+                <a href="#" class="result-button">VER COMPLETO →</a>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="card games-showcase-card">
+            <div class="games-showcase-title">
+              <span class="icon-img icon-nossos-jogos"></span>
+              <h3>Nossos Jogos</h3>
+            </div>
+
+            <div class="games-showcase-grid">
+              <div class="game-showcase-item game-super10">
+                <div class="game-banner"><span class="game-logo logo-super10"></span></div>
+                <h4>Super10</h4>
+                <p>Aposte em até 10 dezenas e concorra a prêmios incríveis. Jogo dinâmico e emocionante com sorteios ao vivo.</p>
+                <a href="#">APOSTAR AGORA</a>
+              </div>
+
+              <div class="game-showcase-item game-seninha">
+                <div class="game-banner"><span class="game-logo logo-seninha"></span></div>
+                <h4>Seninha</h4>
+                <p>Escolha dezenas de 01 a 60. Fácil de jogar e com alta potencial de prêmios. Resultado oficial da Mega Seninha.</p>
+                <a href="#">APOSTAR AGORA</a>
+              </div>
+
+              <div class="game-showcase-item game-quininha">
+                <div class="game-banner"><span class="game-logo logo-quininha"></span></div>
+                <h4>Quininha</h4>
+                <p>Escolha suas dezenas de 01 a 80 e ganhe apostando 5. Sorteio segundo a sábado e resultado imediato.</p>
+                <a href="#">APOSTAR AGORA</a>
+              </div>
+
+              <div class="game-showcase-item game-jackpot">
+                <div class="game-banner"><span class="game-logo logo-jackpot"></span></div>
+                <h4>Jackpot</h4>
+                <p>Escolha 5 bichos que vai sair na Federal e concorra ao Jackpot acumulado. Acerte e ganhe o grande prêmio!</p>
+                <a href="#">QUERO GANHAR</a>
+              </div>
+            </div>
+          </div>
+
+          
+        </main>
+
+      </div>
+  </div>
+
+  <footer class="footer-bar">
+    <div class="footer">
+      <div class="footer-item">
+        <span class="footer-dot green"></span>
+        Ambiente seguro &amp; criptografado
+      </div>
+      <div class="footer-item red">
+        <span class="footer-dot red"></span>
+        Proibido para menores
+      </div>
+      <div class="footer-item orange">
+        <span class="footer-dot orange"></span>
+        Jogue com responsabilidade
+      </div>
+    </div>
+  </footer>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+</body>
+</html>

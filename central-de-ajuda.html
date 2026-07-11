@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<script src="js/action.js"></script>
+<title>Painel</title>
+</head>
+<body>
+
+  <div class="page">
+    <div class="app-layout">
+
+      <aside class="sidebar" id="sidebar">
+          <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo"></a>
+
+          <div class="divider"></div>
+
+          <div class="nav">
+              <ul class="nav-list">
+                  <li><a class="nav-link" href="/perfil.html"><span class="icon icon-perfil"></span>Perfil</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-depositar"></span>Depositar</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-sacar"></span>Sacar</a></li>
+                  <li><a class="nav-link active" href="#"><span class="icon icon-jogar"></span>Jogar</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-carrinho"></span>Carrinho</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-bilhetes"></span>Bilhetes</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-resultados"></span>Resultados</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-classificacao"></span>Classificação</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-cotacao"></span>Cotação</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-regras-jogo"></span>Regras do Jogo</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-regras-bolao"></span>Regras Bolão JC</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-extratos"></span>Extratos</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-guia"></span>Guia do Jogo</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-tutoriais"></span>Tutoriais</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-marketing"></span>Marketing</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-sair"></span>Sair</a></li>
+              </ul>
+          </div>
+      </aside>
+
+        <main class="main">
+
+          <header class="card header">
+              <div class="row">
+
+                  <div class="col header-user">
+                      <div class="avatar"><span class="icon icon-avatar"></span></div>
+                      <div class="header-greeting">
+                      <span class="hello">Olá, (62) 99974-12</span>
+                      <span class="sub">Boa Sorte!</span>
+                      </div>
+                  </div>
+
+                  <div class="col-fixed header-actions">
+                      <div class="balance-pill">
+                      <div class="icon-circle"><span class="icon icon-wallet"></span></div>
+                      <div class="balance-text">
+                          <span class="label">Saldo disponível</span>
+                          <span class="value">R$ 1.187,16</span>
+                      </div>
+                      <span class="icon icon-refresh refresh"></span>
+                      </div>
+
+                      <button class="btn btn-green">
+                      <span class="icon icon-plus"></span>
+                      Depositar
+                      </button>
+
+                      <button class="btn btn-outline-green">
+                      <span class="icon icon-withdraw"></span>
+                      Sacar
+                      </button>
+                  </div>
+
+              </div>
+          </header>
+
+          <header class="mobile-header">
+            <div class="mobile-header-top">
+              <img src="img/logo.png" class="mobile-logo" alt="Logo">
+
+              <div class="mobile-balance">
+                <span class="icon icon-wallet"></span>
+                <div>
+                  <small>Saldo disponível</small>
+                </div>
+              </div>
+
+              <div class="mobile-value">R$103,00</div>
+
+              <button class="mobile-refresh">
+                <span class="icon icon-refresh"></span>
+              </button>
+
+              <button class="mobile-menu" id="mobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+
+            <div class="mobile-header-actions">
+              <button class="mobile-btn depositar">
+                <span class="icon icon-depositar"></span>
+                Depositar
+              </button>
+
+              <button class="mobile-btn sacar">
+                <span class="icon icon-sacar"></span>
+                Sacar
+              </button>
+            </div>
+
+           
+          </header>
+
+          <div class="mobile-greeting">
+            <strong>Olá, (62) 99974-12</strong>
+            <span>Boa Sorte!</span>
+          </div>
+
+          <div class="row">
+            <div class="col card card-countdown" data-target="2026-07-08T20:00:00">
+                <div class="countdown-content">
+
+                    <span class="countdown-label">
+                        <span class="icon"></span>
+                        PRÓXIMO SORTEIO PTV
+                    </span>
+
+                    <h2>Contagem Regressiva</h2>
+
+                    <p>Acompanhe o próximo sorteio ao vivo</p>
+
+                    <div class="countdown">
+
+                        <div class="time-box">
+                            <strong>00</strong>
+                            <span>HORAS</span>
+                        </div>
+
+                        <div class="separator">:</div>
+
+                        <div class="time-box">
+                            <strong>08</strong>
+                            <span>MIN</span>
+                        </div>
+
+                        <div class="separator">:</div>
+
+                        <div class="time-box">
+                            <strong>11</strong>
+                            <span>SEG</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="bottom-line"></div>
+            </div>
+            <div class="col card card-prize">
+
+                <div class="prize-content">
+
+                    <span class="prize-label">
+                        <span class="icon"></span>
+                        PRÊMIO ACUMULADO
+                    </span>
+
+                    <h2>Prêmio Bolão JC</h2>
+
+                    <p>Atualizado em tempo real</p>
+
+                    <div class="prize-value">
+                        <span class="currency">R$</span>
+                        <span class="amount">29.099</span><span class="cents">,04</span>
+                    </div>
+
+                    <div class="prize-total">
+                        <span class="icon-total"></span>
+                        TOTAL ACUMULADO
+                    </div>
+
+                </div>
+
+                <div class="bottom-line"></div>
+
+            </div>
+          </div>
+
+
+          <section class="help-page">
+
+            <!-- Topo -->
+
+            <header class="help-header">
+
+              <div class="help-heading">
+                <span class="help-heading-icon">?</span>
+
+                <div>
+                  <h1>Central de Ajuda</h1>
+                  <p>Encontre respostas rápidas para as dúvidas mais comuns.</p>
+                </div>
+              </div>
+
+              <div class="help-search">
+                <span class="icon icon-search"></span>
+
+                <input
+                  type="search"
+                  id="helpSearch"
+                  placeholder="Busque por depósito, saque, aposta, cotação..."
+                  autocomplete="off"
+                >
+              </div>
+
+            </header>
+
+            <!-- Atalhos -->
+
+            <section class="help-shortcuts">
+
+              <a href="#" class="help-shortcut blue" data-search-term="aposta">
+                <span class="help-shortcut-icon">
+                  <span class="icon icon-help-bet"></span>
+                </span>
+
+                <strong>Como apostar</strong>
+
+                <p>Aprenda o passo a passo para fazer sua aposta.</p>
+              </a>
+
+              <a href="#" class="help-shortcut green" data-search-term="depósito pix">
+                <span class="help-shortcut-icon">
+                  <span class="icon icon-pix"></span>
+                </span>
+
+                <strong>Depósito PIX</strong>
+
+                <p>Veja como depositar de forma rápida e segura.</p>
+              </a>
+
+              <a href="#" class="help-shortcut orange" data-search-term="resultados">
+                <span class="help-shortcut-icon">
+                  <span class="icon icon-live"></span>
+                </span>
+
+                <strong>Resultados ao vivo</strong>
+
+                <p>Acompanhe os resultados dos sorteios em tempo real.</p>
+              </a>
+
+              <a href="#" class="help-shortcut blue" data-search-term="suporte">
+                <span class="help-shortcut-icon">
+                  <span class="icon icon-support"></span>
+                </span>
+
+                <strong>Fale com o suporte</strong>
+
+                <p>Nossa equipe está pronta para te ajudar.</p>
+              </a>
+
+            </section>
+
+            <!-- Perguntas -->
+
+            <section class="card help-faq-card">
+
+              <div class="help-faq-header">
+
+                <div class="help-faq-title">
+                  <span class="help-faq-title-icon">
+                    <span class="icon icon-question"></span>
+                  </span>
+
+                  <h2>DÚVIDAS FREQUENTES</h2>
+                </div>
+
+                <a href="#" class="help-all-link">
+                    Ver todas as perguntas
+                    <span class="icon icon-external"></span>
+                </a>
+
+              </div>
+
+              <div
+                class="pool-faq-list help-faq-list"
+                id="helpFaqList"
+              >
+
+                <article
+                  class="pool-faq-item help-faq-item"
+                  data-keywords="como fazer aposta apostar jogo bilhete"
+                >
+                  <button
+                    type="button"
+                    class="pool-faq-question help-faq-question"
+                  >
+                    <span>
+                      <span class="icon icon-question"></span>
+                      Como fazer uma aposta?
+                    </span>
+
+                    <span class="pool-faq-arrow help-faq-arrow">
+                      <span class="icon icon-chevron-down"></span>
+                    </span>
+                  </button>
+
+                  <div class="pool-faq-answer help-faq-answer">
+                    <div class="help-faq-answer-content">
+                      <p>
+                        Escolha a modalidade, informe seus números,
+                        selecione o sorteio, defina o valor e clique em apostar.
+                      </p>
+                    </div>
+                  </div>
+                </article>
+
+                <article
+                  class="pool-faq-item help-faq-item open"
+                  data-keywords="cotação valores prêmio modalidades dezenas grupos duques"
+                >
+                  <button
+                    type="button"
+                    class="pool-faq-question help-faq-question"
+                  >
+                    <span>
+                      <span class="icon icon-question"></span>
+                      Veja nossa cotação
+                    </span>
+
+                    <span class="pool-faq-arrow help-faq-arrow">
+                      <span class="icon icon-chevron-down"></span>
+                    </span>
+                  </button>
+
+                  <div class="pool-faq-answer help-faq-answer">
+                    <div class="help-faq-answer-content">
+
+                      <p>
+                        Acompanhe nossas cotações atualizadas em tempo real
+                        e faça apostas com mais estratégia. Nossos mercados
+                        incluem dezenas, grupos, duques e muito mais.
+                      </p>
+
+                      <a href="#" class="help-answer-button">
+                        ACESSAR COTAÇÃO
+                      </a>
+
+                    </div>
+                  </div>
+                </article>
+
+                <article
+                  class="pool-faq-item help-faq-item"
+                  data-keywords="bolão jogar bolão jc dezenas prêmio"
+                >
+                  <button
+                    type="button"
+                    class="pool-faq-question help-faq-question"
+                  >
+                    <span>
+                      <span class="icon icon-question"></span>
+                      Como jogar no bolão?
+                    </span>
+
+                    <span class="pool-faq-arrow help-faq-arrow">
+                      <span class="icon icon-chevron-down"></span>
+                    </span>
+                  </button>
+
+                  <div class="pool-faq-answer help-faq-answer">
+                    <div class="help-faq-answer-content">
+                      <p>
+                        Selecione dez dezenas entre 00 e 99,
+                        confirme sua aposta e acompanhe os sorteios
+                        previstos para o Bolão JC.
+                      </p>
+                    </div>
+                  </div>
+                </article>
+
+                <article
+                  class="pool-faq-item help-faq-item"
+                  data-keywords="sacar pix saque retirada dinheiro chave"
+                >
+                  <button
+                    type="button"
+                    class="pool-faq-question help-faq-question"
+                  >
+                    <span>
+                      <span class="icon icon-question"></span>
+                      Como sacar via PIX?
+                    </span>
+
+                    <span class="pool-faq-arrow help-faq-arrow">
+                      <span class="icon icon-chevron-down"></span>
+                    </span>
+                  </button>
+
+                  <div class="pool-faq-answer help-faq-answer">
+                    <div class="help-faq-answer-content">
+                      <p>
+                        Informe o valor do saque, escolha o tipo da chave PIX,
+                        digite a chave corretamente e confirme a solicitação.
+                      </p>
+                    </div>
+                  </div>
+                </article>
+
+                <article
+                  class="pool-faq-item help-faq-item"
+                  data-keywords="ajuda suporte atendimento problema dúvida"
+                >
+                  <button
+                    type="button"
+                    class="pool-faq-question help-faq-question"
+                  >
+                    <span>
+                      <span class="icon icon-question"></span>
+                      Não encontrou o que procurava?
+                    </span>
+
+                    <span class="pool-faq-arrow help-faq-arrow">
+                      <span class="icon icon-chevron-down"></span>
+                    </span>
+                  </button>
+
+                  <div class="pool-faq-answer help-faq-answer">
+                    <div class="help-faq-answer-content">
+
+                      <p>
+                        Entre em contato com o suporte para receber
+                        ajuda personalizada.
+                      </p>
+
+                      <a href="#" class="help-answer-button">
+                        FALAR COM O SUPORTE
+                      </a>
+
+                    </div>
+                  </div>
+                </article>
+
+              </div>
+
+              <div class="help-no-results" id="helpNoResults">
+                Nenhuma dúvida encontrada.
+              </div>
+
+            </section>
+
+          </section>
+
+  
+
+        </main>
+
+      </div>
+  </div>
+
+  <footer class="footer-bar">
+    <div class="footer">
+      <div class="footer-item">
+        <span class="footer-dot green"></span>
+        Ambiente seguro &amp; criptografado
+      </div>
+      <div class="footer-item red">
+        <span class="footer-dot red"></span>
+        Proibido para menores
+      </div>
+      <div class="footer-item orange">
+        <span class="footer-dot orange"></span>
+        Jogue com responsabilidade
+      </div>
+    </div>
+  </footer>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+</body>
+</html>

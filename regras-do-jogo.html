@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<script src="js/action.js"></script>
+<title>Painel</title>
+</head>
+<body>
+
+  <div class="page">
+    <div class="app-layout">
+
+      <aside class="sidebar" id="sidebar">
+          <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo"></a>
+
+          <div class="divider"></div>
+
+          <div class="nav">
+              <ul class="nav-list">
+                  <li><a class="nav-link" href="/perfil.html"><span class="icon icon-perfil"></span>Perfil</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-depositar"></span>Depositar</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-sacar"></span>Sacar</a></li>
+                  <li><a class="nav-link active" href="#"><span class="icon icon-jogar"></span>Jogar</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-carrinho"></span>Carrinho</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-bilhetes"></span>Bilhetes</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-resultados"></span>Resultados</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-classificacao"></span>Classificação</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-cotacao"></span>Cotação</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-regras-jogo"></span>Regras do Jogo</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-regras-bolao"></span>Regras Bolão JC</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-extratos"></span>Extratos</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-guia"></span>Guia do Jogo</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-tutoriais"></span>Tutoriais</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-marketing"></span>Marketing</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-sair"></span>Sair</a></li>
+              </ul>
+          </div>
+      </aside>
+
+        <main class="main">
+
+          <header class="card header">
+              <div class="row">
+
+                  <div class="col header-user">
+                      <div class="avatar"><span class="icon icon-avatar"></span></div>
+                      <div class="header-greeting">
+                      <span class="hello">Olá, (62) 99974-12</span>
+                      <span class="sub">Boa Sorte!</span>
+                      </div>
+                  </div>
+
+                  <div class="col-fixed header-actions">
+                      <div class="balance-pill">
+                      <div class="icon-circle"><span class="icon icon-wallet"></span></div>
+                      <div class="balance-text">
+                          <span class="label">Saldo disponível</span>
+                          <span class="value">R$ 1.187,16</span>
+                      </div>
+                      <span class="icon icon-refresh refresh"></span>
+                      </div>
+
+                      <button class="btn btn-green">
+                      <span class="icon icon-plus"></span>
+                      Depositar
+                      </button>
+
+                      <button class="btn btn-outline-green">
+                      <span class="icon icon-withdraw"></span>
+                      Sacar
+                      </button>
+                  </div>
+
+              </div>
+          </header>
+
+          <header class="mobile-header">
+            <div class="mobile-header-top">
+              <img src="img/logo.png" class="mobile-logo" alt="Logo">
+
+              <div class="mobile-balance">
+                <span class="icon icon-wallet"></span>
+                <div>
+                  <small>Saldo disponível</small>
+                </div>
+              </div>
+
+              <div class="mobile-value">R$103,00</div>
+
+              <button class="mobile-refresh">
+                <span class="icon icon-refresh"></span>
+              </button>
+
+              <button class="mobile-menu" id="mobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+
+            <div class="mobile-header-actions">
+              <button class="mobile-btn depositar">
+                <span class="icon icon-depositar"></span>
+                Depositar
+              </button>
+
+              <button class="mobile-btn sacar">
+                <span class="icon icon-sacar"></span>
+                Sacar
+              </button>
+            </div>
+
+           
+          </header>
+
+          <section class="rules-page">
+
+            <!-- Hero -->
+            <div class="rules-hero">
+              <div class="rules-hero-brand">
+                <img src="img/logo-jogo-bicho.png" alt="Jogo do Bicho" class="rules-hero-logo">
+
+                <div>
+                  <span class="rules-eyebrow">GUIA OFICIAL</span>
+                  <h1>Regras Jogo do Bicho</h1>
+                  <p>Aprenda como apostar, horários dos sorteios e modalidades disponíveis.</p>
+                </div>
+              </div>
+
+              <div class="rules-hero-status">
+                <span class="rules-status active">Regras vigentes</span>
+                <span class="rules-status"><span class="icon icon-shield"></span> 8 seções</span>
+              </div>
+            </div>
+
+            <!-- Como jogar -->
+            <section class="card rules-block rules-how">
+              <div class="rules-section-title">
+                <span class="rules-section-icon blue"><span class="icon icon-list"></span></span>
+                <span class="rules-section-number blue">1</span>
+                <h2>COMO JOGAR</h2>
+              </div>
+
+              <div class="rules-how-grid">
+                <article class="rules-step">
+                  <span>1</span>
+                  <div>
+                    <strong>Acesse sua conta.</strong>
+                  </div>
+                </article>
+
+                <article class="rules-step">
+                  <span>5</span>
+                  <div>
+                    <strong>Defina o valor da sua aposta e clique em “Apostar”.</strong>
+                    <p>Nesse momento, você terá duas opções:</p>
+                  </div>
+                </article>
+
+                <article class="rules-step">
+                  <span>2</span>
+                  <div>
+                    <strong>Faça um depósito para adicionar saldo à sua conta.</strong>
+                    <p>Aceitamos PIX, transferência e outras formas de pagamento.</p>
+                  </div>
+                </article>
+
+                <article class="rules-step">
+                  <span>6</span>
+                  <div>
+                    <strong>Apostar Agora: Finaliza a aposta imediatamente.</strong>
+                    <p>Adicionar ao Carrinho: Permite incluir outras apostas no mesmo bilhete, antes de finalizar.</p>
+                  </div>
+                </article>
+
+                <article class="rules-step">
+                  <span>3</span>
+                  <div>
+                    <strong>Escolha a modalidade que deseja jogar:</strong>
+                    <p>Jogo do Bicho ou Bolão JC.</p>
+                  </div>
+                </article>
+
+                <article class="rules-step">
+                  <span>7</span>
+                  <div>
+                    <strong>Finalizou aposta! Seu bilhete será gerado automaticamente.</strong>
+                    <p>O bilhete estará válido para os sorteios selecionados.</p>
+                  </div>
+                </article>
+
+                <article class="rules-step">
+                  <span>4</span>
+                  <div>
+                    <strong>Selecione o(s) horário(s) do(s) sorteio(s) que deseja participar.</strong>
+                  </div>
+                </article>
+
+                <article class="rules-step">
+                  <span>8</span>
+                  <div>
+                    <strong>Aguarde o sorteio e confira o resultado.</strong>
+                    <p>Após o horário, o resultado é exibido ao vivo ou pela plataforma.</p>
+                  </div>
+                </article>
+              </div>
+
+              <div class="rules-note blue">
+                <span class="icon icon-ticket"></span>
+                <p>Após isso, será gerado um bilhete digital, que é a comprovação da sua aposta e será válido para o(s) sorteio(s) escolhido(s). Depois, é só aguardar o horário e conferir o resultado ao vivo ou pela plataforma.</p>
+              </div>
+            </section>
+
+            <!-- Horários + modalidades -->
+            <div class="rules-two-columns">
+              <section class="card rules-block">
+                <div class="rules-section-title">
+                  <span class="rules-section-icon green"><span class="icon icon-clock"></span></span>
+                  <span class="rules-section-number green">2</span>
+                  <h2>HORÁRIOS DOS SORTEIOS</h2>
+                </div>
+
+                <div class="rules-schedule">
+                  <div><b class="schedule-code purple">PPT</b><span>Prê Para Manhã</span><time>09:00</time></div>
+                  <div><b class="schedule-code cyan">PTM</b><span>Para Toda Manhã</span><time>11:00</time></div>
+                  <div><b class="schedule-code blue">PT</b><span>Para Todos</span><time>14:00</time></div>
+                  <div><b class="schedule-code green">PTV</b><span>Para Todos (Vespertino)</span><time>16:00</time></div>
+                  <div><b class="schedule-code orange">PTN</b><span>Para Toda Noite</span><time>18:00</time></div>
+                  <div><b class="schedule-code red">FED</b><span>Federal Quarta e Sábado</span><time>20:00</time></div>
+                  <div><b class="schedule-code violet">COR</b><span>Corujinha</span><time>21:00</time></div>
+                </div>
+              </section>
+
+              <section class="card rules-block">
+                <div class="rules-section-title">
+                  <span class="rules-section-icon purple"><span class="icon icon-grid"></span></span>
+                  <span class="rules-section-number purple">3</span>
+                  <h2>OPÇÕES DE APOSTAS DISPONÍVEIS</h2>
+                </div>
+
+                <div class="rules-bet-grid">
+                  <article><span class="soft-icon blue"><span class="icon icon-grupo"></span></span><div><strong>Grupo</strong><p>Escolha 1 dos 25 animais (cada animal representa 4 dezenas).</p></div></article>
+                  <article><span class="soft-icon purple"><span class="icon icon-dezena"></span></span><div><strong>Dezena</strong><p>Escolha um número entre 00 e 99.</p></div></article>
+                  <article><span class="soft-icon orange"><span class="icon icon-centena"></span></span><div><strong>Centena</strong><p>Escolha um número entre 000 e 999.</p></div></article>
+                  <article><span class="soft-icon pink"><span class="icon icon-milhar"></span></span><div><strong>Milhar</strong><p>Escolha um número entre 0000 e 9999.</p></div></article>
+                  <article><span class="soft-icon green"><span class="icon icon-combinadas"></span></span><div><strong>Combinadas</strong><p>Crie suas próprias combinações de apostas.</p></div></article>
+                  <article><span class="soft-icon yellow"><span class="icon icon-repetir"></span></span><div><strong>Repetir Aposta</strong><p>Refaça o último bilhete com apenas um clique.</p></div></article>
+                </div>
+              </section>
+            </div>
+
+            <!-- Especiais + cercados -->
+            <div class="rules-two-columns">
+              <section class="card rules-block">
+                <div class="rules-section-title">
+                  <span class="rules-section-icon orange"><span class="icon icon-star"></span></span>
+                  <span class="rules-section-number orange">4</span>
+                  <h2>APOSTAS ESPECIAIS</h2>
+                </div>
+
+                <div class="rules-special-list">
+                  <div><span>›</span><p><strong>Duque de Grupo:</strong> Escolha 2 animais, válidos do 1º ao 5º prêmio.</p></div>
+                  <div><span>›</span><p><strong>Duque de Dezena:</strong> Escolha 2 dezenas (00 a 99), válidas do 1º ao 5º prêmio.</p></div>
+                  <div><span>›</span><p><strong>Terno de Grupo:</strong> Escolha 3 animais, válidos do 1º ao 5º prêmio.</p></div>
+                  <div><span>›</span><p><strong>Terno de Dezena:</strong> Escolha 3 dezenas, válidas do 1º ao 5º prêmio.</p></div>
+                  <div><span>›</span><p><strong>Combinadas:</strong> Crie suas próprias combinações de apostas.</p></div>
+                  <div><span>›</span><p><strong>Repetir Aposta:</strong> Refaça o último bilhete com apenas um clique.</p></div>
+                </div>
+              </section>
+
+              <section class="card rules-block">
+                <div class="rules-section-title">
+                  <span class="rules-section-icon green"><span class="icon icon-cercado"></span></span>
+                  <span class="rules-section-number green">5</span>
+                  <h2>CERCADOS</h2>
+                </div>
+
+                <div class="rules-fences">
+                  <article class="blue">
+                    <span>1ºao5º</span>
+                    <div>
+                      <strong>Cercado do 1º ao 5º prêmio</strong>
+                      <p>Aposte em Grupo, Dezena, Centena ou Milhar com validade do 1º ao 5º prêmio.</p>
+                    </div>
+                  </article>
+
+                  <article class="green">
+                    <span>1ºao7º</span>
+                    <div>
+                      <strong>Cercado do 1º ao 7º prêmio</strong>
+                      <p>Aposte em Grupo, Centena ou Milhar válidos do 1º ao 7º prêmio.</p>
+                    </div>
+                  </article>
+                </div>
+              </section>
+            </div>
+
+            <!-- Inversões + combinações -->
+            <div class="rules-inversion-layout">
+              <section class="card rules-block">
+                <div class="rules-section-title">
+                  <span class="rules-section-icon pink"><span class="icon icon-reload"></span></span>
+                  <span class="rules-section-number pink">6</span>
+                  <h2>INVERSÕES</h2>
+                </div>
+
+                <div class="rules-inversion-list">
+                  <article>
+                    <span class="soft-icon orange"><span class="icon icon-centena-inversao"></span></span>
+                    <div><strong>Centena Inversão</strong><p>Aposta válida com as inversões da centena escolhida.</p></div>
+                  </article>
+
+                  <article>
+                    <span class="soft-icon pink"><span class="icon icon-milhar-inversao"></span></span>
+                    <div><strong>Milhar Inversão</strong><p>Aposta válida com as inversões da milhar escolhida.</p></div>
+                  </article>
+                </div>
+              </section>
+
+              <section class="card rules-block">
+                <div class="rules-section-title">
+                  <span class="rules-section-icon purple"><span class="icon icon-combinadas2"></span></span>
+                  <span class="rules-section-number purple">7</span>
+                  <h2>COMBINAÇÕES</h2>
+                </div>
+
+                <div class="rules-combinations">
+                  <article><span>1</span><div><strong>Milhar e Centena</strong><p>Aposte em uma combinação de milhar e centena.</p></div></article>
+                  <article><span>2</span><div><strong>Milhar e Centena Invertida</strong><p>Inclui todas as inversões da milhar combinada com a centena.</p></div></article>
+                  <article><span>3</span><div><strong>Milhar e Dezena</strong><p>Aposta cruzando uma milhar com uma dezena específica.</p></div></article>
+                  <article><span>4</span><div><strong>Milhar e Dezena Invertida</strong><p>Aposta com inversões da dezena combinada à milhar.</p></div></article>
+                  <article><span>5</span><div><strong>Milhar, Centena e Dezena</strong><p>Aposta completa com os três formatos combinados.</p></div></article>
+                  <article><span>6</span><div><strong>Milhar, Centena e Dezena Invertida</strong><p>Inclui todas as inversões possíveis das combinações.</p></div></article>
+                  <article><span>7</span><div><strong>Terno de Dezena Combinado</strong><p>Aposta em 3 dezenas (00 a 99), com todas as combinações possíveis entre elas.</p></div></article>
+                  <article><span>8</span><div><strong>Duque de Dezena Combinado</strong><p>Aposta em 2 dezenas (00 a 99), com todas as combinações possíveis.</p></div></article>
+                  <article><span>9</span><div><strong>Esquerda, Meio e Direita</strong><p>Aposta dividida pela posição dos dígitos do número sorteado.</p><em>Exemplo: Milhar 1234 → esquerda: 12; meio: 23; direita: 34.</em></div></article>
+                  <article><span>10</span><div><strong>Unidade</strong><p>Aposta feita apenas com o número final (unidade 0 a 9) da milhar sorteada.</p></div></article>
+                  <article><span>11</span><div><strong>Passe Vai</strong><p>Aposta cruzada em dois animais. Para ganhar, os dois animais devem sair em resultados consecutivos e na ordem exata.</p><em>Exemplo: Apostou no Leão seguido do Cavalo → o Leão precisa sair primeiro, e logo em seguida o Cavalo.</em></div></article>
+                  <article><span>12</span><div><strong>Passe Vai e Vem</strong><p>Aposta em dois animais com vantagem extra: você ganha se os animais saírem em qualquer ordem, desde que estejam em resultados consecutivos.</p><em>Exemplo: Apostou em Galo e Macaco → ganha se sair Galo seguido de Macaco ou Macaco seguido de Galo.</em></div></article>
+                </div>
+              </section>
+            </div>
+
+            <!-- Premiação e saque -->
+            <section class="card rules-block">
+              <div class="rules-section-title">
+                <span class="rules-section-icon green"><span class="icon icon-wallet"></span></span>
+                <span class="rules-section-number green">8</span>
+                <h2>PREMIAÇÃO E SAQUE</h2>
+              </div>
+
+              <div class="rules-prize-grid">
+                <article class="green">
+                  <span class="rules-prize-icon"><span class="icon icon-check-circle"></span></span>
+                  <strong>Acertou?</strong>
+                  <p>O valor do prêmio é creditado automaticamente na sua conta Jogo.Capital.</p>
+                  <small>Crédito automático e instantâneo</small>
+                </article>
+
+                <article class="blue">
+                  <span class="rules-prize-icon"><span class="icon icon-upload"></span></span>
+                  <strong>Saque</strong>
+                  <p>Para retirar seu dinheiro, basta realizar um saque direto pela plataforma informando seu PIX.</p>
+                  <small>Transferência segura via PIX</small>
+                </article>
+
+                <article class="orange">
+                  <span class="rules-prize-icon"><span class="icon icon-warning"></span></span>
+                  <strong>Atenção</strong>
+                  <p>Confira seu bilhete após a aposta.</p>
+                  <small>Verifique sempre antes de finalizar</small>
+                </article>
+              </div>
+            </section>
+
+            <!-- Encerramento -->
+            <section class="rules-good-luck">
+              <h2 class="rules-good-luck-title">
+                  <span class="icon icon-trevo"></span>
+                  Boa sorte e bons jogos!
+                  <span class="icon icon-trevo"></span>
+              </h2>
+              <p>Que a sorte esteja ao seu lado em cada aposta. Divirta-se com responsabilidade e aproveite a emoção do Jogo Capital!</p>
+            </section>
+
+          </section>
+
+        </main>
+
+      </div>
+  </div>
+
+  <footer class="footer-bar">
+    <div class="footer">
+      <div class="footer-item">
+        <span class="footer-dot green"></span>
+        Ambiente seguro &amp; criptografado
+      </div>
+      <div class="footer-item red">
+        <span class="footer-dot red"></span>
+        Proibido para menores
+      </div>
+      <div class="footer-item orange">
+        <span class="footer-dot orange"></span>
+        Jogue com responsabilidade
+      </div>
+    </div>
+  </footer>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+</body>
+</html>

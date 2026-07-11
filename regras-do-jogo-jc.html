@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<script src="js/action.js"></script>
+<title>Painel</title>
+</head>
+<body>
+
+  <div class="page">
+    <div class="app-layout">
+
+      <aside class="sidebar" id="sidebar">
+          <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo"></a>
+
+          <div class="divider"></div>
+
+          <div class="nav">
+              <ul class="nav-list">
+                  <li><a class="nav-link" href="/perfil.html"><span class="icon icon-perfil"></span>Perfil</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-depositar"></span>Depositar</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-sacar"></span>Sacar</a></li>
+                  <li><a class="nav-link active" href="#"><span class="icon icon-jogar"></span>Jogar</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-carrinho"></span>Carrinho</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-bilhetes"></span>Bilhetes</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-resultados"></span>Resultados</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-classificacao"></span>Classificação</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-cotacao"></span>Cotação</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-regras-jogo"></span>Regras do Jogo</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-regras-bolao"></span>Regras Bolão JC</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-extratos"></span>Extratos</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-guia"></span>Guia do Jogo</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-tutoriais"></span>Tutoriais</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-marketing"></span>Marketing</a></li>
+                  <li><a class="nav-link" href="#"><span class="icon icon-sair"></span>Sair</a></li>
+              </ul>
+          </div>
+      </aside>
+
+        <main class="main">
+
+          <header class="card header">
+              <div class="row">
+
+                  <div class="col header-user">
+                      <div class="avatar"><span class="icon icon-avatar"></span></div>
+                      <div class="header-greeting">
+                      <span class="hello">Olá, (62) 99974-12</span>
+                      <span class="sub">Boa Sorte!</span>
+                      </div>
+                  </div>
+
+                  <div class="col-fixed header-actions">
+                      <div class="balance-pill">
+                      <div class="icon-circle"><span class="icon icon-wallet"></span></div>
+                      <div class="balance-text">
+                          <span class="label">Saldo disponível</span>
+                          <span class="value">R$ 1.187,16</span>
+                      </div>
+                      <span class="icon icon-refresh refresh"></span>
+                      </div>
+
+                      <button class="btn btn-green">
+                      <span class="icon icon-plus"></span>
+                      Depositar
+                      </button>
+
+                      <button class="btn btn-outline-green">
+                      <span class="icon icon-withdraw"></span>
+                      Sacar
+                      </button>
+                  </div>
+
+              </div>
+          </header>
+
+          <header class="mobile-header">
+            <div class="mobile-header-top">
+              <img src="img/logo.png" class="mobile-logo" alt="Logo">
+
+              <div class="mobile-balance">
+                <span class="icon icon-wallet"></span>
+                <div>
+                  <small>Saldo disponível</small>
+                </div>
+              </div>
+
+              <div class="mobile-value">R$103,00</div>
+
+              <button class="mobile-refresh">
+                <span class="icon icon-refresh"></span>
+              </button>
+
+              <button class="mobile-menu" id="mobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+
+            <div class="mobile-header-actions">
+              <button class="mobile-btn depositar">
+                <span class="icon icon-depositar"></span>
+                Depositar
+              </button>
+
+              <button class="mobile-btn sacar">
+                <span class="icon icon-sacar"></span>
+                Sacar
+              </button>
+            </div>
+
+           
+          </header>
+
+          <section class="pool-rules-page">
+            <section class="pool-hero">
+              <div class="pool-hero-main">
+                <img src="img/logo-bolao-jc.png" alt="Bolão JC" class="pool-hero-logo">
+                <div class="pool-hero-copy">
+                  <span class="pool-hero-label">BOLÃO JC</span>
+                  <h1>Regras do Bolão Jogo Capital</h1>
+                  <p>Entenda como funciona, os sorteios e a premiação do Bolão JC.</p>
+                </div>
+              </div>
+              <div class="pool-number-preview" aria-label="Exemplo de dezenas">
+                <span class="blue">07</span><span class="plain">23</span><span class="orange">45</span><span class="purple">61</span><span class="pink">88</span><span class="outline">...</span>
+              </div>
+            </section>
+
+            <section class="pool-summary-grid">
+              <article class="pool-summary-card blue"><span class="pool-summary-icon"><span class="icon icon-calculator"></span></span><div><strong>10 dezenas</strong><p>Você escolhe 10 números.</p></div></article>
+              <article class="pool-summary-card purple"><span class="pool-summary-icon"><span class="icon icon-numbers"></span></span><div><strong>00 a 99</strong><p>Escolha números entre 00 e 99.</p></div></article>
+              <article class="pool-summary-card green"><span class="pool-summary-icon"><span class="icon icon-calendar"></span></span><div><strong>Sorteios Qua a Sáb</strong><p>4 sorteios por semana.</p></div></article>
+              <article class="pool-summary-card orange"><span class="pool-summary-icon"><span class="icon icon-prize"></span></span><div><strong>Prêmio acumulado</strong><p>Acumula se não houver ganhador.</p></div></article>
+            </section>
+
+            <div class="pool-content-layout">
+              <main class="pool-main-column">
+                <section class="card pool-card">
+                  <div class="pool-section-title"><span class="pool-section-icon blue"><span class="icon icon-info"></span></span><h2>SOBRE O BOLÃO JOGO CAPITAL</h2></div>
+                  <p class="pool-about-text">No <strong>Bolão JC</strong>, você escolhe <b>10 dezenas entre 00 e 99</b>, participa dos sorteios da semana e concorre ao prêmio principal acumulado. Quanto mais acertos, maiores as chances de ganhar!</p>
+                </section>
+
+                <section class="card pool-card">
+                  <div class="pool-section-title"><span class="pool-section-icon purple"><span class="icon icon-document"></span></span><h2>REGRAS DO JOGO</h2></div>
+                  <div class="pool-rules-list">
+                    <article><span>1</span><p>Escolha 10 dezenas diferentes de 00 a 99.</p></article>
+                    <article><span>2</span><p>As apostas podem ser feitas de sábado, 20h, até quarta-feira, 18h55.</p></article>
+                    <article><span>3</span><p>Os sorteios acontecem de quarta-feira a sábado.</p></article>
+                    <article><span>4</span><p>Quem acerta as 10 dezenas leva o prêmio principal.</p></article>
+                    <article><span>5</span><p>Se ninguém acertar, o prêmio acumula para a semana seguinte.</p></article>
+                  </div>
+                </section>
+
+                <section class="card pool-card">
+              <div class="pool-section-title"><span class="pool-section-icon green"><span class="icon icon-calendar"></span></span><h2>CRONOGRAMA DOS SORTEIOS</h2></div>
+              <div class="pool-schedule-grid">
+                <article class="blue"><strong>Quinta-feira</strong><div><span><span class="icon icon-clock"></span>14h</span><span><span class="icon icon-clock"></span>18h</span></div></article>
+                <article class="purple"><strong>Sexta-feira</strong><div><span><span class="icon icon-clock"></span>14h</span><span><span class="icon icon-clock"></span>18h</span></div></article>
+                <article class="green"><strong>Sábado</strong><div><span><span class="icon icon-clock"></span>14h</span></div></article>
+                <article class="orange"><strong>Loteria Federal</strong><div><span><span class="icon icon-clock"></span>Qua 20h</span><span><span class="icon icon-clock"></span>Sáb 20h</span></div></article>
+              </div>
+              <div class="pool-live-alert"><span></span>Resultados atualizados em tempo real nas nossas plataformas.</div>
+            </section>
+
+            <section class="card pool-card">
+              <div class="pool-section-title"><span class="pool-section-icon orange"><span class="icon icon-medal"></span></span><h2>PREMIAÇÃO</h2></div>
+              <div class="pool-prize-list">
+                <article class="main"><span class="pool-prize-icon green"><span class="icon icon-trophy"></span></span><div><strong>Prêmio principal</strong><p>Para quem acertar as 10 dezenas sorteadas.</p></div></article>
+                <article><span class="pool-prize-icon gray"><span class="icon icon-no-entry"></span></span><div><strong>Sem acertadores</strong><p>Participantes com maior número de acertos recebem 2,5% do prêmio acumulado.</p></div></article>
+                <article><span class="pool-prize-icon gray"><span class="icon icon-group"></span></span><div><strong>Prêmio do grupo</strong><p>Divide 1,5% do valor acumulado entre os primeiros que acertarem os 10 grupos.</p></div></article>
+              </div>
+            </section>
+
+            <section class="card pool-card pool-faq-card">
+              <div class="pool-faq-header">
+                <div class="pool-section-title"><span class="pool-section-icon blue"><span class="icon icon-question"></span></span><h2>DÚVIDAS FREQUENTES</h2></div>
+                <a href="#">Ver todas as perguntas ↗</a>
+              </div>
+              <div class="pool-faq-list">
+                <article class="pool-faq-item"><button type="button" class="pool-faq-question"><span><span class="icon icon-question"></span>Como funciona o Bolão JC?</span><span class="pool-faq-arrow"><span class="icon icon-chevron-down"></span></span></button><div class="pool-faq-answer">Você escolhe 10 dezenas entre 00 e 99 e participa dos sorteios previstos no cronograma.</div></article>
+                <article class="pool-faq-item"><button type="button" class="pool-faq-question"><span><span class="icon icon-question"></span>Como são feitos os sorteios?</span><span class="pool-faq-arrow"><span class="icon icon-chevron-down"></span></span></button><div class="pool-faq-answer">Os sorteios acontecem de quarta-feira a sábado, de acordo com os horários apresentados na página.</div></article>
+                <article class="pool-faq-item"><button type="button" class="pool-faq-question"><span><span class="icon icon-question"></span>Como receber o prêmio?</span><span class="pool-faq-arrow"><span class="icon icon-chevron-down"></span></span></button><div class="pool-faq-answer">O prêmio é creditado conforme as regras da modalidade e pode ser retirado pelos meios disponíveis no painel.</div></article>
+                <article class="pool-faq-item"><button type="button" class="pool-faq-question"><span><span class="icon icon-question"></span>O que é o prêmio do grupo?</span><span class="pool-faq-arrow"><span class="icon icon-chevron-down"></span></span></button><div class="pool-faq-answer">É a parcela destinada aos primeiros participantes que acertarem os 10 grupos previstos.</div></article>
+              </div>
+            </section>
+              </main>
+
+              <aside class="pool-help-column">
+                <section class="pool-help-card">
+                  <div class="pool-help-head"><span class="pool-help-icon"><span class="icon icon-chat"></span></span><strong>Precisa de ajuda?</strong><p>Acesse nossos conteúdos rápidos ou fale com nosso suporte.</p></div>
+                  <div class="pool-help-links">
+                    <a href="#"><span class="pool-help-link-icon blue"><span class="icon icon-book"></span></span><div><strong>Como apostar</strong><small>Passo a passo completo</small></div><span class="pool-help-arrow">›</span></a>
+                    <a href="#"><span class="pool-help-link-icon green"><span class="icon icon-tag"></span></span><div><strong>Ver cotação</strong><small>Consulte os valores atuais</small></div><span class="pool-help-arrow">›</span></a>
+                    <a href="#"><span class="pool-help-link-icon purple"><span class="icon icon-chat"></span></span><div><strong>Falar com suporte</strong><small>Atendimento online</small></div><span class="pool-help-arrow">›</span></a>
+                  </div>
+                </section>
+                <a href="#" class="pool-bet-now"><span class="icon icon-ticket"></span>APOSTAR AGORA</a>
+              </aside>
+            </div>
+
+            
+          </section>
+
+        </main>
+
+      </div>
+  </div>
+
+  <footer class="footer-bar">
+    <div class="footer">
+      <div class="footer-item">
+        <span class="footer-dot green"></span>
+        Ambiente seguro &amp; criptografado
+      </div>
+      <div class="footer-item red">
+        <span class="footer-dot red"></span>
+        Proibido para menores
+      </div>
+      <div class="footer-item orange">
+        <span class="footer-dot orange"></span>
+        Jogue com responsabilidade
+      </div>
+    </div>
+  </footer>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+</body>
+</html>
