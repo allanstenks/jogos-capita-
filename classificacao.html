@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="stylesheet" href="style.css">
+<script src="js/action.js"></script>
+<title>Painel Jogos Capital - Classificação</title>
+</head>
+<body>
+
+  <div class="page">
+    <div class="app-layout">
+
+      <aside class="sidebar" id="sidebar">
+          <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo"></a>
+
+          <div class="divider"></div>
+
+          <div class="nav">
+            <ul class="nav-list">
+              <li><a class="nav-link" href="perfil.html"><span class="icon icon-perfil"></span>Perfil</a></li>
+              <li><a class="nav-link" href="depositar.html"><span class="icon icon-depositar"></span>Depositar</a></li>
+              <li><a class="nav-link active" href="index.html"><span class="icon icon-jogar"></span>Jogar</a></li>
+              <li><a class="nav-link" href="sacar.html"><span class="icon icon-sacar"></span>Sacar</a></li>
+              <li><a class="nav-link" href="carrinho.html"><span class="icon icon-carrinho"></span>Carrinho</a></li>
+              <li><a class="nav-link" href="meus-bilhetes.html"><span class="icon icon-bilhetes"></span>Bilhetes</a></li>
+              <li><a class="nav-link" href="resultados.html"><span class="icon icon-resultados"></span>Resultados</a></li>
+              <li><a class="nav-link" href="classificacao.html"><span class="icon icon-classificacao"></span>Classificação</a></li>
+              <li><a class="nav-link" href="cotacao.html"><span class="icon icon-cotacao"></span>Cotação</a></li>
+              <li><a class="nav-link" href="regras-do-jogo.html"><span class="icon icon-regras-jogo"></span>Regras do Jogo</a></li>
+              <li><a class="nav-link" href="regras-do-jogo-jc.html"><span class="icon icon-regras-bolao"></span>Regras Bolão JC</a></li>
+              <li><a class="nav-link" href="meu-extrato.html"><span class="icon icon-extratos"></span>Extratos</a></li>
+              <li><a class="nav-link" href="central-de-ajuda.html"><span class="icon icon-guia"></span>Guia do Jogo</a></li>
+              <li><a class="nav-link" href="tutoriais.html"><span class="icon icon-tutoriais"></span>Tutoriais</a></li>
+              <li><a class="nav-link" href="indique-e-ganhe.html"><span class="icon icon-marketing"></span>Indique e Ganhe</a></li>
+              <li><a class="nav-link" href="login.html"><span class="icon icon-sair"></span>Sair</a></li>
+            </ul>
+          </div>
+      </aside>
+
+        <main class="main">
+
+          <header class="card header">
+              <div class="row">
+
+                  <div class="col header-user">
+                      <div class="avatar"><span class="icon icon-avatar"></span></div>
+                      <div class="header-greeting">
+                      <span class="hello">Olá, (62) 99974-12</span>
+                      <span class="sub">Boa Sorte!</span>
+                      </div>
+                  </div>
+
+                  <div class="col-fixed header-actions">
+                      <div class="balance-pill">
+                      <div class="icon-circle"><span class="icon icon-wallet"></span></div>
+                      <div class="balance-text">
+                          <span class="label">Saldo disponível</span>
+                          <span class="value">R$ 1.187,16</span>
+                      </div>
+                      <span class="icon icon-refresh refresh"></span>
+                      </div>
+
+                      <a href="depositar.html" class="btn btn-green btn btn-green"><span class="icon icon-plus"></span>Depositar</a>
+
+                      <a href="sacar.html" class="btn btn-outline-green"><span class="icon icon-withdraw"></span>Sacar</a>
+                  </div>
+
+              </div>
+          </header>
+
+          <header class="mobile-header">
+            <div class="mobile-header-top">
+              <a class="logo-mobile" href="index.html"><img src="img/logo.png" class="mobile-logo" alt="Logo"></a>
+
+              <div class="mobile-balance">
+                <span class="icon icon-wallet"></span>
+                <div>
+                  <small>Saldo disponível</small>
+                </div>
+              </div>
+
+              <div class="mobile-value">R$103,00</div>
+
+              <button class="mobile-refresh">
+                <span class="icon icon-refresh"></span>
+              </button>
+
+              <button class="mobile-menu" id="mobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+
+            <div class="mobile-header-actions">
+              <a href="depositar.html" class="mobile-btn depositar">
+                <span class="icon icon-depositar"></span>
+                Depositar
+              </a>
+
+<a href="sacar.html" class="mobile-btn sacar">
+                <span class="icon icon-sacar"></span>
+                Sacar
+              </a>
+            </div>
+
+           
+          </header>
+
+          <div class="mobile-greeting">
+            <strong>Olá, (62) 99974-12</strong>
+            <span>Boa Sorte!</span>
+          </div>
+
+          <div class="row">
+            <div class="col card card-countdown" data-target="2026-07-13T20:00:00">
+                <div class="countdown-content">
+
+                    <span class="countdown-label">
+                        <span class="icon"></span>
+                        PRÓXIMO SORTEIO PTV
+                    </span>
+
+                    <h2>Contagem Regressiva</h2>
+
+                    <p>Acompanhe o próximo sorteio ao vivo</p>
+
+                    <div class="countdown">
+
+                        <div class="time-box">
+                            <strong>00</strong>
+                            <span>HORAS</span>
+                        </div>
+
+                        <div class="separator">:</div>
+
+                        <div class="time-box">
+                            <strong>08</strong>
+                            <span>MIN</span>
+                        </div>
+
+                        <div class="separator">:</div>
+
+                        <div class="time-box">
+                            <strong>11</strong>
+                            <span>SEG</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="bottom-line"></div>
+            </div>
+            <div class="col card card-prize">
+
+                <div class="prize-content">
+
+                    <span class="prize-label">
+                        <span class="icon"></span>
+                        PRÊMIO ACUMULADO
+                    </span>
+
+                    <h2>Prêmio Bolão JC</h2>
+
+                    <p>Atualizado em tempo real</p>
+
+                    <div class="prize-value">
+                        <span class="currency">R$</span>
+                        <span class="amount">29.099</span><span class="cents">,04</span>
+                    </div>
+
+                    <div class="prize-total">
+                        <span class="icon-total"></span>
+                        TOTAL ACUMULADO
+                    </div>
+
+                </div>
+
+                <div class="bottom-line"></div>
+
+            </div>
+          </div>
+
+          <section class="ranking-page">
+
+            <!-- Cabeçalho -->
+
+            <section class="ranking-hero">
+
+              <img
+                src="img/logo-bolao-jc.png"
+                alt="Bolão JC"
+                class="ranking-hero-logo"
+              >
+
+              <div>
+                <span>BOLÃO JC</span>
+                <h1>Classificação do Bolão JC</h1>
+              </div>
+
+            </section>
+
+
+            <!-- Acertos por dezenas -->
+
+            <section class="card ranking-block">
+
+              <header class="ranking-block-header">
+
+                <div class="ranking-block-header-inner">
+
+                  <button
+                    type="button"
+                    class="ranking-arrow previous"
+                    aria-label="Período anterior"
+                  >
+                    <span class="icon icon-chevron-left"></span>
+                  </button>
+
+                  <strong>
+                    ACERTOS POR <b>DEZENAS</b> DE
+                    <time>24/06/2026</time>
+                    ATÉ
+                    <time>27/06/2026</time>
+                  </strong>
+
+                  <button
+                    type="button"
+                    class="ranking-arrow next"
+                    aria-label="Próximo período"
+                  >
+                    <span class="icon icon-chevron-right"></span>
+                  </button>
+
+                </div>
+
+              </header>
+
+              <div class="ranking-table-wrap">
+
+                <table class="ranking-table ranking-dozens-table">
+
+                  <thead>
+                    <tr>
+                      <th>PULE</th>
+                      <th>DEZENAS</th>
+                      <th>ACERTOS</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+
+                    <tr>
+                      <td>95367</td>
+
+                      <td>
+                        <div class="ranking-number-list">
+                          <span class="hit">15</span>
+                          <span class="hit">19</span>
+                          <span class="hit">22</span>
+                          <span class="hit">31</span>
+                          <span class="hit">40</span>
+                          <span>45</span>
+                          <span>66</span>
+                          <span>69</span>
+                          <span>91</span>
+                          <span>97</span>
+                        </div>
+                      </td>
+
+                      <td>
+                        <span class="ranking-score">5</span>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>95450</td>
+
+                      <td>
+                        <div class="ranking-number-list">
+                          <span class="hit">02</span>
+                          <span class="hit">20</span>
+                          <span class="hit">08</span>
+                          <span class="hit">80</span>
+                          <span>19</span>
+                          <span>81</span>
+                          <span>56</span>
+                          <span>58</span>
+                          <span>85</span>
+                        </div>
+                      </td>
+
+                      <td>
+                        <span class="ranking-score">4</span>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>95378</td>
+
+                      <td>
+                        <div class="ranking-number-list">
+                          <span class="hit">23</span>
+                          <span class="hit">30</span>
+                          <span class="hit">33</span>
+                          <span>38</span>
+                          <span>45</span>
+                          <span>54</span>
+                          <span>74</span>
+                          <span>86</span>
+                          <span>97</span>
+                          <span>98</span>
+                        </div>
+                      </td>
+
+                      <td>
+                        <span class="ranking-score">3</span>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>95460</td>
+
+                      <td>
+                        <div class="ranking-number-list">
+                          <span class="hit">13</span>
+                          <span class="hit">21</span>
+                          <span class="hit">69</span>
+                          <span>31</span>
+                          <span>73</span>
+                          <span>76</span>
+                          <span>55</span>
+                          <span>58</span>
+                          <span>85</span>
+                        </div>
+                      </td>
+
+                      <td>
+                        <span class="ranking-score">3</span>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>95551/01</td>
+
+                      <td>
+                        <div class="ranking-number-list">
+                          <span class="hit">13</span>
+                          <span class="hit">24</span>
+                          <span>25</span>
+                          <span>39</span>
+                          <span>58</span>
+                          <span>71</span>
+                          <span>77</span>
+                          <span>79</span>
+                          <span>83</span>
+                          <span>90</span>
+                        </div>
+                      </td>
+
+                      <td>
+                        <span class="ranking-score">2</span>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>95551/02</td>
+
+                      <td>
+                        <div class="ranking-number-list">
+                          <span class="hit">08</span>
+                          <span class="hit">11</span>
+                          <span>28</span>
+                          <span>33</span>
+                          <span>41</span>
+                          <span>43</span>
+                          <span>58</span>
+                          <span>60</span>
+                          <span>90</span>
+                          <span>94</span>
+                        </div>
+                      </td>
+
+                      <td>
+                        <span class="ranking-score">2</span>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>95597</td>
+
+                      <td>
+                        <div class="ranking-number-list">
+                          <span class="hit">21</span>
+                          <span class="hit">34</span>
+                          <span>45</span>
+                          <span>47</span>
+                          <span>52</span>
+                          <span>69</span>
+                          <span>76</span>
+                          <span>85</span>
+                          <span>87</span>
+                          <span>98</span>
+                        </div>
+                      </td>
+
+                      <td>
+                        <span class="ranking-score">2</span>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>95601</td>
+
+                      <td>
+                        <div class="ranking-number-list">
+                          <span>10</span>
+                          <span>11</span>
+                          <span>12</span>
+                          <span>25</span>
+                          <span>29</span>
+                          <span>54</span>
+                          <span>69</span>
+                          <span>72</span>
+                          <span>80</span>
+                        </div>
+                      </td>
+
+                      <td>
+                        <span class="ranking-score">0</span>
+                      </td>
+                    </tr>
+
+                  </tbody>
+
+                </table>
+
+              </div>
+
+
+              <!-- Resumo dezenas -->
+
+              <div class="ranking-summary">
+
+                <strong>QUANTIDADE DE ACERTOS POR DEZENAS</strong>
+
+                <div class="ranking-summary-grid">
+
+                  <div><b>COM 10</b><span>0</span></div>
+                  <div><b>COM 9</b><span>0</span></div>
+                  <div><b>COM 8</b><span>0</span></div>
+                  <div><b>COM 7</b><span>0</span></div>
+                  <div><b>COM 6</b><span>0</span></div>
+                  <div><b>COM 5</b><span>1</span></div>
+                  <div><b>COM 4</b><span>1</span></div>
+                  <div><b>COM 3</b><span>2</span></div>
+
+                </div>
+
+                <small>
+                  DEVIDO À GRANDE QUANTIDADE DE PULES, SÃO EXIBIDOS APENAS OS 10 PRIMEIROS.
+                </small>
+
+              </div>
+
+            </section>
+
+
+            <!-- Acertos por grupos -->
+
+            <section class="card ranking-block">
+
+              <header class="ranking-block-header">
+
+                <div class="ranking-block-header-inner">
+
+                <button
+                  type="button"
+                  class="ranking-arrow previous"
+                  aria-label="Período anterior"
+                >
+                  <span class="icon icon-chevron-left"></span>
+                </button>
+
+                <strong>
+                  ACERTOS POR <b>GRUPOS</b> DE
+                  <time>24/06/2026</time>
+                  ATÉ
+                  <time>27/06/2026</time>
+                </strong>
+
+                <button
+                  type="button"
+                  class="ranking-arrow next"
+                  aria-label="Próximo período"
+                >
+                  <span class="icon icon-chevron-right"></span>
+                </button>
+
+                </div>
+
+              </header>
+
+              <div class="ranking-table-wrap">
+
+                <table class="ranking-table ranking-groups-table">
+
+                  <thead>
+                    <tr>
+                      <th>PULE</th>
+                      <th>GRUPOS</th>
+                      <th>ACERTOS</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+
+                    <tr>
+                      <td>95551/01</td>
+
+                      <td>
+                        <div class="ranking-number-list">
+                          <span class="hit">04</span>
+                          <span class="hit">06</span>
+                          <span class="hit">07</span>
+                          <span class="hit">08</span>
+                          <span class="hit">15</span>
+                          <span class="hit">18</span>
+                          <span>20</span>
+                          <span>20</span>
+                          <span>21</span>
+                          <span>23</span>
+                        </div>
+                      </td>
+
+                      <td><span class="ranking-score">6</span></td>
+                    </tr>
+
+                    <tr>
+                      <td>95551/02</td>
+
+                      <td>
+                        <div class="ranking-number-list">
+                          <span class="hit">02</span>
+                          <span class="hit">03</span>
+                          <span class="hit">07</span>
+                          <span class="hit">09</span>
+                          <span class="hit">11</span>
+                          <span class="hit">11</span>
+                          <span>15</span>
+                          <span>15</span>
+                          <span>23</span>
+                          <span>24</span>
+                        </div>
+                      </td>
+
+                      <td><span class="ranking-score">6</span></td>
+                    </tr>
+
+                    <tr>
+                      <td>95367</td>
+
+                      <td>
+                        <div class="ranking-number-list">
+                          <span class="hit">04</span>
+                          <span class="hit">05</span>
+                          <span class="hit">08</span>
+                          <span class="hit">09</span>
+                          <span class="hit">10</span>
+                          <span>12</span>
+                          <span>17</span>
+                          <span>18</span>
+                          <span>23</span>
+                          <span>25</span>
+                        </div>
+                      </td>
+
+                      <td><span class="ranking-score">5</span></td>
+                    </tr>
+
+                    <tr>
+                      <td>95378</td>
+
+                      <td>
+                        <div class="ranking-number-list">
+                          <span class="hit">06</span>
+                          <span class="hit">08</span>
+                          <span class="hit">09</span>
+                          <span class="hit">10</span>
+                          <span class="hit">12</span>
+                          <span>14</span>
+                          <span>19</span>
+                          <span>22</span>
+                          <span>25</span>
+                          <span>25</span>
+                        </div>
+                      </td>
+
+                      <td><span class="ranking-score">5</span></td>
+                    </tr>
+
+                    <tr>
+                      <td>95597</td>
+
+                      <td>
+                        <div class="ranking-number-list">
+                          <span class="hit">06</span>
+                          <span class="hit">08</span>
+                          <span class="hit">12</span>
+                          <span>12</span>
+                          <span>13</span>
+                          <span>18</span>
+                          <span>19</span>
+                          <span>24</span>
+                          <span>25</span>
+                          <span>25</span>
+                        </div>
+                      </td>
+
+                      <td><span class="ranking-score">5</span></td>
+                    </tr>
+
+                    <tr>
+                      <td>95458</td>
+
+                      <td>
+                        <div class="ranking-number-list">
+                          <span class="hit">01</span>
+                          <span class="hit">05</span>
+                          <span class="hit">02</span>
+                          <span class="hit">20</span>
+                          <span>05</span>
+                          <span>23</span>
+                          <span>14</span>
+                          <span>17</span>
+                          <span>15</span>
+                          <span>22</span>
+                        </div>
+                      </td>
+
+                      <td><span class="ranking-score">4</span></td>
+                    </tr>
+
+                    <tr>
+                      <td>95460</td>
+
+                      <td>
+                        <div class="ranking-number-list">
+                          <span class="hit">04</span>
+                          <span class="hit">08</span>
+                          <span class="hit">04</span>
+                          <span>13</span>
+                          <span>05</span>
+                          <span>23</span>
+                          <span>14</span>
+                          <span>17</span>
+                          <span>15</span>
+                          <span>22</span>
+                        </div>
+                      </td>
+
+                      <td><span class="ranking-score">3</span></td>
+                    </tr>
+
+                    <tr>
+                      <td>95601</td>
+
+                      <td>
+                        <div class="ranking-number-list">
+                          <span class="hit">03</span>
+                          <span>05</span>
+                          <span>08</span>
+                          <span>08</span>
+                          <span>09</span>
+                          <span>10</span>
+                          <span>13</span>
+                          <span>18</span>
+                          <span>20</span>
+                        </div>
+                      </td>
+
+                      <td><span class="ranking-score">1</span></td>
+                    </tr>
+
+                  </tbody>
+
+                </table>
+
+              </div>
+
+
+              <!-- Resumo grupos -->
+
+              <div class="ranking-summary">
+
+                <strong>QUANTIDADE DE ACERTOS POR GRUPOS</strong>
+
+                <div class="ranking-summary-grid">
+
+                  <div><b>COM 10</b><span>0</span></div>
+                  <div><b>COM 9</b><span>0</span></div>
+                  <div><b>COM 8</b><span>0</span></div>
+                  <div><b>COM 7</b><span>0</span></div>
+                  <div><b>COM 6</b><span>1</span></div>
+                  <div><b>COM 5</b><span>3</span></div>
+                  <div><b>COM 4</b><span>1</span></div>
+                  <div><b>COM 3</b><span>1</span></div>
+
+                </div>
+
+                <small>
+                  DEVIDO À GRANDE QUANTIDADE DE PULES, SÃO EXIBIDOS APENAS OS 10 PRIMEIROS.
+                </small>
+
+              </div>
+
+            </section>
+
+
+            <!-- Prêmio -->
+
+            <section class="ranking-prize">
+
+              <div class="ranking-prize-info">
+
+                <span class="ranking-prize-icon">
+                  <span class="icon icon-money-circle"></span>
+                </span>
+
+                <div>
+                  <strong>PRÊMIO DOS GRUPOS</strong>
+                  <small>ACUMULADO</small>
+                </div>
+
+              </div>
+
+              <strong class="ranking-prize-value">
+                R$ 436,88
+              </strong>
+
+            </section>
+
+          </section>
+
+        </main>
+
+      </div>
+  </div>
+
+  <footer class="footer-bar">
+    <div class="footer">
+      <div class="footer-item">
+        <span class="footer-dot green"></span>
+        Ambiente seguro &amp; criptografado
+      </div>
+      <div class="footer-item red">
+        <span class="footer-dot red"></span>
+        Proibido para menores
+      </div>
+      <div class="footer-item orange">
+        <span class="footer-dot orange"></span>
+        Jogue com responsabilidade
+      </div>
+    </div>
+  </footer>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+</body>
+</html>

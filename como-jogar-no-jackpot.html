@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="stylesheet" href="style.css">
+<script src="js/action.js"></script>
+<title>Painel Jogos Capital - Regras do Jogo</title>
+</head>
+<body>
+
+  <div class="page">
+    <div class="app-layout">
+
+      <aside class="sidebar" id="sidebar">
+          <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo"></a>
+
+          <div class="divider"></div>
+
+          <div class="nav">
+            <ul class="nav-list">
+              <li><a class="nav-link" href="perfil.html"><span class="icon icon-perfil"></span>Perfil</a></li>
+              <li><a class="nav-link" href="depositar.html"><span class="icon icon-depositar"></span>Depositar</a></li>
+              <li><a class="nav-link active" href="index.html"><span class="icon icon-jogar"></span>Jogar</a></li>
+              <li><a class="nav-link" href="sacar.html"><span class="icon icon-sacar"></span>Sacar</a></li>
+              <li><a class="nav-link" href="carrinho.html"><span class="icon icon-carrinho"></span>Carrinho</a></li>
+              <li><a class="nav-link" href="meus-bilhetes.html"><span class="icon icon-bilhetes"></span>Bilhetes</a></li>
+              <li><a class="nav-link" href="resultados.html"><span class="icon icon-resultados"></span>Resultados</a></li>
+              <li><a class="nav-link" href="classificacao.html"><span class="icon icon-classificacao"></span>Classificação</a></li>
+              <li><a class="nav-link" href="cotacao.html"><span class="icon icon-cotacao"></span>Cotação</a></li>
+              <li><a class="nav-link" href="regras-do-jogo.html"><span class="icon icon-regras-jogo"></span>Regras do Jogo</a></li>
+              <li><a class="nav-link" href="regras-do-jogo-jc.html"><span class="icon icon-regras-bolao"></span>Regras Bolão JC</a></li>
+              <li><a class="nav-link" href="meu-extrato.html"><span class="icon icon-extratos"></span>Extratos</a></li>
+              <li><a class="nav-link" href="central-de-ajuda.html"><span class="icon icon-guia"></span>Guia do Jogo</a></li>
+              <li><a class="nav-link" href="tutoriais.html"><span class="icon icon-tutoriais"></span>Tutoriais</a></li>
+              <li><a class="nav-link" href="indique-e-ganhe.html"><span class="icon icon-marketing"></span>Indique e Ganhe</a></li>
+              <li><a class="nav-link" href="login.html"><span class="icon icon-sair"></span>Sair</a></li>
+            </ul>
+          </div>
+      </aside>
+
+        <main class="main">
+
+          <header class="card header">
+              <div class="row">
+
+                  <div class="col header-user">
+                      <div class="avatar"><span class="icon icon-avatar"></span></div>
+                      <div class="header-greeting">
+                      <span class="hello">Olá, (62) 99974-12</span>
+                      <span class="sub">Boa Sorte!</span>
+                      </div>
+                  </div>
+
+                  <div class="col-fixed header-actions">
+                      <div class="balance-pill">
+                      <div class="icon-circle"><span class="icon icon-wallet"></span></div>
+                      <div class="balance-text">
+                          <span class="label">Saldo disponível</span>
+                          <span class="value">R$ 1.187,16</span>
+                      </div>
+                      <span class="icon icon-refresh refresh"></span>
+                      </div>
+
+                      <a href="depositar.html" class="btn btn-green btn btn-green"><span class="icon icon-plus"></span>Depositar</a>
+
+                      <a href="sacar.html" class="btn btn-outline-green"><span class="icon icon-withdraw"></span>Sacar</a>
+                  </div>
+
+              </div>
+          </header>
+
+          <header class="mobile-header">
+            <div class="mobile-header-top">
+              <a class="logo-mobile" href="index.html"><img src="img/logo.png" class="mobile-logo" alt="Logo"></a>
+
+              <div class="mobile-balance">
+                <span class="icon icon-wallet"></span>
+                <div>
+                  <small>Saldo disponível</small>
+                </div>
+              </div>
+
+              <div class="mobile-value">R$103,00</div>
+
+              <button class="mobile-refresh">
+                <span class="icon icon-refresh"></span>
+              </button>
+
+              <button class="mobile-menu" id="mobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+
+            <div class="mobile-header-actions">
+              <a href="depositar.html" class="mobile-btn depositar">
+                <span class="icon icon-depositar"></span>
+                Depositar
+              </a>
+
+<a href="sacar.html" class="mobile-btn sacar">
+                <span class="icon icon-sacar"></span>
+                Sacar
+              </a>
+            </div>
+
+           
+          </header>
+
+          <section class="jackpot-guide-page">
+
+            <section class="card jackpot-guide-hero">
+              <div class="jackpot-guide-hero-copy">
+                <span class="jackpot-guide-kicker">
+                  <span></span>
+                  JOGO CAPITAL DESDE 1965
+                </span>
+
+                <h1>
+                  Guia prático:<br>
+                  como jogar no <strong>JACKPOT</strong>
+                </h1>
+
+                <a href="index.html" class="jackpot-guide-brand-pill">Banca do Bicho</a>
+              </div>
+
+              <img
+                src="img/logo-jackpot.svg"
+                alt="Jackpot"
+                class="jackpot-guide-logo"
+              >
+            </section>
+
+            <section class="jackpot-guide-top-grid">
+              <article class="jackpot-guide-jackpot-card">
+                <span class="jackpot-guide-jackpot-label">✦&nbsp;&nbsp;JACKPOT ACUMULADO</span>
+                <strong>R$ 35.872,63</strong>
+              </article>
+
+              <article class="card jackpot-guide-draw-card">
+                <span class="jackpot-guide-soft-icon purple">
+                  <span class="icon icon-calendar"></span>
+                </span>
+
+                <div>
+                  <strong>SORTEIOS</strong>
+                  <p><b>Quarta-feira e Sábado</b> às 20h pelo resultado da <b>Loteria Federal</b>.</p>
+                </div>
+              </article>
+            </section>
+
+            <section class="card jackpot-guide-intro">
+              <span class="jackpot-guide-soft-icon blue">
+                <span class="icon icon-info"></span>
+              </span>
+
+              <p>
+                O <strong>Jackpot</strong> é uma modalidade especial da plataforma
+                <a href="index.html">Banca do Bicho</a>, com prêmio acumulado.<br>
+                O jogador escolhe 5 bichos e concorre pelo resultado da
+                <a href="#">Loteria Federal</a>, nos sorteios de quarta-feira e sábado, às 20h.
+              </p>
+            </section>
+
+            <div class="jackpot-guide-content-grid">
+
+              <section class="card jackpot-guide-panel jackpot-guide-how">
+                <div class="jackpot-guide-section-title">
+                  <span class="jackpot-guide-section-icon green">
+                    <span class="icon icon-document"></span>
+                  </span>
+                  <h2>COMO JOGAR</h2>
+                </div>
+
+                <div class="jackpot-guide-steps">
+                  <article>
+                    <span>1</span>
+                    <div>
+                      <strong>Acesse a modalidade Jackpot</strong>
+                      <p>Acesse a modalidade Jackpot na plataforma Banca do Bicho.</p>
+                    </div>
+                  </article>
+
+                  <article>
+                    <span>2</span>
+                    <div>
+                      <strong>Escolha o dia do sorteio</strong>
+                      <p>Você pode jogar para quarta-feira ou sábado, sempre às 20h, pelo resultado da Federal.</p>
+                    </div>
+                  </article>
+
+                  <article>
+                    <span>3</span>
+                    <div>
+                      <strong>Escolha seus 5 bichos da sorte</strong>
+                      <p>O bilhete deve conter 5 bichos.</p>
+                    </div>
+                  </article>
+
+                  <article>
+                    <span>4</span>
+                    <div>
+                      <strong>Você pode repetir bicho</strong>
+                      <p>É permitido escolher o mesmo bicho mais de uma vez no mesmo bilhete.</p>
+                    </div>
+                  </article>
+
+                  <article>
+                    <span>5</span>
+                    <div>
+                      <strong>Confira o valor do bilhete</strong>
+                      <p>O valor fixo é de R$ 2,00 por bilhete.</p>
+                    </div>
+                  </article>
+
+                  <article>
+                    <span>6</span>
+                    <div>
+                      <strong>Veja o possível prêmio</strong>
+                      <p>A plataforma mostra o valor do Jackpot acumulado antes da confirmação.</p>
+                    </div>
+                  </article>
+
+                  <article>
+                    <span>7</span>
+                    <div>
+                      <strong>Clique em Confirmar Aposta</strong>
+                      <p>Pronto. Seu bilhete fica registrado para o sorteio escolhido.</p>
+                    </div>
+                  </article>
+                </div>
+              </section>
+
+              <aside class="jackpot-guide-side-column">
+
+                <section class="card jackpot-guide-panel jackpot-guide-repeat">
+                  <div class="jackpot-guide-section-title">
+                    <span class="jackpot-guide-section-icon orange">
+                      <span class="icon icon-warning"></span>
+                    </span>
+                    <h2>REGRA IMPORTANTE SOBRE BICHO REPETIDO</h2>
+                  </div>
+
+                  <p class="jackpot-guide-side-text">
+                    Se você repetir um bicho no bilhete, ele precisa aparecer repetido no resultado
+                    para contar como múltiplos acertos.
+                  </p>
+
+                  <strong class="jackpot-guide-example-label">Exemplo:</strong>
+
+                  <div class="jackpot-guide-animal-example" aria-label="Exemplo de bichos repetidos">
+                    <div><span><img src="img/icon-aguia.svg" /></span><small>Águia</small></div>
+                    <div><span><img src="img/icon-peru.svg" /></span><small>Peru</small></div>
+                    <div><span><img src="img/icon-gato.svg" /></span><small>Gato</small></div>
+                    <div><span><img src="img/icon-cachorro.svg" /></span><small>Cachorro</small></div>
+                    <div><span><img src="img/icon-aguia.svg" /></span><small>Águia</small></div>
+                  </div>
+
+                  <p class="jackpot-guide-side-text jackpot-guide-repeat-note">
+                    Se você escolher Águia, Peru, Gato, Cachorro e Águia, para ganhar o prêmio máximo,
+                    a Águia precisa sair duas vezes, além dos outros bichos escolhidos.
+                  </p>
+                </section>
+
+                <section class="card jackpot-guide-panel jackpot-guide-prize">
+                  <div class="jackpot-guide-section-title jackpot-guide-prize-title">
+                    <span class="jackpot-guide-section-icon purple">
+                      <span class="icon icon-trophy"></span>
+                    </span>
+                    <div>
+                      <h2>COMO GANHAR NO JACKPOT</h2>
+                      <p>Os resultados consideram os bichos sorteados do 1º ao 5º prêmio da Federal.</p>
+                    </div>
+                  </div>
+
+                  <div class="jackpot-guide-prize-table">
+                    <div class="jackpot-guide-prize-head">
+                      <strong>ACERTOS</strong>
+                      <strong>PREMIAÇÃO</strong>
+                    </div>
+
+                    <div class="jackpot-guide-prize-row">
+                      <strong>5 acertos</strong>
+                      <p>Ganha <b>100%</b> do <b>Jackpot acumulado</b></p>
+                    </div>
+
+                    <div class="jackpot-guide-prize-row">
+                      <strong>4 acertos</strong>
+                      <p>Ganha <b>2,4%</b> do valor total do <b>Jackpot acumulado</b></p>
+                    </div>
+                  </div>
+
+                  <div class="jackpot-guide-prize-note">
+                    <span class="icon icon-users"></span>
+                    <p>
+                      Se houver mais de um ganhador com <strong>5 acertos</strong>, o prêmio acumulado é
+                      <strong>dividido igualmente entre os ganhadores.</strong>
+                    </p>
+                  </div>
+                </section>
+
+              </aside>
+            </div>
+
+            <section class="card jackpot-guide-summary">
+              <div class="jackpot-guide-section-title">
+                <span class="jackpot-guide-section-icon green">
+                  <span class="icon icon-document"></span>
+                </span>
+                <h2>RESUMO RÁPIDO PARA O CLIENTE</h2>
+              </div>
+
+              <div class="jackpot-guide-summary-grid">
+                <article class="green">
+                  <span class="jackpot-guide-summary-icon"><span class="icon icon-check-circle"></span></span>
+                  <p>Para ganhar o prêmio principal, os <strong>5 bichos escolhidos</strong> precisam aparecer entre o 1º e o 5º prêmio, em qualquer ordem.</p>
+                </article>
+
+                <article class="blue">
+                  <span class="jackpot-guide-summary-icon"><span class="icon icon-trophy"></span></span>
+                  <p>Se acertar os <strong>5 bichos</strong>, ganha o <strong>Jackpot acumulado</strong>.</p>
+                </article>
+
+                <article class="orange">
+                  <span class="jackpot-guide-summary-icon"><span class="icon icon-trophy"></span></span>
+                  <p>Com <strong>4 acertos</strong>, ganha <strong>uma parte do acumulado</strong>.</p>
+                </article>
+
+                <article class="purple">
+                  <span class="jackpot-guide-summary-icon"><span class="icon icon-clock"></span></span>
+                  <p>Sorteios: <strong>quarta-feira e sábado</strong>, às 20h, pela <strong>Loteria Federal</strong>.</p>
+                </article>
+              </div>
+            </section>
+
+            <section class="card jackpot-guide-legal-strip">
+              <div class="jackpot-guide-legal-item purple">
+                <span class="jackpot-guide-legal-icon">
+                  <span class="icon icon-lock"></span>
+                </span>
+                <div>
+                  <strong>AMBIENTE SEGURO</strong>
+                  <small>Dados protegidos e criptografados</small>
+                </div>
+              </div>
+
+              <div class="jackpot-guide-legal-separator"></div>
+
+              <div class="jackpot-guide-legal-item orange">
+                <span class="jackpot-guide-age-badge">18+</span>
+                <div>
+                  <strong>JOGO LEGAL</strong>
+                  <small>Proibido para menores de 18 anos</small>
+                </div>
+              </div>
+
+              <div class="jackpot-guide-legal-separator"></div>
+
+              <div class="jackpot-guide-legal-item blue">
+                <span class="jackpot-guide-legal-icon">
+                  <span class="icon icon-shield"></span>
+                </span>
+                <div>
+                  <strong>JOGUE COM RESPONSABILIDADE</strong>
+                </div>
+              </div>
+            </section>
+
+          </section>
+
+        </main>
+
+      </div>
+  </div>
+
+  <footer class="footer-bar">
+    <div class="footer">
+      <div class="footer-item">
+        <span class="footer-dot green"></span>
+        Ambiente seguro &amp; criptografado
+      </div>
+      <div class="footer-item red">
+        <span class="footer-dot red"></span>
+        Proibido para menores
+      </div>
+      <div class="footer-item orange">
+        <span class="footer-dot orange"></span>
+        Jogue com responsabilidade
+      </div>
+    </div>
+  </footer>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+</body>
+</html>

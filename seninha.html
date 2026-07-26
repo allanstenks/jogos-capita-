@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="stylesheet" href="style.css">
+<script src="js/action.js"></script>
+<title>Painel Jogos Capital - Seninha</title>
+</head>
+<body>
+
+  <div class="page">
+    <div class="app-layout">
+
+      <aside class="sidebar" id="sidebar">
+          <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo"></a>
+
+          <div class="divider"></div>
+
+          <div class="nav">
+            <ul class="nav-list">
+              <li><a class="nav-link" href="perfil.html"><span class="icon icon-perfil"></span>Perfil</a></li>
+              <li><a class="nav-link" href="depositar.html"><span class="icon icon-depositar"></span>Depositar</a></li>
+              <li><a class="nav-link active" href="index.html"><span class="icon icon-jogar"></span>Jogar</a></li>
+              <li><a class="nav-link" href="sacar.html"><span class="icon icon-sacar"></span>Sacar</a></li>
+              <li><a class="nav-link" href="carrinho.html"><span class="icon icon-carrinho"></span>Carrinho</a></li>
+              <li><a class="nav-link" href="meus-bilhetes.html"><span class="icon icon-bilhetes"></span>Bilhetes</a></li>
+              <li><a class="nav-link" href="resultados.html"><span class="icon icon-resultados"></span>Resultados</a></li>
+              <li><a class="nav-link" href="classificacao.html"><span class="icon icon-classificacao"></span>Classificação</a></li>
+              <li><a class="nav-link" href="cotacao.html"><span class="icon icon-cotacao"></span>Cotação</a></li>
+              <li><a class="nav-link" href="regras-do-jogo.html"><span class="icon icon-regras-jogo"></span>Regras do Jogo</a></li>
+              <li><a class="nav-link" href="regras-do-jogo-jc.html"><span class="icon icon-regras-bolao"></span>Regras Bolão JC</a></li>
+              <li><a class="nav-link" href="meu-extrato.html"><span class="icon icon-extratos"></span>Extratos</a></li>
+              <li><a class="nav-link" href="central-de-ajuda.html"><span class="icon icon-guia"></span>Guia do Jogo</a></li>
+              <li><a class="nav-link" href="tutoriais.html"><span class="icon icon-tutoriais"></span>Tutoriais</a></li>
+              <li><a class="nav-link" href="indique-e-ganhe.html"><span class="icon icon-marketing"></span>Indique e Ganhe</a></li>
+              <li><a class="nav-link" href="login.html"><span class="icon icon-sair"></span>Sair</a></li>
+            </ul>
+          </div>
+      </aside>
+
+        <main class="main">
+
+          <header class="card header">
+              <div class="row">
+
+                  <div class="col header-user">
+                      <div class="avatar"><span class="icon icon-avatar"></span></div>
+                      <div class="header-greeting">
+                      <span class="hello">Olá, (62) 99974-12</span>
+                      <span class="sub">Boa Sorte!</span>
+                      </div>
+                  </div>
+
+                  <div class="col-fixed header-actions">
+                      <div class="balance-pill">
+                      <div class="icon-circle"><span class="icon icon-wallet"></span></div>
+                      <div class="balance-text">
+                          <span class="label">Saldo disponível</span>
+                          <span class="value">R$ 1.187,16</span>
+                      </div>
+                      <span class="icon icon-refresh refresh"></span>
+                      </div>
+
+                      <a href="depositar.html" class="btn btn-green btn btn-green"><span class="icon icon-plus"></span>Depositar</a>
+
+                      <a href="sacar.html" class="btn btn-outline-green"><span class="icon icon-withdraw"></span>Sacar</a>
+                  </div>
+
+              </div>
+          </header>
+
+          <header class="mobile-header">
+            <div class="mobile-header-top">
+              <a class="logo-mobile" href="index.html"><img src="img/logo.png" class="mobile-logo" alt="Logo"></a>
+
+              <div class="mobile-balance">
+                <span class="icon icon-wallet"></span>
+                <div>
+                  <small>Saldo disponível</small>
+                </div>
+              </div>
+
+              <div class="mobile-value">R$103,00</div>
+
+              <button class="mobile-refresh">
+                <span class="icon icon-refresh"></span>
+              </button>
+
+              <button class="mobile-menu" id="mobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+
+            <div class="mobile-header-actions">
+              <a href="depositar.html" class="mobile-btn depositar">
+                <span class="icon icon-depositar"></span>
+                Depositar
+              </a>
+
+              <a href="sacar.html" class="mobile-btn sacar">
+                <span class="icon icon-sacar"></span>
+                Sacar
+              </a>
+            </div>
+
+           
+          </header>
+
+          <div class="mobile-greeting">
+            <strong>Olá, (62) 99974-12</strong>
+            <span>Boa Sorte!</span>
+          </div>
+
+
+
+          <section class="seninha-page" id="seninhaV2Page">
+
+            <section class="seninha-hero">
+
+              <div class="seninha-hero-logo">
+                <img
+                  src="img/logo-seninha.svg"
+                  alt="Seninha Jogo Capital"
+                >
+              </div>
+
+              <div
+                class="seninha-countdown card-countdown"
+                data-target="2026-07-14T11:00:00"
+              >
+
+                <div class="seninha-countdown-label">
+                  <span class="icon icon-clock"></span>
+                  <span>PRÓXIMO SORTEIO</span>
+                </div>
+
+                <div class="seninha-countdown-time">
+
+                  <div class="time-box">
+                    <strong>00</strong>
+                    <span>HORAS</span>
+                  </div>
+
+                  <span class="seninha-time-separator">:</span>
+
+                  <div class="time-box">
+                    <strong>08</strong>
+                    <span>MIN</span>
+                  </div>
+
+                  <span class="seninha-time-separator">:</span>
+
+                  <div class="time-box">
+                    <strong>11</strong>
+                    <span>SEG</span>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </section>
+
+
+            <header class="seninha-heading">
+
+              <span class="seninha-heading-icon">
+                <span class="icon icon-bilhetes"></span>
+              </span>
+
+              <div>
+                <h1>Seninha</h1>
+                <p>Escolha seus números e concorra a grandes prêmios!</p>
+              </div>
+
+            </header>
+
+
+            <div class="seninha-layout">
+
+              <main class="seninha-main">
+
+                <section class="card seninha-form-card">
+
+                  <section class="seninha-section">
+
+                    <div class="seninha-section-header">
+
+                      <div class="seninha-section-title">
+                        <span>1</span>
+                        <h2>Escolher cliente / apostador</h2>
+                      </div>
+
+                      <a href="#" class="seninha-help-link">
+                        Como funciona?
+                        <span class="icon icon-info"></span>
+                      </a>
+
+                    </div>
+
+                    <div class="seninha-client-grid">
+
+                      <div class="seninha-select">
+
+                        <span class="seninha-select-icon">
+                          <span class="icon icon-perfil"></span>
+                        </span>
+
+                        <select id="seninhaV2Client">
+                          <option value="AA">AA</option>
+                          <option value="BB">BB</option>
+                          <option value="CC">CC</option>
+                        </select>
+
+                      </div>
+
+                      <button
+                        type="button"
+                        class="seninha-new-client"
+                        id="seninhaV2NewClient"
+                      >
+                        <span class="icon icon-plus"></span>
+                        Novo cliente
+                      </button>
+
+                    </div>
+
+                  </section>
+
+
+                  <section class="seninha-section">
+
+                    <div class="seninha-section-title">
+                      <span>2</span>
+                      <h2>Selecionar a data do sorteio</h2>
+                    </div>
+
+                    <div class="seninha-date-grid">
+
+                      <button
+                        type="button"
+                        class="seninha-date-option active"
+                        data-seninha-date="tuesday"
+                      >
+
+                        <span class="seninha-date-icon">
+                          <span class="icon icon-calendar"></span>
+                        </span>
+
+                        <span class="seninha-radio"></span>
+
+                        <strong>Terça</strong>
+
+                      </button>
+
+                      <button
+                        type="button"
+                        class="seninha-date-option"
+                        data-seninha-date="thursday"
+                      >
+
+                        <span class="seninha-date-icon">
+                          <span class="icon icon-calendar"></span>
+                        </span>
+
+                        <span class="seninha-radio"></span>
+
+                        <strong>Quinta</strong>
+
+                      </button>
+
+                      <button
+                        type="button"
+                        class="seninha-date-option"
+                        data-seninha-date="saturday"
+                      >
+
+                        <span class="seninha-date-icon">
+                          <span class="icon icon-calendar"></span>
+                        </span>
+
+                        <span class="seninha-radio"></span>
+
+                        <strong>Sábado</strong>
+
+                      </button>
+
+                    </div>
+
+                  </section>
+
+
+                  <section class="seninha-section">
+
+                    <div class="seninha-section-title">
+                      <span>3</span>
+                      <h2>Escolher quantidade de dezenas</h2>
+                    </div>
+
+                    <div class="seninha-dozens-grid">
+
+                      <button
+                        type="button"
+                        class="seninha-dozen-option active"
+                        data-dozens="14"
+                        data-price="6000"
+                      >
+
+                        <span class="seninha-selected-check">
+                          <span class="icon icon-check"></span>
+                        </span>
+
+                        <strong>14</strong>
+                        <small>R$ 6.000</small>
+
+                      </button>
+
+                      <button
+                        type="button"
+                        class="seninha-dozen-option"
+                        data-dozens="15"
+                        data-price="4000"
+                      >
+                        <strong>15</strong>
+                        <small>R$ 4.000</small>
+                      </button>
+
+                      <button
+                        type="button"
+                        class="seninha-dozen-option"
+                        data-dozens="16"
+                        data-price="2600"
+                      >
+                        <strong>16</strong>
+                        <small>R$ 2.600</small>
+                      </button>
+
+                      <button
+                        type="button"
+                        class="seninha-dozen-option"
+                        data-dozens="17"
+                        data-price="1800"
+                      >
+                        <strong>17</strong>
+                        <small>R$ 1.800</small>
+                      </button>
+
+                      <button
+                        type="button"
+                        class="seninha-dozen-option"
+                        data-dozens="18"
+                        data-price="1300"
+                      >
+                        <strong>18</strong>
+                        <small>R$ 1.300</small>
+                      </button>
+
+                      <button
+                        type="button"
+                        class="seninha-dozen-option"
+                        data-dozens="19"
+                        data-price="900"
+                      >
+                        <strong>19</strong>
+                        <small>R$ 900</small>
+                      </button>
+
+                      <button
+                        type="button"
+                        class="seninha-dozen-option"
+                        data-dozens="20"
+                        data-price="650"
+                      >
+                        <strong>20</strong>
+                        <small>R$ 650</small>
+                      </button>
+
+                      <button
+                        type="button"
+                        class="seninha-dozen-option"
+                        data-dozens="25"
+                        data-price="150"
+                      >
+                        <strong>25</strong>
+                        <small>R$ 150</small>
+                      </button>
+
+                      <button
+                        type="button"
+                        class="seninha-dozen-option"
+                        data-dozens="30"
+                        data-price="48"
+                      >
+                        <strong>30</strong>
+                        <small>R$ 48</small>
+                      </button>
+
+                      <button
+                        type="button"
+                        class="seninha-dozen-option"
+                        data-dozens="35"
+                        data-price="8"
+                      >
+                        <strong>35</strong>
+                        <small>R$ 8</small>
+                      </button>
+
+                    </div>
+
+                    <div class="seninha-pricing-note">
+                      <span class="icon icon-info"></span>
+                      Valores correspondem à cotação/premiação de cada opção
+                    </div>
+
+                  </section>
+
+
+                  <section class="seninha-section">
+
+                    <div class="seninha-section-title">
+                      <span>4</span>
+                      <h2>Quantidade de bilhetes</h2>
+                    </div>
+
+                    <div class="seninha-ticket-counter">
+
+                      <button
+                        type="button"
+                        id="seninhaV2TicketMinus"
+                        aria-label="Diminuir quantidade de bilhetes"
+                      >
+                        −
+                      </button>
+
+                      <div>
+                        <strong id="seninhaV2TicketCount">1</strong>
+                        <small>Bilhetes</small>
+                      </div>
+
+                      <button
+                        type="button"
+                        id="seninhaV2TicketPlus"
+                        aria-label="Aumentar quantidade de bilhetes"
+                      >
+                        +
+                      </button>
+
+                    </div>
+
+                  </section>
+
+
+                  <section class="seninha-section">
+
+                    <div class="seninha-section-title">
+                      <span>5</span>
+                      <h2>Gerar números aleatórios</h2>
+                    </div>
+
+                    <p class="seninha-random-description">
+                      Deseja gerar aleatório os números dos bilhetes?
+                    </p>
+
+                    <div class="seninha-radio-group">
+
+                      <label>
+                        <input
+                          type="radio"
+                          name="seninhaV2Random"
+                          value="yes"
+                        >
+                        <span></span>
+                        Sim
+                      </label>
+
+                      <label>
+                        <input
+                          type="radio"
+                          name="seninhaV2Random"
+                          value="no"
+                          checked
+                        >
+                        <span></span>
+                        Não
+                      </label>
+
+                    </div>
+
+                  </section>
+
+                </section>
+
+
+                <section class="card seninha-tickets-card">
+
+                  <header class="seninha-tickets-header">
+
+                    <div class="seninha-tickets-heading">
+
+                      <span class="seninha-ticket-circle">
+                        #
+                      </span>
+
+                      <h2>Seus Bilhetes</h2>
+
+                    </div>
+
+                    <div class="seninha-ticket-actions">
+
+                      <button
+                        type="button"
+                        class="seninha-clear-all"
+                        id="seninhaV2ClearAll"
+                      >
+                        Limpar todos
+                      </button>
+
+                      <button
+                        type="button"
+                        class="seninha-delete-all"
+                        aria-label="Excluir todos os bilhetes"
+                      >
+                        <span class="icon icon-trash"></span>
+                      </button>
+
+                      <button
+                        type="button"
+                        class="seninha-toggle-tickets"
+                        aria-label="Abrir ou fechar bilhetes"
+                      >
+                        <span class="icon icon-chevron-down"></span>
+                      </button>
+
+                    </div>
+
+                  </header>
+
+                  <div
+                    class="seninha-tickets-list"
+                    id="seninhaV2TicketsList"
+                  >
+
+                    <article class="seninha-ticket">
+
+                      <div class="seninha-ticket-title">
+
+                        <strong>Bilhete 1</strong>
+
+                        <span>
+                          14 dezenas
+                        </span>
+
+                      </div>
+
+                      <div class="seninha-number-grid">
+
+                        <input type="text" maxlength="2" inputmode="numeric" placeholder="00">
+                        <input type="text" maxlength="2" inputmode="numeric" placeholder="00">
+                        <input type="text" maxlength="2" inputmode="numeric" placeholder="00">
+                        <input type="text" maxlength="2" inputmode="numeric" placeholder="00">
+                        <input type="text" maxlength="2" inputmode="numeric" placeholder="00">
+                        <input type="text" maxlength="2" inputmode="numeric" placeholder="00">
+
+                        <input type="text" maxlength="2" inputmode="numeric" placeholder="00">
+                        <input type="text" maxlength="2" inputmode="numeric" placeholder="00">
+                        <input type="text" maxlength="2" inputmode="numeric" placeholder="00">
+                        <input type="text" maxlength="2" inputmode="numeric" placeholder="00">
+                        <input type="text" maxlength="2" inputmode="numeric" placeholder="00">
+                        <input type="text" maxlength="2" inputmode="numeric" placeholder="00">
+
+                        <input type="text" maxlength="2" inputmode="numeric" placeholder="00">
+                        <input type="text" maxlength="2" inputmode="numeric" placeholder="00">
+
+                      </div>
+
+                      <div class="seninha-ticket-tip">
+                        <span class="icon icon-info"></span>
+                        Digite suas dezenas de 00 até 60
+                      </div>
+
+                    </article>
+
+                  </div>
+
+                </section>
+
+              </main>
+
+
+              <aside class="seninha-sidebar">
+
+                <section class="card seninha-summary-card">
+
+                  <header>
+
+                    <span class="seninha-summary-header-icon">
+                      <span class="icon icon-document"></span>
+                    </span>
+
+                    <h2>Resumo da aposta</h2>
+
+                  </header>
+
+                  <div class="seninha-summary-list">
+
+                    <div class="seninha-summary-item">
+
+                      <span class="seninha-summary-item-icon blue">
+                        <span class="icon icon-money"></span>
+                      </span>
+
+                      <div>
+                        <small>Valor da aposta</small>
+                        <strong id="seninhaV2TotalValue">R$ 0,00</strong>
+                      </div>
+
+                    </div>
+
+                    <div class="seninha-summary-item">
+
+                      <span class="seninha-summary-item-icon green">
+                        <span class="icon icon-money"></span>
+                      </span>
+
+                      <div>
+                        <small>Possíveis ganhos</small>
+                        <strong id="seninhaV2PossibleWinnings">R$ 0,00</strong>
+                      </div>
+
+                    </div>
+
+                    <div class="seninha-summary-item">
+
+                      <span class="seninha-summary-item-icon purple">
+                        <span class="icon icon-ticket"></span>
+                      </span>
+
+                      <div>
+                        <small>Total de bilhetes</small>
+                        <strong id="seninhaV2SummaryTickets">1</strong>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </section>
+
+
+                <button
+                  type="button"
+                  class="seninha-submit"
+                  id="seninhaV2Submit"
+                >
+           
+                  APOSTAR AGORA
+                </button>
+
+
+                <section class="card seninha-security-card">
+
+                  <span class="seninha-security-icon">
+                    <span class="icon icon-shield"></span>
+                  </span>
+
+                  <div>
+                    <strong>Apostas 100% Seguras</strong>
+
+                    <p>
+                      Seus dados e suas apostas sempre protegidos.
+                    </p>
+                  </div>
+
+                </section>
+
+              </aside>
+
+            </div>
+
+          </section>
+
+        </main>
+
+      </div>
+  </div>
+
+  <footer class="footer-bar">
+    <div class="footer">
+      <div class="footer-item">
+        <span class="footer-dot green"></span>
+        Ambiente seguro &amp; criptografado
+      </div>
+      <div class="footer-item red">
+        <span class="footer-dot red"></span>
+        Proibido para menores
+      </div>
+      <div class="footer-item orange">
+        <span class="footer-dot orange"></span>
+        Jogue com responsabilidade
+      </div>
+    </div>
+  </footer>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+</body>
+</html>

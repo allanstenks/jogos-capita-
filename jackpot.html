@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="stylesheet" href="style.css">
+<script src="js/action.js"></script>
+<title>Painel Jogos Capital - Jackpot</title>
+</head>
+<body>
+
+  <div class="page">
+    <div class="app-layout">
+
+      <aside class="sidebar" id="sidebar">
+          <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo"></a>
+
+          <div class="divider"></div>
+
+          <div class="nav">
+            <ul class="nav-list">
+              <li><a class="nav-link" href="perfil.html"><span class="icon icon-perfil"></span>Perfil</a></li>
+              <li><a class="nav-link" href="depositar.html"><span class="icon icon-depositar"></span>Depositar</a></li>
+              <li><a class="nav-link active" href="index.html"><span class="icon icon-jogar"></span>Jogar</a></li>
+              <li><a class="nav-link" href="sacar.html"><span class="icon icon-sacar"></span>Sacar</a></li>
+              <li><a class="nav-link" href="carrinho.html"><span class="icon icon-carrinho"></span>Carrinho</a></li>
+              <li><a class="nav-link" href="meus-bilhetes.html"><span class="icon icon-bilhetes"></span>Bilhetes</a></li>
+              <li><a class="nav-link" href="resultados.html"><span class="icon icon-resultados"></span>Resultados</a></li>
+              <li><a class="nav-link" href="classificacao.html"><span class="icon icon-classificacao"></span>Classificação</a></li>
+              <li><a class="nav-link" href="cotacao.html"><span class="icon icon-cotacao"></span>Cotação</a></li>
+              <li><a class="nav-link" href="regras-do-jogo.html"><span class="icon icon-regras-jogo"></span>Regras do Jogo</a></li>
+              <li><a class="nav-link" href="regras-do-jogo-jc.html"><span class="icon icon-regras-bolao"></span>Regras Bolão JC</a></li>
+              <li><a class="nav-link" href="meu-extrato.html"><span class="icon icon-extratos"></span>Extratos</a></li>
+              <li><a class="nav-link" href="central-de-ajuda.html"><span class="icon icon-guia"></span>Guia do Jogo</a></li>
+              <li><a class="nav-link" href="tutoriais.html"><span class="icon icon-tutoriais"></span>Tutoriais</a></li>
+              <li><a class="nav-link" href="indique-e-ganhe.html"><span class="icon icon-marketing"></span>Indique e Ganhe</a></li>
+              <li><a class="nav-link" href="login.html"><span class="icon icon-sair"></span>Sair</a></li>
+            </ul>
+          </div>
+      </aside>
+
+        <main class="main">
+
+          <header class="card header">
+              <div class="row">
+
+                  <div class="col header-user">
+                      <div class="avatar"><span class="icon icon-avatar"></span></div>
+                      <div class="header-greeting">
+                      <span class="hello">Olá, (62) 99974-12</span>
+                      <span class="sub">Boa Sorte!</span>
+                      </div>
+                  </div>
+
+                  <div class="col-fixed header-actions">
+                      <div class="balance-pill">
+                      <div class="icon-circle"><span class="icon icon-wallet"></span></div>
+                      <div class="balance-text">
+                          <span class="label">Saldo disponível</span>
+                          <span class="value">R$ 1.187,16</span>
+                      </div>
+                      <span class="icon icon-refresh refresh"></span>
+                      </div>
+
+                      <a href="depositar.html" class="btn btn-green btn btn-green"><span class="icon icon-plus"></span>Depositar</a>
+
+                      <a href="sacar.html" class="btn btn-outline-green"><span class="icon icon-withdraw"></span>Sacar</a>
+                  </div>
+
+              </div>
+          </header>
+
+          <header class="mobile-header">
+            <div class="mobile-header-top">
+              <a class="logo-mobile" href="index.html"><img src="img/logo.png" class="mobile-logo" alt="Logo"></a>
+
+              <div class="mobile-balance">
+                <span class="icon icon-wallet"></span>
+                <div>
+                  <small>Saldo disponível</small>
+                </div>
+              </div>
+
+              <div class="mobile-value">R$103,00</div>
+
+              <button class="mobile-refresh">
+                <span class="icon icon-refresh"></span>
+              </button>
+
+              <button class="mobile-menu" id="mobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+
+            <div class="mobile-header-actions">
+              <a href="depositar.html" class="mobile-btn depositar">
+                <span class="icon icon-depositar"></span>
+                Depositar
+              </a>
+
+<a href="sacar.html" class="mobile-btn sacar">
+                <span class="icon icon-sacar"></span>
+                Sacar
+              </a>
+            </div>
+
+           
+          </header>
+
+          <div class="mobile-greeting">
+            <strong>Olá, (62) 99974-12</strong>
+            <span>Boa Sorte!</span>
+          </div>
+
+          <div class="row">
+            <div class="col card card-countdown" data-target="2026-07-13T20:00:00">
+                <div class="countdown-content">
+
+                    <span class="countdown-label">
+                        <span class="icon"></span>
+                        PRÓXIMO SORTEIO PTV
+                    </span>
+
+                    <h2>Contagem Regressiva</h2>
+
+                    <p>Acompanhe o próximo sorteio ao vivo</p>
+
+                    <div class="countdown">
+
+                        <div class="time-box">
+                            <strong>00</strong>
+                            <span>HORAS</span>
+                        </div>
+
+                        <div class="separator">:</div>
+
+                        <div class="time-box">
+                            <strong>08</strong>
+                            <span>MIN</span>
+                        </div>
+
+                        <div class="separator">:</div>
+
+                        <div class="time-box">
+                            <strong>11</strong>
+                            <span>SEG</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="bottom-line"></div>
+            </div>
+            <div class="col card card-prize">
+
+                <div class="prize-content">
+
+                    <span class="prize-label">
+                        <span class="icon"></span>
+                        PRÊMIO ACUMULADO
+                    </span>
+
+                    <h2>Prêmio Bolão JC</h2>
+
+                    <p>Atualizado em tempo real</p>
+
+                    <div class="prize-value">
+                        <span class="currency">R$</span>
+                        <span class="amount">29.099</span><span class="cents">,04</span>
+                    </div>
+
+                    <div class="prize-total">
+                        <span class="icon-total"></span>
+                        TOTAL ACUMULADO
+                    </div>
+
+                </div>
+
+                <div class="bottom-line"></div>
+
+            </div>
+          </div>
+
+          <section class="jackpot-page" id="jackpotGame">
+
+            <!-- Banner -->
+
+            <section class="jackpot-hero">
+              <h1>Escolha 5 bichos da sorte e concorra!</h1>
+
+              <img
+                src="img/logo-jackpot.svg"
+                alt="Jackpot"
+                class="jackpot-hero-logo"
+              >
+            </section>
+
+
+            <!-- Formulário -->
+
+            <section class="card jackpot-form-card">
+
+              <!-- Cliente -->
+
+              <div class="jackpot-section">
+
+                <div class="jackpot-section-title">
+                  <span>1</span>
+                  <h2>Escolher Cliente</h2>
+                </div>
+
+                <div class="jackpot-client-grid">
+
+                  <div class="jackpot-select">
+                    <select id="jackpotClient">
+                      <option value="">Escolha o Cliente</option>
+                      <option value="1">Cliente 1</option>
+                      <option value="2">Cliente 2</option>
+                    </select>
+                  </div>
+
+                  <input
+                    type="text"
+                    id="jackpotClientName"
+                    placeholder="Nome do Cliente"
+                  >
+
+                </div>
+
+              </div>
+
+
+              <!-- Dia e sorteio -->
+
+              <div class="jackpot-options-row">
+
+                <div class="jackpot-section">
+
+                  <div class="jackpot-section-title">
+                    <span>2</span>
+                    <h2>Escolha o dia</h2>
+                  </div>
+
+                  <div class="jackpot-choice-grid jackpot-days">
+
+                    <button
+                      type="button"
+                      class="jackpot-choice active"
+                      data-jackpot-day="quinta"
+                    >
+                      <span class="jackpot-choice-icon">
+                        <span class="icon icon-calendar"></span>
+                      </span>
+
+                      <span class="jackpot-radio"></span>
+
+                      <strong>Quarta-feira</strong>
+                      <small>Sorteio às 20h00</small>
+                    </button>
+
+                    <button
+                      type="button"
+                      class="jackpot-choice"
+                      data-jackpot-day="sabado"
+                    >
+                      <span class="jackpot-choice-icon">
+                        <span class="icon icon-calendar"></span>
+                      </span>
+
+                      <span class="jackpot-radio"></span>
+
+                      <strong>Sábado</strong>
+                      <small>Sorteio às 20h00</small>
+                    </button>
+
+                  </div>
+
+                </div>
+
+
+                <div class="jackpot-section">
+
+                  <div class="jackpot-section-title">
+                    <span>3</span>
+                    <h2>Sorteio</h2>
+                  </div>
+
+                  <div class="jackpot-choice-grid jackpot-draws">
+
+                    <button
+                      type="button"
+                      class="jackpot-choice active"
+                      data-jackpot-draw="federal"
+                    >
+                      <span class="jackpot-choice-icon">
+                        <span class="icon icon-ticket"></span>
+                      </span>
+
+                      <strong>Federal</strong>
+                      <small>Loteria federal</small>
+                    </button>
+
+                    <button
+                      type="button"
+                      class="jackpot-choice"
+                      data-jackpot-draw="quina-grupo"
+                    >
+                      <span class="jackpot-choice-icon">
+                        <span class="icon icon-grupo"></span>
+                      </span>
+
+                      <strong>Quina de Grupo</strong>
+                      <small>Acerto de 5 grupos</small>
+                    </button>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+
+              <!-- Informação do valor -->
+
+              <div class="jackpot-value-alert">
+                <span class="jackpot-value-icon">
+                  <span class="icon icon-info"></span>
+                </span>
+
+                <div>
+                  <strong>Valor do bilhete</strong>
+                  <p>O valor do bilhete é de R$ 3,00 por dia selecionado</p>
+                </div>
+              </div>
+
+
+              <!-- Bichos -->
+
+              <div class="jackpot-section">
+
+                <div class="jackpot-animals-header">
+
+                  <div class="jackpot-section-title">
+                    <span>4</span>
+                    <h2>Escolha os seus 5 bichos da sorte</h2>
+                  </div>
+
+                  <div class="jackpot-progress-info">
+                    <span>
+                      <b id="jackpotSelectedCount">0</b> de 5 bichos selecionados
+                    </span>
+
+                    <div class="jackpot-progress">
+                      <span id="jackpotProgressBar"></span>
+                    </div>
+                  </div>
+
+                </div>
+
+
+                <div class="jackpot-animal-slots" id="jackpotAnimalSlots">
+
+                  <button type="button" class="jackpot-animal-slot" data-slot="0">
+                    <span class="jackpot-add">+</span>
+                    <span class="jackpot-slot-label">Escolher</span>
+                  </button>
+
+                  <button type="button" class="jackpot-animal-slot" data-slot="1">
+                    <span class="jackpot-add">+</span>
+                    <span class="jackpot-slot-label">Escolher</span>
+                  </button>
+
+                  <button type="button" class="jackpot-animal-slot" data-slot="2">
+                    <span class="jackpot-add">+</span>
+                    <span class="jackpot-slot-label">Escolher</span>
+                  </button>
+
+                  <button type="button" class="jackpot-animal-slot" data-slot="3">
+                    <span class="jackpot-add">+</span>
+                    <span class="jackpot-slot-label">Escolher</span>
+                  </button>
+
+                  <button type="button" class="jackpot-animal-slot" data-slot="4">
+                    <span class="jackpot-add">+</span>
+                    <span class="jackpot-slot-label">Escolher</span>
+                  </button>
+
+                </div>
+
+                <div class="jackpot-selection-warning">
+                  Você precisa selecionar mais
+                  <strong id="jackpotMissingCount">5 bichos</strong>
+                  para completar sua aposta.
+                </div>
+
+              </div>
+
+
+              <!-- Total -->
+
+              <div class="jackpot-total-card">
+
+                <div class="jackpot-total-value">
+                  <span>Total a pagar</span>
+                  <strong id="jackpotTotal">R$ 0,00</strong>
+                </div>
+
+                <div class="jackpot-confirm-area">
+
+                  <button
+                    type="button"
+                    class="jackpot-confirm"
+                    id="jackpotConfirm"
+                    disabled
+                  >
+                    CONFIRMAR APOSTA
+                  </button>
+
+                  <small>
+                    Pagamento 100% seguro • Regras claras e transparentes
+                  </small>
+
+                </div>
+
+              </div>
+
+            </section>
+
+
+            <!-- Modal dos bichos -->
+
+            <div class="jackpot-modal" id="jackpotAnimalModal">
+
+              <div class="jackpot-modal-overlay" data-close-jackpot-modal></div>
+
+              <div class="jackpot-modal-content">
+
+                <header>
+                  <div>
+                    <h2>Escolha um bicho</h2>
+                    <p>Selecione um animal para adicionar ao seu bilhete.</p>
+                  </div>
+
+                  <button type="button" data-close-jackpot-modal>×</button>
+                </header>
+
+                <div class="jackpot-animal-grid">
+
+                  <button type="button" data-animal="Avestruz" data-group="01">
+                    <strong>01</strong>
+                    <span>Avestruz</span>
+                  </button>
+
+                  <button type="button" data-animal="Águia" data-group="02">
+                    <strong>02</strong>
+                    <span>Águia</span>
+                  </button>
+
+                  <button type="button" data-animal="Burro" data-group="03">
+                    <strong>03</strong>
+                    <span>Burro</span>
+                  </button>
+
+                  <button type="button" data-animal="Borboleta" data-group="04">
+                    <strong>04</strong>
+                    <span>Borboleta</span>
+                  </button>
+
+                  <button type="button" data-animal="Cachorro" data-group="05">
+                    <strong>05</strong>
+                    <span>Cachorro</span>
+                  </button>
+
+                  <button type="button" data-animal="Cabra" data-group="06">
+                    <strong>06</strong>
+                    <span>Cabra</span>
+                  </button>
+
+                  <button type="button" data-animal="Carneiro" data-group="07">
+                    <strong>07</strong>
+                    <span>Carneiro</span>
+                  </button>
+
+                  <button type="button" data-animal="Camelo" data-group="08">
+                    <strong>08</strong>
+                    <span>Camelo</span>
+                  </button>
+
+                  <button type="button" data-animal="Cobra" data-group="09">
+                    <strong>09</strong>
+                    <span>Cobra</span>
+                  </button>
+
+                  <button type="button" data-animal="Coelho" data-group="10">
+                    <strong>10</strong>
+                    <span>Coelho</span>
+                  </button>
+
+                  <button type="button" data-animal="Cavalo" data-group="11">
+                    <strong>11</strong>
+                    <span>Cavalo</span>
+                  </button>
+
+                  <button type="button" data-animal="Elefante" data-group="12">
+                    <strong>12</strong>
+                    <span>Elefante</span>
+                  </button>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </section>
+
+        </main>
+
+      </div>
+  </div>
+
+  <footer class="footer-bar">
+    <div class="footer">
+      <div class="footer-item">
+        <span class="footer-dot green"></span>
+        Ambiente seguro &amp; criptografado
+      </div>
+      <div class="footer-item red">
+        <span class="footer-dot red"></span>
+        Proibido para menores
+      </div>
+      <div class="footer-item orange">
+        <span class="footer-dot orange"></span>
+        Jogue com responsabilidade
+      </div>
+    </div>
+  </footer>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+</body>
+</html>

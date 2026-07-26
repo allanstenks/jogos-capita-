@@ -2,10 +2,10 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <link rel="stylesheet" href="style.css">
 <script src="js/action.js"></script>
-<title>Painel</title>
+<title>Painel Jogos Capital - Regras do Jogo</title>
 </head>
 <body>
 
@@ -18,24 +18,24 @@
           <div class="divider"></div>
 
           <div class="nav">
-              <ul class="nav-list">
-                  <li><a class="nav-link" href="/perfil.html"><span class="icon icon-perfil"></span>Perfil</a></li>
-                  <li><a class="nav-link" href="#"><span class="icon icon-depositar"></span>Depositar</a></li>
-                  <li><a class="nav-link" href="#"><span class="icon icon-sacar"></span>Sacar</a></li>
-                  <li><a class="nav-link active" href="#"><span class="icon icon-jogar"></span>Jogar</a></li>
-                  <li><a class="nav-link" href="#"><span class="icon icon-carrinho"></span>Carrinho</a></li>
-                  <li><a class="nav-link" href="#"><span class="icon icon-bilhetes"></span>Bilhetes</a></li>
-                  <li><a class="nav-link" href="#"><span class="icon icon-resultados"></span>Resultados</a></li>
-                  <li><a class="nav-link" href="#"><span class="icon icon-classificacao"></span>Classificação</a></li>
-                  <li><a class="nav-link" href="#"><span class="icon icon-cotacao"></span>Cotação</a></li>
-                  <li><a class="nav-link" href="#"><span class="icon icon-regras-jogo"></span>Regras do Jogo</a></li>
-                  <li><a class="nav-link" href="#"><span class="icon icon-regras-bolao"></span>Regras Bolão JC</a></li>
-                  <li><a class="nav-link" href="#"><span class="icon icon-extratos"></span>Extratos</a></li>
-                  <li><a class="nav-link" href="#"><span class="icon icon-guia"></span>Guia do Jogo</a></li>
-                  <li><a class="nav-link" href="#"><span class="icon icon-tutoriais"></span>Tutoriais</a></li>
-                  <li><a class="nav-link" href="#"><span class="icon icon-marketing"></span>Marketing</a></li>
-                  <li><a class="nav-link" href="#"><span class="icon icon-sair"></span>Sair</a></li>
-              </ul>
+            <ul class="nav-list">
+              <li><a class="nav-link" href="perfil.html"><span class="icon icon-perfil"></span>Perfil</a></li>
+              <li><a class="nav-link" href="depositar.html"><span class="icon icon-depositar"></span>Depositar</a></li>
+              <li><a class="nav-link active" href="index.html"><span class="icon icon-jogar"></span>Jogar</a></li>
+              <li><a class="nav-link" href="sacar.html"><span class="icon icon-sacar"></span>Sacar</a></li>
+              <li><a class="nav-link" href="carrinho.html"><span class="icon icon-carrinho"></span>Carrinho</a></li>
+              <li><a class="nav-link" href="meus-bilhetes.html"><span class="icon icon-bilhetes"></span>Bilhetes</a></li>
+              <li><a class="nav-link" href="resultados.html"><span class="icon icon-resultados"></span>Resultados</a></li>
+              <li><a class="nav-link" href="classificacao.html"><span class="icon icon-classificacao"></span>Classificação</a></li>
+              <li><a class="nav-link" href="cotacao.html"><span class="icon icon-cotacao"></span>Cotação</a></li>
+              <li><a class="nav-link" href="regras-do-jogo.html"><span class="icon icon-regras-jogo"></span>Regras do Jogo</a></li>
+              <li><a class="nav-link" href="regras-do-jogo-jc.html"><span class="icon icon-regras-bolao"></span>Regras Bolão JC</a></li>
+              <li><a class="nav-link" href="meu-extrato.html"><span class="icon icon-extratos"></span>Extratos</a></li>
+              <li><a class="nav-link" href="central-de-ajuda.html"><span class="icon icon-guia"></span>Guia do Jogo</a></li>
+              <li><a class="nav-link" href="tutoriais.html"><span class="icon icon-tutoriais"></span>Tutoriais</a></li>
+              <li><a class="nav-link" href="indique-e-ganhe.html"><span class="icon icon-marketing"></span>Indique e Ganhe</a></li>
+              <li><a class="nav-link" href="login.html"><span class="icon icon-sair"></span>Sair</a></li>
+            </ul>
           </div>
       </aside>
 
@@ -62,15 +62,9 @@
                       <span class="icon icon-refresh refresh"></span>
                       </div>
 
-                      <button class="btn btn-green">
-                      <span class="icon icon-plus"></span>
-                      Depositar
-                      </button>
+                      <a href="depositar.html" class="btn btn-green btn btn-green"><span class="icon icon-plus"></span>Depositar</a>
 
-                      <button class="btn btn-outline-green">
-                      <span class="icon icon-withdraw"></span>
-                      Sacar
-                      </button>
+                      <a href="sacar.html" class="btn btn-outline-green"><span class="icon icon-withdraw"></span>Sacar</a>
                   </div>
 
               </div>
@@ -78,7 +72,7 @@
 
           <header class="mobile-header">
             <div class="mobile-header-top">
-              <img src="img/logo.png" class="mobile-logo" alt="Logo">
+              <a class="logo-mobile" href="index.html"><img src="img/logo.png" class="mobile-logo" alt="Logo"></a>
 
               <div class="mobile-balance">
                 <span class="icon icon-wallet"></span>
@@ -101,15 +95,15 @@
             </div>
 
             <div class="mobile-header-actions">
-              <button class="mobile-btn depositar">
+              <a href="depositar.html" class="mobile-btn depositar">
                 <span class="icon icon-depositar"></span>
                 Depositar
-              </button>
+              </a>
 
-              <button class="mobile-btn sacar">
+<a href="sacar.html" class="mobile-btn sacar">
                 <span class="icon icon-sacar"></span>
                 Sacar
-              </button>
+              </a>
             </div>
 
            
@@ -208,7 +202,9 @@
               </div>
 
               <div class="rules-note blue">
-                <span class="icon icon-ticket"></span>
+                <span class="rules-note-icon">
+                  <span class="icon icon-warning"></span>
+                </span>
                 <p>Após isso, será gerado um bilhete digital, que é a comprovação da sua aposta e será válido para o(s) sorteio(s) escolhido(s). Depois, é só aguardar o horário e conferir o resultado ao vivo ou pela plataforma.</p>
               </div>
             </section>
@@ -351,28 +347,66 @@
                 <h2>PREMIAÇÃO E SAQUE</h2>
               </div>
 
-              <div class="rules-prize-grid">
-                <article class="green">
-                  <span class="rules-prize-icon"><span class="icon icon-check-circle"></span></span>
-                  <strong>Acertou?</strong>
-                  <p>O valor do prêmio é creditado automaticamente na sua conta Jogo.Capital.</p>
-                  <small>Crédito automático e instantâneo</small>
-                </article>
+                <div class="rules-prize-grid">
 
-                <article class="blue">
-                  <span class="rules-prize-icon"><span class="icon icon-upload"></span></span>
-                  <strong>Saque</strong>
-                  <p>Para retirar seu dinheiro, basta realizar um saque direto pela plataforma informando seu PIX.</p>
-                  <small>Transferência segura via PIX</small>
-                </article>
+                  <article class="green">
+                    <div class="rules-prize-heading">
+                      <span class="rules-prize-icon">
+                        <span class="icon icon-check-circle"></span>
+                      </span>
 
-                <article class="orange">
-                  <span class="rules-prize-icon"><span class="icon icon-warning"></span></span>
-                  <strong>Atenção</strong>
-                  <p>Confira seu bilhete após a aposta.</p>
-                  <small>Verifique sempre antes de finalizar</small>
-                </article>
-              </div>
+                      <strong>Acertou?</strong>
+                    </div>
+
+                    <p>
+                      O valor do prêmio é creditado automaticamente na sua conta Banca do Bicho.
+                    </p>
+
+                    <small>
+                      <span class="icon icon-lightning"></span>
+                      Crédito automático e instantâneo
+                    </small>
+                  </article>
+
+                  <article class="blue">
+                    <div class="rules-prize-heading">
+                      <span class="rules-prize-icon">
+                        <span class="icon icon-upload"></span>
+                      </span>
+
+                      <strong>Saque</strong>
+                    </div>
+
+                    <p>
+                      Para retirar seu dinheiro, basta realizar um saque direto pela plataforma informando seu PIX.
+                    </p>
+
+                    <small>
+                      <span class="icon icon-shield"></span>
+                      Transferência segura via PIX
+                    </small>
+                  </article>
+
+                  <article class="orange">
+                    <div class="rules-prize-heading">
+                      <span class="rules-prize-icon">
+                        <span class="icon icon-warning"></span>
+                      </span>
+
+                      <strong>Atenção</strong>
+                    </div>
+
+                    <p>
+                      Confira seu bilhete após a aposta.
+                    </p>
+
+                    <small>
+                      <span class="icon icon-info"></span>
+                      Verifique sempre antes de finalizar
+                    </small>
+                  </article>
+
+                </div>
             </section>
 
             <!-- Encerramento -->

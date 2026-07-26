@@ -5,12 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <link rel="stylesheet" href="style.css">
 <script src="js/action.js"></script>
-<title>Painel Jogos Capital - Meus Bilhetes</title>
+<title>Painel Jogos Capital - Resultados</title>
 </head>
 <body>
 
   <div class="page">
     <div class="app-layout">
+
 
       <aside class="sidebar" id="sidebar">
           <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo"></a>
@@ -184,136 +185,138 @@
             </div>
           </div>
 
-          <section class="tickets-page">
+          <section class="results-page">
 
-            <header class="tickets-heading">
-              <span class="tickets-heading-icon">
-                <span class="icon icon-bilhetes"></span>
+            <header class="results-page-header">
+              <span class="results-page-icon">
+                <span class="icon icon-resultados"></span>
               </span>
 
               <div>
-                <h1>Meus Bilhetes</h1>
-                <p>
-                  Estes são os seus bilhetes. Você pode visualizar todos os bilhetes,
-                  atuais e antigos e acompanhar os resultados.
-                </p>
+                <h1>Resultados</h1>
+                <p>Consulte os resultados dos nossos jogos e sorteios.</p>
               </div>
             </header>
 
-            <section class="card tickets-filter-card">
+            <div class="results-games-grid">
 
-              <div class="tickets-filter-field">
-                <label for="ticketsLimit">Número de bilhetes exibidos</label>
-
-                <select id="ticketsLimit">
-                  <option value="10">10</option>
-                  <option value="20">20</option>
-                  <option value="30">30</option>
-                  <option value="50">50</option>
-                </select>
-              </div>
-
-              <div class="tickets-filter-field tickets-search-field">
-                <label for="ticketsSearch">Buscar pelo nº</label>
-
-                <div class="tickets-search">
-                  <span class="icon icon-search"></span>
-
-                  <input
-                    type="search"
-                    id="ticketsSearch"
-                    placeholder="Digite o número do bilhete"
-                  >
+              <article class="result-game-card super10">
+                <div class="result-game-image">
+                  <img src="img/logo-super10.svg" alt="Super10">
                 </div>
-              </div>
 
-            </section>
+                <div class="result-game-content">
+                  <h2>Super10</h2>
 
-              <section class="tickets-list">
+                  <p>
+                    Aposte em até 10 dezenas e concorra a prêmios incríveis.
+                    Jogo dinâmico e emocionante com sorteios ao vivo.
+                  </p>
 
-                <article class="card ticket-item" data-ticket="36495">
+                  <a href="resultado-super10.html" class="result-game-button">
+                    Ver resultado
+                  </a>
+                </div>
+              </article>
 
-                  <div class="ticket-left-line"></div>
+              <article class="result-game-card seninha">
+                <div class="result-game-image">
+                  <img src="img/logo-seninha.svg" alt="Seninha">
+                </div>
 
-                  <div class="ticket-main">
+                <div class="result-game-content">
+                  <h2>Seninha</h2>
 
-                    <span class="ticket-number-icon">#</span>
+                  <p>
+                    Escolha dezenas de 01 a 60. Fácil de jogar e com alto
+                    potencial de prêmios.
+                  </p>
 
-                    <div class="ticket-info">
-                      <h2>Bilhete 36495 . Dezena</h2>
-                      <time datetime="2025-09-09T14:00:00">
-                        09/09/2025 14:00
-                      </time>
+                  <a href="resultado-seninha.html" class="result-game-button">
+                    Ver resultado
+                  </a>
+                </div>
+              </article>
 
-                      <span class="ticket-status not-awarded">
-                        BILHETE NÃO PREMIADO
-                      </span>
-                    </div>
+              <article class="result-game-card quininha">
+                <div class="result-game-image">
+                  <img src="img/logo-quininha.svg" alt="Quininha">
+                </div>
 
-                  </div>
+                <div class="result-game-content">
+                  <h2>Quininha</h2>
 
-                  <div class="ticket-actions">
+                  <p>
+                    Escolha suas dezenas de 01 a 80 e ganhe apostando 5.
+                    Sorteio segundo a sábado e resultado imediato.
+                  </p>
 
-                    <strong class="ticket-price">R$ 5,00</strong>
+                  <a href="resultado-quininha.html" class="result-game-button">
+                    Ver resultado
+                  </a>
+                </div>
+              </article>
 
-                    <div class="ticket-buttons">
-                      <button type="button" class="ticket-btn print">
-                        Imprimir
-                      </button>
+              <article class="result-game-card jackpot">
+                <div class="result-game-image">
+                  <img src="img/logo-jackpot.svg" alt="Jackpot">
+                </div>
 
-                      <button type="button" class="ticket-btn view">
-                        Visualizar
-                      </button>
-                    </div>
+                <div class="result-game-content">
+                  <h2>Jackpot</h2>
 
-                  </div>
+                  <p>
+                    Escolha 5 bichos que vão sair na Federal e concorra
+                    ao Jackpot acumulado.
+                  </p>
 
-                </article>
+                  <a href="resultado-jackpot.html" class="result-game-button">
+                    Ver resultado
+                  </a>
+                </div>
+              </article>
 
-                <article class="card ticket-item" data-ticket="35985">
+              <article class="result-game-card bicho">
+                <div class="result-game-image">
+                  <img src="img/logo-jogo-bicho.png" alt="Jogo do Bicho">
+                </div>
 
-                  <div class="ticket-left-line"></div>
+                <div class="result-game-content">
+                  <h2>Jogo do Bicho</h2>
 
-                  <div class="ticket-main">
+                  <p>
+                    O clássico na banca mais tradicional do Brasil.
+                    Aposte em bichos, milhares, centenas e dezenas.
+                  </p>
 
-                    <span class="ticket-number-icon">#</span>
+                  <a href="resultado-jogo-bicho.html" class="result-game-button">
+                    Ver resultado
+                  </a>
+                </div>
+              </article>
 
-                    <div class="ticket-info">
-                      <h2>Bilhete 35985 . Dezena</h2>
-                      <time datetime="2025-09-04T14:00:00">
-                        04/09/2025 14:00
-                      </time>
+              <article class="result-game-card bolao">
+                <div class="result-game-image">
+                  <img src="img/logo-bolao-jc.png" alt="Bolão Jogo Capital">
+                </div>
 
-                      <span class="ticket-status not-awarded">
-                        BILHETE NÃO PREMIADO
-                      </span>
-                    </div>
+                <div class="result-game-content">
+                  <h2>Bolão Jogo Capital</h2>
 
-                  </div>
+                  <p>
+                    Seu bilhete é válido de quarta a sábado.
+                    Se ninguém acertar as 10 dezenas, acumula para o próximo sorteio.
+                  </p>
 
-                  <div class="ticket-actions">
+                  <a href="resultado-bolao-jc.html" class="result-game-button">
+                    Ver resultado
+                  </a>
+                </div>
+              </article>
 
-                    <strong class="ticket-price">R$ 2,00</strong>
-
-                    <div class="ticket-buttons">
-                      <button type="button" class="ticket-btn print">
-                        Imprimir
-                      </button>
-
-                      <button type="button" class="ticket-btn view">
-                        Visualizar
-                      </button>
-                    </div>
-
-                  </div>
-
-                </article>
-
-              </section>
+            </div>
 
           </section>
-
-
 
         </main>
 

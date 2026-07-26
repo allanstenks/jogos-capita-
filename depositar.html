@@ -2,10 +2,10 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <link rel="stylesheet" href="style.css">
 <script src="js/action.js"></script>
-<title>Painel</title>
+<title>Painel Jogos Capital - Depositar</title>
 </head>
 <body>
 
@@ -18,24 +18,24 @@
           <div class="divider"></div>
 
           <div class="nav">
-              <ul class="nav-list">
-                  <li><a class="nav-link" href="/perfil.html"><span class="icon icon-perfil"></span>Perfil</a></li>
-                  <li><a class="nav-link" href="#"><span class="icon icon-depositar"></span>Depositar</a></li>
-                  <li><a class="nav-link" href="#"><span class="icon icon-sacar"></span>Sacar</a></li>
-                  <li><a class="nav-link active" href="#"><span class="icon icon-jogar"></span>Jogar</a></li>
-                  <li><a class="nav-link" href="#"><span class="icon icon-carrinho"></span>Carrinho</a></li>
-                  <li><a class="nav-link" href="#"><span class="icon icon-bilhetes"></span>Bilhetes</a></li>
-                  <li><a class="nav-link" href="#"><span class="icon icon-resultados"></span>Resultados</a></li>
-                  <li><a class="nav-link" href="#"><span class="icon icon-classificacao"></span>Classificação</a></li>
-                  <li><a class="nav-link" href="#"><span class="icon icon-cotacao"></span>Cotação</a></li>
-                  <li><a class="nav-link" href="#"><span class="icon icon-regras-jogo"></span>Regras do Jogo</a></li>
-                  <li><a class="nav-link" href="#"><span class="icon icon-regras-bolao"></span>Regras Bolão JC</a></li>
-                  <li><a class="nav-link" href="#"><span class="icon icon-extratos"></span>Extratos</a></li>
-                  <li><a class="nav-link" href="#"><span class="icon icon-guia"></span>Guia do Jogo</a></li>
-                  <li><a class="nav-link" href="#"><span class="icon icon-tutoriais"></span>Tutoriais</a></li>
-                  <li><a class="nav-link" href="#"><span class="icon icon-marketing"></span>Marketing</a></li>
-                  <li><a class="nav-link" href="#"><span class="icon icon-sair"></span>Sair</a></li>
-              </ul>
+            <ul class="nav-list">
+              <li><a class="nav-link" href="perfil.html"><span class="icon icon-perfil"></span>Perfil</a></li>
+              <li><a class="nav-link" href="depositar.html"><span class="icon icon-depositar"></span>Depositar</a></li>
+              <li><a class="nav-link active" href="index.html"><span class="icon icon-jogar"></span>Jogar</a></li>
+              <li><a class="nav-link" href="sacar.html"><span class="icon icon-sacar"></span>Sacar</a></li>
+              <li><a class="nav-link" href="carrinho.html"><span class="icon icon-carrinho"></span>Carrinho</a></li>
+              <li><a class="nav-link" href="meus-bilhetes.html"><span class="icon icon-bilhetes"></span>Bilhetes</a></li>
+              <li><a class="nav-link" href="resultados.html"><span class="icon icon-resultados"></span>Resultados</a></li>
+              <li><a class="nav-link" href="classificacao.html"><span class="icon icon-classificacao"></span>Classificação</a></li>
+              <li><a class="nav-link" href="cotacao.html"><span class="icon icon-cotacao"></span>Cotação</a></li>
+              <li><a class="nav-link" href="regras-do-jogo.html"><span class="icon icon-regras-jogo"></span>Regras do Jogo</a></li>
+              <li><a class="nav-link" href="regras-do-jogo-jc.html"><span class="icon icon-regras-bolao"></span>Regras Bolão JC</a></li>
+              <li><a class="nav-link" href="meu-extrato.html"><span class="icon icon-extratos"></span>Extratos</a></li>
+              <li><a class="nav-link" href="central-de-ajuda.html"><span class="icon icon-guia"></span>Guia do Jogo</a></li>
+              <li><a class="nav-link" href="tutoriais.html"><span class="icon icon-tutoriais"></span>Tutoriais</a></li>
+              <li><a class="nav-link" href="indique-e-ganhe.html"><span class="icon icon-marketing"></span>Indique e Ganhe</a></li>
+              <li><a class="nav-link" href="login.html"><span class="icon icon-sair"></span>Sair</a></li>
+            </ul>
           </div>
       </aside>
 
@@ -62,15 +62,9 @@
                       <span class="icon icon-refresh refresh"></span>
                       </div>
 
-                      <button class="btn btn-green">
-                      <span class="icon icon-plus"></span>
-                      Depositar
-                      </button>
+                      <a href="depositar.html" class="btn btn-green btn btn-green"><span class="icon icon-plus"></span>Depositar</a>
 
-                      <button class="btn btn-outline-green">
-                      <span class="icon icon-withdraw"></span>
-                      Sacar
-                      </button>
+                      <a href="sacar.html" class="btn btn-outline-green"><span class="icon icon-withdraw"></span>Sacar</a>
                   </div>
 
               </div>
@@ -78,7 +72,7 @@
 
           <header class="mobile-header">
             <div class="mobile-header-top">
-              <img src="img/logo.png" class="mobile-logo" alt="Logo">
+              <a class="logo-mobile" href="index.html"><img src="img/logo.png" class="mobile-logo" alt="Logo"></a>
 
               <div class="mobile-balance">
                 <span class="icon icon-wallet"></span>
@@ -101,15 +95,15 @@
             </div>
 
             <div class="mobile-header-actions">
-              <button class="mobile-btn depositar">
+              <a href="depositar.html" class="mobile-btn depositar">
                 <span class="icon icon-depositar"></span>
                 Depositar
-              </button>
+              </a>
 
-              <button class="mobile-btn sacar">
+<a href="sacar.html" class="mobile-btn sacar">
                 <span class="icon icon-sacar"></span>
                 Sacar
-              </button>
+              </a>
             </div>
 
            
@@ -120,7 +114,7 @@
             <span>Boa Sorte!</span>
           </div>
 
-          <section class="deposit-page" id="depositFlow">
+   <section class="deposit-page" id="depositFlow">
 
             <div class="deposit-steps">
               <button class="step active" type="button" data-go-step="1">
@@ -141,10 +135,10 @@
 
               <div class="deposit-title">
                 <div class="deposit-title-icon">
-                  <span class="icon icon-wallet"></span>
+                  <span class="icon icon-wallet2"></span>
                 </div>
                 <div>
-                  <h1>Depositar Saldo</h1>
+                  <h1>Depositar</h1>
                   <p>Escolha a forma de depósito.</p>
                 </div>
               </div>
@@ -171,8 +165,6 @@
                   <h3>Transferência bancária</h3>
                   <p>Entre bancos</p>
                   <small>Pode levar até 5 minutos.</small>
-
-                  <span class="method-tag gray">TED / DOC</span>
                 </a>
 
               </div>
@@ -200,7 +192,7 @@
               </div>
 
               <div class="deposit-method-grid">
-                <a href="#" class="card deposit-method-card selected">
+                <a href="#" class="card deposit-method-card" data-go-step="2" data-method="pix">
                   <div class="method-icon pix">
                     <span class="icon icon-pix"></span>
                   </div>
@@ -217,7 +209,6 @@
                   <h3>Transferência bancária</h3>
                   <p>Entre bancos</p>
                   <small>Pode levar até 5 minutos.</small>
-                  <span class="method-tag gray">TED / DOC</span>
                 </a>
               </div>
 
@@ -233,14 +224,13 @@
                   type="text"
                   class="deposit-amount-display"
                   data-amount-input
-                  value="R$ 100,00"
-                  readonly
+                  placeholder="R$ 0,00"
                 >
 
                 <div class="amount-options">
                   <button type="button" data-amount="20">R$ 20</button>
                   <button type="button" data-amount="50">R$ 50</button>
-                  <button type="button" data-amount="100" class="active">R$ 100</button>
+                  <button type="button" data-amount="100">R$ 100</button>
                   <button type="button" data-amount="200">R$ 200</button>
                   <button type="button" data-amount="500">R$ 500</button>
                 </div>
@@ -267,7 +257,7 @@
 
               <div class="deposit-actions">
                 <button class="deposit-continue" type="button" data-next-step="3">CONTINUAR</button>
-                <button class="deposit-cancel">CANCELAR</button>
+                <button class="deposit-cancel" type="button">CANCELAR</button>
               </div>
 
             </div>
@@ -368,7 +358,7 @@
               </div>
 
               <div class="deposit-method-grid">
-                <a href="#" class="card deposit-method-card">
+                <a href="#" class="card deposit-method-card" data-go-step="2" data-method="pix">
                   <div class="method-icon pix">
                     <span class="icon icon-pix"></span>
                   </div>
@@ -378,14 +368,13 @@
                   <span class="method-tag">RECOMENDADO</span>
                 </a>
 
-                <a href="#" class="card deposit-method-card selected">
+                <a href="#" class="card deposit-method-card" data-go-step="2" data-method="transfer">
                   <div class="method-icon bank">
                     <span class="icon icon-bank"></span>
                   </div>
                   <h3>Transferência bancária</h3>
                   <p>Entre bancos</p>
                   <small>Pode levar até 5 minutos.</small>
-                  <span class="method-tag gray">TED / DOC</span>
                 </a>
               </div>
 
@@ -412,51 +401,58 @@
                 </div>
               </div>
 
-              <div class="card deposit-form-card">
+              <div class="card deposit-form-card" data-amount-selector>
                 <div class="deposit-box-title">
                   <strong>Selecione seu banco</strong>
                 </div>
 
                 <div class="bank-grid">
-                  <button>
+                  <button type="button">
                       <span class="bank-icon icon-itau"></span>Itaú
                   </button>
-                  <button>
+                  <button type="button">
                       <span class="bank-icon icon-banco-brasil"></span>Banco do Brasil
                   </button>
-                  <button>
+                  <button type="button">
                       <span class="bank-icon icon-bradesco"></span>Bradesco
                   </button>
-                  <button>
+                  <button type="button">
                       <span class="bank-icon icon-santander"></span>Santander
                   </button>
-                  <button>
+                  <button type="button">
                       <span class="bank-icon icon-caixa"></span>Caixa
                   </button>
-                  <button>
+                  <button type="button">
                       <span class="bank-icon icon-nubank"></span>Nubank
                   </button>
-                  <button>
-                      <span class="bank-icon icon-outros"></span>Outros
+                  <button type="button">
+                      Outros
                   </button>
               </div>
               </div>
 
-              <div class="card deposit-form-card">
+            <div class="card deposit-form-card" data-amount-selector>
                 <div class="deposit-box-title">
                   <span class="icon icon-wallet"></span>
-                  <strong>Valor da transferência</strong>
+                  <strong>Valor do depósito</strong>
                 </div>
 
-                <div class="deposit-amount-display">R$ 100,00</div>
+                <small>Pode depositar a partir de R$1,00</small>
+
+                <input
+                  type="text"
+                  class="deposit-amount-display"
+                  data-amount-input
+                  value="R$ 100,00"
+                  readonly
+                >
 
                 <div class="amount-options">
-                  <button>R$ 10</button>
-                  <button>R$ 20</button>
-                  <button>R$ 50</button>
-                  <button class="active">R$ 100</button>
-                  <button>R$ 200</button>
-                  <button>Outro valor</button>
+                  <button type="button" data-amount="20">R$ 20</button>
+                  <button type="button" data-amount="50">R$ 50</button>
+                  <button type="button" data-amount="100" class="active">R$ 100</button>
+                  <button type="button" data-amount="200">R$ 200</button>
+                  <button type="button" data-amount="500">R$ 500</button>
                 </div>
               </div>
 
@@ -472,31 +468,41 @@
               </div>
 
               <div class="deposit-actions">
-                <button class="deposit-continue">CONFIRMAR TRANSFERÊNCIA</button>
-                <button class="deposit-cancel">CANCELAR</button>
+                <button class="deposit-continue" type="button">CONFIRMAR TRANSFERÊNCIA</button>
+                <button class="deposit-cancel" type="button">CANCELAR</button>
               </div>
 
-              <div class="transfer-important">
-                  <h3>Informações importantes</h3>
-                  <div class="transfer-important-grid">
-                      <span>
-                          <span class="icon icon-clock-green"></span>
-                          Transferência 24h por dia
-                      </span>
-                      <span>
-                          <span class="icon icon-lightning"></span>
-                          Crédito instantâneo
-                      </span>
-                      <span>
-                          <span class="icon icon-shield-green"></span>
-                          Ambiente 100% seguro
-                      </span>
-                      <span>
-                          <span class="icon icon-check-circle"></span>
-                          Sem taxas adicionais
-                      </span>
-                  </div>
-              </div>
+            <div class="transfer-important-grid">
+
+              <span>
+                  <span class="transfer-icon">
+                      <span class="icon icon-clock-green"></span>
+                  </span>
+                  Transferência 24h por dia
+              </span>
+
+              <span>
+                  <span class="transfer-icon">
+                      <span class="icon icon-lightning"></span>
+                  </span>
+                  Crédito instantâneo
+              </span>
+
+              <span>
+                  <span class="transfer-icon">
+                      <span class="icon icon-shield-green"></span>
+                  </span>
+                  Ambiente 100% seguro
+              </span>
+
+              <span>
+                  <span class="transfer-icon">
+                      <span class="icon icon-check-circle"></span>
+                  </span>
+                  Sem taxas adicionais
+              </span>
+
+          </div>
 
               <div class="deposit-security-alert">
                 <span class="icon icon-shield"></span>

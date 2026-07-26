@@ -5,12 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <link rel="stylesheet" href="style.css">
 <script src="js/action.js"></script>
-<title>Painel Jogos Capital - Meus Bilhetes</title>
+<title>Painel Jogos Capital - Resultados Detalhe</title>
 </head>
 <body>
 
   <div class="page">
     <div class="app-layout">
+
 
       <aside class="sidebar" id="sidebar">
           <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo"></a>
@@ -184,136 +185,192 @@
             </div>
           </div>
 
-          <section class="tickets-page">
+          <section class="animal-results-page" id="animalResults">
 
-            <header class="tickets-heading">
-              <span class="tickets-heading-icon">
-                <span class="icon icon-bilhetes"></span>
-              </span>
+            <section class="card animal-result-header">
 
-              <div>
-                <h1>Meus Bilhetes</h1>
-                <p>
-                  Estes são os seus bilhetes. Você pode visualizar todos os bilhetes,
-                  atuais e antigos e acompanhar os resultados.
-                </p>
-              </div>
-            </header>
+              <img
+                src="img/logo-jogo-bicho.png"
+                alt="Jogo do Bicho"
+                class="animal-result-logo"
+              >
 
-            <section class="card tickets-filter-card">
+              <div class="animal-result-title">
 
-              <div class="tickets-filter-field">
-                <label for="ticketsLimit">Número de bilhetes exibidos</label>
+                <span>RESULTADOS JOGO DO BICHO</span>
 
-                <select id="ticketsLimit">
-                  <option value="10">10</option>
-                  <option value="20">20</option>
-                  <option value="30">30</option>
-                  <option value="50">50</option>
-                </select>
-              </div>
+                <div class="animal-result-navigation">
 
-              <div class="tickets-filter-field tickets-search-field">
-                <label for="ticketsSearch">Buscar pelo nº</label>
-
-                <div class="tickets-search">
-                  <span class="icon icon-search"></span>
-
-                  <input
-                    type="search"
-                    id="ticketsSearch"
-                    placeholder="Digite o número do bilhete"
+                  <button
+                    type="button"
+                    class="result-date-arrow previous"
+                    data-result-prev
+                    aria-label="Ver resultados do dia anterior"
                   >
+                    <span class="icon icon-chevron-left"></span>
+                  </button>
+
+                  <div class="animal-result-date">
+                    <h1>RESULTADO</h1>
+
+                    <time
+                      id="animalResultDate"
+                      datetime="2026-06-25"
+                    >
+                      25 DE JUNHO
+                    </time>
+                  </div>
+
+                  <button
+                    type="button"
+                    class="result-date-arrow next"
+                    data-result-next
+                    aria-label="Ver resultados do próximo dia"
+                  >
+                    <span class="icon icon-chevron-right"></span>
+                  </button>
+
                 </div>
+
               </div>
 
             </section>
 
-              <section class="tickets-list">
+            <section class="card animal-result-content">
 
-                <article class="card ticket-item" data-ticket="36495">
+              <div class="animal-result-grid">
 
-                  <div class="ticket-left-line"></div>
+                <article
+                  class="draw-result-card blue"
+                  data-draw="ppt"
+                >
+                  <header>PPT - 09:00</header>
 
-                  <div class="ticket-main">
-
-                    <span class="ticket-number-icon">#</span>
-
-                    <div class="ticket-info">
-                      <h2>Bilhete 36495 . Dezena</h2>
-                      <time datetime="2025-09-09T14:00:00">
-                        09/09/2025 14:00
-                      </time>
-
-                      <span class="ticket-status not-awarded">
-                        BILHETE NÃO PREMIADO
-                      </span>
-                    </div>
-
-                  </div>
-
-                  <div class="ticket-actions">
-
-                    <strong class="ticket-price">R$ 5,00</strong>
-
-                    <div class="ticket-buttons">
-                      <button type="button" class="ticket-btn print">
-                        Imprimir
-                      </button>
-
-                      <button type="button" class="ticket-btn view">
-                        Visualizar
-                      </button>
-                    </div>
-
-                  </div>
-
+                  <ol class="draw-result-list">
+                    <li><span>1º PRÊMIO</span><strong>4291-23</strong></li>
+                    <li><span>2º PRÊMIO</span><strong>6208-02</strong></li>
+                    <li><span>3º PRÊMIO</span><strong>6381-21</strong></li>
+                    <li><span>4º PRÊMIO</span><strong>7897-25</strong></li>
+                    <li><span>5º PRÊMIO</span><strong>3341-11</strong></li>
+                    <li><span>6º PRÊMIO</span><strong>8118-05</strong></li>
+                    <li><span>7º PRÊMIO</span><strong>0638-10</strong></li>
+                  </ol>
                 </article>
 
-                <article class="card ticket-item" data-ticket="35985">
+                <article
+                  class="draw-result-card green"
+                  data-draw="ptm"
+                >
+                  <header>PTM - 11:00</header>
 
-                  <div class="ticket-left-line"></div>
-
-                  <div class="ticket-main">
-
-                    <span class="ticket-number-icon">#</span>
-
-                    <div class="ticket-info">
-                      <h2>Bilhete 35985 . Dezena</h2>
-                      <time datetime="2025-09-04T14:00:00">
-                        04/09/2025 14:00
-                      </time>
-
-                      <span class="ticket-status not-awarded">
-                        BILHETE NÃO PREMIADO
-                      </span>
-                    </div>
-
-                  </div>
-
-                  <div class="ticket-actions">
-
-                    <strong class="ticket-price">R$ 2,00</strong>
-
-                    <div class="ticket-buttons">
-                      <button type="button" class="ticket-btn print">
-                        Imprimir
-                      </button>
-
-                      <button type="button" class="ticket-btn view">
-                        Visualizar
-                      </button>
-                    </div>
-
-                  </div>
-
+                  <ol class="draw-result-list">
+                    <li><span>1º PRÊMIO</span><strong>3431-08</strong></li>
+                    <li><span>2º PRÊMIO</span><strong>2477-20</strong></li>
+                    <li><span>3º PRÊMIO</span><strong>3180-20</strong></li>
+                    <li><span>4º PRÊMIO</span><strong>9223-06</strong></li>
+                    <li><span>5º PRÊMIO</span><strong>4659-15</strong></li>
+                    <li><span>6º PRÊMIO</span><strong>2970-18</strong></li>
+                    <li><span>7º PRÊMIO</span><strong>0498-25</strong></li>
+                  </ol>
                 </article>
 
-              </section>
+                <article
+                  class="draw-result-card blue"
+                  data-draw="pt"
+                >
+                  <header>PT - 14:00</header>
+
+                  <ol class="draw-result-list">
+                    <li><span>1º PRÊMIO</span><strong>6781-21</strong></li>
+                    <li><span>2º PRÊMIO</span><strong>3058-15</strong></li>
+                    <li><span>3º PRÊMIO</span><strong>6861-16</strong></li>
+                    <li><span>4º PRÊMIO</span><strong>1231-08</strong></li>
+                    <li><span>5º PRÊMIO</span><strong>6325-07</strong></li>
+                    <li><span>6º PRÊMIO</span><strong>4256-14</strong></li>
+                    <li><span>7º PRÊMIO</span><strong>0736-09</strong></li>
+                  </ol>
+                </article>
+
+                <article
+                  class="draw-result-card green"
+                  data-draw="ptv"
+                >
+                  <header>PTV - 16:00</header>
+
+                  <ol class="draw-result-list">
+                    <li><span>1º PRÊMIO</span><strong>8363-16</strong></li>
+                    <li><span>2º PRÊMIO</span><strong>5746-12</strong></li>
+                    <li><span>3º PRÊMIO</span><strong>7083-21</strong></li>
+                    <li><span>4º PRÊMIO</span><strong>2999-25</strong></li>
+                    <li><span>5º PRÊMIO</span><strong>5106-02</strong></li>
+                    <li><span>6º PRÊMIO</span><strong>9297-25</strong></li>
+                    <li><span>7º PRÊMIO</span><strong>0053-14</strong></li>
+                  </ol>
+                </article>
+
+                <article
+                  class="draw-result-card blue"
+                  data-draw="ptn"
+                >
+                  <header>PTN - 18:00</header>
+
+                  <ol class="draw-result-list">
+                    <li><span>1º PRÊMIO</span><strong>8142-11</strong></li>
+                    <li><span>2º PRÊMIO</span><strong>2793-24</strong></li>
+                    <li><span>3º PRÊMIO</span><strong>4622-06</strong></li>
+                    <li><span>4º PRÊMIO</span><strong>4774-19</strong></li>
+                    <li><span>5º PRÊMIO</span><strong>5602-01</strong></li>
+                    <li><span>6º PRÊMIO</span><strong>5933-09</strong></li>
+                    <li><span>7º PRÊMIO</span><strong>0740-10</strong></li>
+                  </ol>
+                </article>
+
+                <article
+                  class="draw-result-card green"
+                  data-draw="cor"
+                >
+                  <header>COR - 21:00</header>
+
+                  <ol class="draw-result-list">
+                    <li><span>1º PRÊMIO</span><strong>3256-14</strong></li>
+                    <li><span>2º PRÊMIO</span><strong>2502-01</strong></li>
+                    <li><span>3º PRÊMIO</span><strong>5034-09</strong></li>
+                    <li><span>4º PRÊMIO</span><strong>8856-14</strong></li>
+                    <li><span>5º PRÊMIO</span><strong>9188-22</strong></li>
+                    <li><span>6º PRÊMIO</span><strong>8836-09</strong></li>
+                    <li><span>7º PRÊMIO</span><strong>0146-12</strong></li>
+                  </ol>
+                </article>
+
+              </div>
+
+              <div class="animal-result-location">
+                RESULTADO DA EXTRAÇÃO DO RIO DE JANEIRO
+              </div>
+
+            </section>
+
+            <section class="card animal-result-legend">
+
+              <div class="animal-result-legend-title">
+                <span></span>
+                <strong>LEGENDA</strong>
+                <span></span>
+              </div>
+
+              <div class="animal-result-legend-grid">
+                <span>PPT | PRÊ PARA MANHÃ — 09:00</span>
+                <span>PT | PARA TODOS — 14:00</span>
+                <span>PTM | PARA TODA MANHÃ — 11:00</span>
+                <span>PTN | PARA TODA NOITE — 18:00</span>
+                <span>PTV | PARA TODOS VESPERTINO — 16:00</span>
+                <span>COR | CORUJINHA — 21:00</span>
+                <span>FED | FEDERAL QUARTA E SÁBADO — 20:00</span>
+              </div>
+
+            </section>
 
           </section>
-
-
 
         </main>
 

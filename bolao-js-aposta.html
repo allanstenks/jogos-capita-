@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <link rel="stylesheet" href="style.css">
 <script src="js/action.js"></script>
-<title>Painel Jogos Capital - Meus Bilhetes</title>
+<title>Painel Jogos Capital - Bolão JS Aposta</title>
 </head>
 <body>
 
@@ -100,7 +100,7 @@
                 Depositar
               </a>
 
-<a href="sacar.html" class="mobile-btn sacar">
+              <a href="sacar.html" class="mobile-btn sacar">
                 <span class="icon icon-sacar"></span>
                 Sacar
               </a>
@@ -184,136 +184,255 @@
             </div>
           </div>
 
-          <section class="tickets-page">
+          <section class="card pool-bet-page" id="poolBetPage">
 
-            <header class="tickets-heading">
-              <span class="tickets-heading-icon">
-                <span class="icon icon-bilhetes"></span>
+            <!-- Cabeçalho -->
+            <header class="pool-bet-header">
+              <span class="pool-bet-header-icon">
+                <span class="icon icon-ticket"></span>
               </span>
 
-              <div>
-                <h1>Meus Bilhetes</h1>
-                <p>
-                  Estes são os seus bilhetes. Você pode visualizar todos os bilhetes,
-                  atuais e antigos e acompanhar os resultados.
-                </p>
-              </div>
+              <h1>CRIANDO APOSTA NO BOLÃO JC</h1>
             </header>
 
-            <section class="card tickets-filter-card">
+            <!-- Aviso -->
+            <div class="pool-bet-content">
 
-              <div class="tickets-filter-field">
-                <label for="ticketsLimit">Número de bilhetes exibidos</label>
+              <div class="pool-bet-alert">
+                <span class="pool-bet-alert-icon">
+                  <span class="icon icon-clock"></span>
+                </span>
 
-                <select id="ticketsLimit">
-                  <option value="10">10</option>
-                  <option value="20">20</option>
-                  <option value="30">30</option>
-                  <option value="50">50</option>
-                </select>
-              </div>
-
-              <div class="tickets-filter-field tickets-search-field">
-                <label for="ticketsSearch">Buscar pelo nº</label>
-
-                <div class="tickets-search">
-                  <span class="icon icon-search"></span>
-
-                  <input
-                    type="search"
-                    id="ticketsSearch"
-                    placeholder="Digite o número do bilhete"
-                  >
+                <div>
+                  <strong>Sorteio inicia às Quartas-feiras 20h.</strong>
+                  <p>Termina aos Sábados às 20h.</p>
                 </div>
               </div>
 
-            </section>
+              <!-- Cliente -->
+              <section class="pool-bet-section">
 
-              <section class="tickets-list">
+                <div class="pool-bet-section-title">
+                  <span>1</span>
+                  <h2>Escolher Cliente</h2>
+                </div>
 
-                <article class="card ticket-item" data-ticket="36495">
+                <div class="pool-bet-client-grid">
 
-                  <div class="ticket-left-line"></div>
+                  <div class="pool-bet-field">
+                    <label for="poolClient">
+                      Deseja gerar aleatório os números dos bilhetes?
+                    </label>
 
-                  <div class="ticket-main">
+                    <div class="pool-bet-select has-icon">
+                      <span class="icon icon-user"></span>
 
-                    <span class="ticket-number-icon">#</span>
-
-                    <div class="ticket-info">
-                      <h2>Bilhete 36495 . Dezena</h2>
-                      <time datetime="2025-09-09T14:00:00">
-                        09/09/2025 14:00
-                      </time>
-
-                      <span class="ticket-status not-awarded">
-                        BILHETE NÃO PREMIADO
-                      </span>
+                      <select id="poolClient">
+                        <option value="AA">AA</option>
+                        <option value="BB">BB</option>
+                      </select>
                     </div>
-
                   </div>
 
-                  <div class="ticket-actions">
+                  <div class="pool-bet-field">
+                    <label for="poolClientName">Nome do cliente</label>
 
-                    <strong class="ticket-price">R$ 5,00</strong>
-
-                    <div class="ticket-buttons">
-                      <button type="button" class="ticket-btn print">
-                        Imprimir
-                      </button>
-
-                      <button type="button" class="ticket-btn view">
-                        Visualizar
-                      </button>
+                    <div class="pool-bet-select">
+                      <select id="poolClientName">
+                        <option value="AA">AA</option>
+                        <option value="BB">BB</option>
+                      </select>
                     </div>
-
                   </div>
 
-                </article>
-
-                <article class="card ticket-item" data-ticket="35985">
-
-                  <div class="ticket-left-line"></div>
-
-                  <div class="ticket-main">
-
-                    <span class="ticket-number-icon">#</span>
-
-                    <div class="ticket-info">
-                      <h2>Bilhete 35985 . Dezena</h2>
-                      <time datetime="2025-09-04T14:00:00">
-                        04/09/2025 14:00
-                      </time>
-
-                      <span class="ticket-status not-awarded">
-                        BILHETE NÃO PREMIADO
-                      </span>
-                    </div>
-
-                  </div>
-
-                  <div class="ticket-actions">
-
-                    <strong class="ticket-price">R$ 2,00</strong>
-
-                    <div class="ticket-buttons">
-                      <button type="button" class="ticket-btn print">
-                        Imprimir
-                      </button>
-
-                      <button type="button" class="ticket-btn view">
-                        Visualizar
-                      </button>
-                    </div>
-
-                  </div>
-
-                </article>
+                </div>
 
               </section>
 
+              <!-- Quantidade e aleatório -->
+              <div class="pool-bet-options-grid">
+
+                <section class="pool-bet-section">
+
+                  <div class="pool-bet-section-title">
+                    <span>2</span>
+                    <h2>Quantidade de bilhetes</h2>
+                  </div>
+
+                  <div class="pool-ticket-counter">
+
+                    <button type="button" id="poolTicketMinus">
+                      −
+                    </button>
+
+                    <div class="pool-ticket-count">
+                      <strong id="poolTicketCount">2</strong>
+                      <small>Bilhetes</small>
+                    </div>
+
+                    <button type="button" id="poolTicketPlus">
+                      +
+                    </button>
+
+                  </div>
+
+                </section>
+
+                <section class="pool-bet-section pool-random-section">
+
+                  <div class="pool-bet-section-title">
+                    <span>3</span>
+                    <h2>Gerar aleatório</h2>
+                  </div>
+
+                  <p>Deseja gerar aleatório os números dos bilhetes?</p>
+
+                  <div class="pool-radio-group">
+
+                    <label>
+                      <input type="radio" name="poolRandom" value="yes">
+                      <span></span>
+                      Sim
+                    </label>
+
+                    <label>
+                      <input type="radio" name="poolRandom" value="no" checked>
+                      <span></span>
+                      Não
+                    </label>
+
+                  </div>
+
+                </section>
+
+              </div>
+
+              <!-- Valor -->
+              <section class="pool-bet-section">
+
+                <div class="pool-bet-section-title">
+                  <span>4</span>
+                  <h2>Valor do bilhete</h2>
+                </div>
+
+                <strong class="pool-ticket-price">
+                  R$ 5,00
+                </strong>
+
+              </section>
+
+              <!-- Resumo -->
+              <section class="pool-bet-summary">
+
+                <div>
+                  <small>Valor total</small>
+                  <strong id="poolTotalValue">R$ 10,00</strong>
+                </div>
+
+                <span class="pool-summary-divider"></span>
+
+                <div>
+                  <small>Possíveis ganhos</small>
+                  <strong id="poolPossibleWinnings">R$ 0,00</strong>
+                </div>
+
+              </section>
+
+              <!-- Bilhetes gerados pelo JS -->
+              <section
+                class="pool-tickets-list"
+                id="poolTicketsList"
+              ></section>
+
+              <!-- Adicionar -->
+              <button
+                type="button"
+                class="pool-add-ticket"
+                id="poolAddTicket"
+              >
+                + Adicionar mais bilhetes
+              </button>
+
+              <!-- Dica -->
+              <div class="pool-bet-tip">
+                <span class="icon icon-lightning"></span>
+
+                <strong>DICA:</strong>
+
+                <span>
+                  Clique em um campo para digitar suas dezenas.
+                </span>
+              </div>
+
+              <!-- Confirmar -->
+              <button
+                type="button"
+                class="pool-confirm-btn"
+                id="poolConfirmBet"
+              >
+                CONFIRMAR APOSTA
+              </button>
+
+            </div>
+
           </section>
 
+          <template id="poolTicketTemplate">
 
+            <article class="pool-ticket-card">
+
+              <span class="pool-ticket-accent"></span>
+
+              <header class="pool-ticket-header">
+
+                <div class="pool-ticket-identification">
+
+                  <span class="pool-ticket-number">
+                    #
+                  </span>
+
+                  <strong class="pool-ticket-title">
+                    Bilhete 01
+                  </strong>
+
+                </div>
+
+                <div class="pool-ticket-actions">
+
+                  <button
+                    type="button"
+                    class="pool-ticket-clear"
+                  >
+                    Limpar
+                  </button>
+
+                  <button
+                    type="button"
+                    class="pool-ticket-delete"
+                    aria-label="Excluir bilhete"
+                  >
+                    <span class="icon icon-trash"></span>
+                  </button>
+
+                  <button
+                    type="button"
+                    class="pool-ticket-toggle"
+                    aria-label="Abrir ou fechar bilhete"
+                  >
+                    <span class="icon icon-chevron-down"></span>
+                  </button>
+
+                </div>
+
+              </header>
+
+              <div class="pool-ticket-body">
+                <div class="pool-number-grid"></div>
+              </div>
+
+            </article>
+
+          </template>
 
         </main>
 

@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="stylesheet" href="style.css">
+<script src="js/action.js"></script>
+<title>Painel Jogos Capital - Regras do Jogo</title>
+</head>
+<body>
+
+  <div class="page">
+    <div class="app-layout">
+
+      <aside class="sidebar" id="sidebar">
+          <a href="index.html" class="logo"><img src="img/logo.png" alt="Logo"></a>
+
+          <div class="divider"></div>
+
+          <div class="nav">
+            <ul class="nav-list">
+              <li><a class="nav-link" href="perfil.html"><span class="icon icon-perfil"></span>Perfil</a></li>
+              <li><a class="nav-link" href="depositar.html"><span class="icon icon-depositar"></span>Depositar</a></li>
+              <li><a class="nav-link active" href="index.html"><span class="icon icon-jogar"></span>Jogar</a></li>
+              <li><a class="nav-link" href="sacar.html"><span class="icon icon-sacar"></span>Sacar</a></li>
+              <li><a class="nav-link" href="carrinho.html"><span class="icon icon-carrinho"></span>Carrinho</a></li>
+              <li><a class="nav-link" href="meus-bilhetes.html"><span class="icon icon-bilhetes"></span>Bilhetes</a></li>
+              <li><a class="nav-link" href="resultados.html"><span class="icon icon-resultados"></span>Resultados</a></li>
+              <li><a class="nav-link" href="classificacao.html"><span class="icon icon-classificacao"></span>Classificação</a></li>
+              <li><a class="nav-link" href="cotacao.html"><span class="icon icon-cotacao"></span>Cotação</a></li>
+              <li><a class="nav-link" href="regras-do-jogo.html"><span class="icon icon-regras-jogo"></span>Regras do Jogo</a></li>
+              <li><a class="nav-link" href="regras-do-jogo-jc.html"><span class="icon icon-regras-bolao"></span>Regras Bolão JC</a></li>
+              <li><a class="nav-link" href="meu-extrato.html"><span class="icon icon-extratos"></span>Extratos</a></li>
+              <li><a class="nav-link" href="central-de-ajuda.html"><span class="icon icon-guia"></span>Guia do Jogo</a></li>
+              <li><a class="nav-link" href="tutoriais.html"><span class="icon icon-tutoriais"></span>Tutoriais</a></li>
+              <li><a class="nav-link" href="indique-e-ganhe.html"><span class="icon icon-marketing"></span>Indique e Ganhe</a></li>
+              <li><a class="nav-link" href="login.html"><span class="icon icon-sair"></span>Sair</a></li>
+            </ul>
+          </div>
+      </aside>
+
+        <main class="main">
+
+          <header class="card header">
+              <div class="row">
+
+                  <div class="col header-user">
+                      <div class="avatar"><span class="icon icon-avatar"></span></div>
+                      <div class="header-greeting">
+                      <span class="hello">Olá, (62) 99974-12</span>
+                      <span class="sub">Boa Sorte!</span>
+                      </div>
+                  </div>
+
+                  <div class="col-fixed header-actions">
+                      <div class="balance-pill">
+                      <div class="icon-circle"><span class="icon icon-wallet"></span></div>
+                      <div class="balance-text">
+                          <span class="label">Saldo disponível</span>
+                          <span class="value">R$ 1.187,16</span>
+                      </div>
+                      <span class="icon icon-refresh refresh"></span>
+                      </div>
+
+                      <a href="depositar.html" class="btn btn-green btn btn-green"><span class="icon icon-plus"></span>Depositar</a>
+
+                      <a href="sacar.html" class="btn btn-outline-green"><span class="icon icon-withdraw"></span>Sacar</a>
+                  </div>
+
+              </div>
+          </header>
+
+          <header class="mobile-header">
+            <div class="mobile-header-top">
+              <a class="logo-mobile" href="index.html"><img src="img/logo.png" class="mobile-logo" alt="Logo"></a>
+
+              <div class="mobile-balance">
+                <span class="icon icon-wallet"></span>
+                <div>
+                  <small>Saldo disponível</small>
+                </div>
+              </div>
+
+              <div class="mobile-value">R$103,00</div>
+
+              <button class="mobile-refresh">
+                <span class="icon icon-refresh"></span>
+              </button>
+
+              <button class="mobile-menu" id="mobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+
+            <div class="mobile-header-actions">
+              <a href="depositar.html" class="mobile-btn depositar">
+                <span class="icon icon-depositar"></span>
+                Depositar
+              </a>
+
+<a href="sacar.html" class="mobile-btn sacar">
+                <span class="icon icon-sacar"></span>
+                Sacar
+              </a>
+            </div>
+
+           
+          </header>
+
+          <section class="super10-guide-page">
+
+  <section class="card super10-guide-hero">
+    <div class="super10-guide-hero-copy">
+      <span class="super10-guide-kicker">
+        <span></span>
+        JOGO CAPITAL DESDE 1965
+      </span>
+
+      <h1>
+        Guia prático:<br>
+        como jogar na <strong>Super 10</strong> no Banca do Bicho
+      </h1>
+
+      <p>
+        A Super 10 é uma modalidade em que você escolhe de 1 a 10 dezenas entre 00 e 99
+        e concorre com base no resultado oficial do Jogo Capital Super 10.
+      </p>
+    </div>
+
+    <img
+      src="img/logo-super10.svg"
+      alt="Super 10 Jogo Capital"
+      class="super10-guide-logo"
+    >
+
+    <div class="super10-guide-meta">
+
+      <article class="super10-guide-meta-draw">
+        <span class="super10-guide-meta-icon purple">
+          <span class="icon icon-calendar"></span>
+        </span>
+        <div>
+          <strong>SORTEIOS</strong>
+          <small>
+            Terças, Quintas e Sábados • às 21h<br>
+            (horário de Brasília)
+          </small>
+        </div>
+      </article>
+
+      <span class="super10-guide-meta-separator"></span>
+
+      <article class="super10-guide-meta-text">
+        <p>
+          Baseado no resultado oficial do<br>
+          <strong>Jogo Capital Super 10.</strong>
+        </p>
+      </article>
+
+      <span class="super10-guide-meta-separator"></span>
+
+      <article class="super10-guide-meta-text">
+        <p>
+          Em cada sorteio, são extraídas<br>
+          <strong>10 dezenas.</strong>
+        </p>
+      </article>
+
+    </div>
+  </section>
+
+
+  <div class="super10-guide-main-grid">
+
+    <section class="card super10-guide-panel super10-guide-how">
+      <div class="super10-guide-section-title">
+        <span class="super10-guide-section-icon green">
+          <span class="icon icon-document"></span>
+        </span>
+        <h2>COMO JOGAR</h2>
+      </div>
+
+      <div class="super10-guide-steps">
+
+        <article>
+          <span>1</span>
+          <div>
+            <strong>Acesse a modalidade Super 10</strong>
+            <p>Acesse a modalidade Super 10 na plataforma Banca do Bicho.</p>
+          </div>
+        </article>
+
+        <article>
+          <span>2</span>
+          <div>
+            <strong>Escolha o dia do sorteio</strong>
+            <p>
+              Você pode jogar para terça, quinta ou sábado, sempre às 21h,
+              horário de Brasília.
+            </p>
+          </div>
+        </article>
+
+        <article>
+          <span>3</span>
+          <div>
+            <strong>Escolha a quantidade de dezenas</strong>
+            <p>Você pode marcar de 1 até 10 dezenas por aposta.</p>
+          </div>
+        </article>
+
+        <article>
+          <span>4</span>
+          <div>
+            <strong>Digite suas dezenas de 00 a 99</strong>
+            <p>
+              É permitido escolher a mesma dezena mais de uma vez no mesmo bilhete.
+              Cada repetição conta como uma nova dezena escolhida.
+            </p>
+          </div>
+        </article>
+
+        <article>
+          <span>5</span>
+          <div>
+            <strong>Informe o valor da aposta</strong>
+            <p>A aposta pode ser feita a partir de R$ 1,00 por bilhete.</p>
+          </div>
+        </article>
+
+        <article>
+          <span>6</span>
+          <div>
+            <strong>Confira os possíveis ganhos</strong>
+            <p>
+              A plataforma mostra o valor apostado e a premiação possível
+              antes da confirmação.
+            </p>
+          </div>
+        </article>
+
+        <article>
+          <span>7</span>
+          <div>
+            <strong>Clique em Apostar</strong>
+            <p>Pronto. Seu bilhete fica registrado para o sorteio escolhido.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+
+    <div class="super10-guide-side-column">
+
+      <section class="card super10-guide-panel super10-guide-repeat">
+        <div class="super10-guide-section-title">
+          <span class="super10-guide-section-icon orange">
+            <span class="icon icon-warning"></span>
+          </span>
+          <h2>REGRA IMPORTANTE SOBRE<br>DEZENA REPETIDA</h2>
+        </div>
+
+        <p class="super10-guide-repeat-intro">
+          Se você repetir uma dezena, ela precisa sair repetida no resultado
+          para contar como múltiplos acertos.
+        </p>
+
+        <div class="super10-guide-repeat-example">
+          <strong>EXEMPLO</strong>
+
+          <div class="super10-guide-repeat-numbers">
+            <b>23</b>
+            <span>+</span>
+            <b>23</b>
+            <span>=</span>
+            <span class="icon icon-trophy"></span>
+          </div>
+
+          <p>
+            Se você escolher a dezena 23 duas vezes, ela precisa ser sorteada
+            duas vezes para contar como 2 acertos. Se sair apenas uma vez,
+            conta como 1 acerto.
+          </p>
+        </div>
+      </section>
+
+
+      <section class="card super10-guide-panel super10-guide-quotes">
+        <div class="super10-guide-section-title">
+          <span class="super10-guide-section-icon purple">
+            <span class="icon icon-cotacao"></span>
+          </span>
+          <h2>COTAÇÕES DA SUPER 10 POR R$ 1,00</h2>
+        </div>
+
+        <div class="super10-guide-table">
+
+          <div class="super10-guide-table-head">
+            <strong>DEZENAS ESCOLHIDAS</strong>
+            <strong>PREMIAÇÃO</strong>
+          </div>
+
+          <div class="super10-guide-table-row"><strong>1 dezena</strong><span>2X</span></div>
+          <div class="super10-guide-table-row"><strong>2 dezenas</strong><span>4X</span></div>
+          <div class="super10-guide-table-row"><strong>3 dezenas</strong><span>15X</span></div>
+          <div class="super10-guide-table-row"><strong>4 dezenas</strong><span>30X</span></div>
+          <div class="super10-guide-table-row"><strong>5 dezenas</strong><span>150X</span></div>
+          <div class="super10-guide-table-row"><strong>6 dezenas</strong><span>250X</span></div>
+          <div class="super10-guide-table-row"><strong>7 dezenas</strong><span>2.000X</span></div>
+          <div class="super10-guide-table-row"><strong>8 dezenas</strong><span>3.000X</span></div>
+          <div class="super10-guide-table-row"><strong>9 dezenas</strong><span>5.000X</span></div>
+          <div class="super10-guide-table-row"><strong>10 dezenas</strong><span>6.000X</span></div>
+
+        </div>
+      </section>
+
+    </div>
+
+  </div>
+
+
+  <section class="card super10-guide-panel super10-guide-prize">
+
+    <div class="super10-guide-prize-header">
+      <div class="super10-guide-section-title">
+        <span class="super10-guide-section-icon blue">
+          <span class="icon icon-trophy"></span>
+        </span>
+        <h2>COMO FUNCIONA A PREMIAÇÃO</h2>
+      </div>
+
+      <div class="super10-guide-prize-example">
+        <strong>Exemplo simples:</strong>
+        <p>
+          Se você escolher 10 dezenas e apostar R$ 1,00,
+          os possíveis ganhos podem ser:
+        </p>
+      </div>
+    </div>
+
+    <div class="super10-guide-prize-grid">
+
+      <article>
+        <small>4 ACERTOS</small>
+        <strong>R$ 1,00</strong>
+      </article>
+
+      <article>
+        <small>5 ACERTOS</small>
+        <strong>R$ 2,00</strong>
+      </article>
+
+      <article>
+        <small>6 ACERTOS</small>
+        <strong>R$ 10,00</strong>
+      </article>
+
+      <article>
+        <small>7 ACERTOS</small>
+        <strong>R$ 30,00</strong>
+      </article>
+
+      <article>
+        <small>8 ACERTOS</small>
+        <strong>R$ 300,00</strong>
+      </article>
+
+      <article>
+        <small>9 ACERTOS</small>
+        <strong>R$ 1.000,00</strong>
+      </article>
+
+      <article>
+        <small>10 ACERTOS</small>
+        <strong>R$ 6.000,00</strong>
+      </article>
+
+    </div>
+  </section>
+
+
+  <section class="card super10-guide-panel super10-guide-summary">
+    <div class="super10-guide-section-title">
+      <span class="super10-guide-section-icon green">
+        <span class="icon icon-document"></span>
+      </span>
+      <h2>RESUMO RÁPIDO PARA O CLIENTE</h2>
+    </div>
+
+    <p>
+      Na Super 10, você escolhe de <strong>1 a 10 dezenas</strong> entre
+      <strong>00 e 99</strong>. Os sorteios acontecem às
+      <strong>terças, quintas e sábados às 21h</strong>. São sorteadas
+      <strong>10 dezenas oficiais</strong>, e a premiação depende da quantidade
+      de dezenas jogadas e dos acertos no resultado. Quanto mais dezenas escolhidas,
+      maior pode ser o potencial de premiação.
+    </p>
+  </section>
+
+
+  <section class="card super10-guide-legal-strip">
+
+    <div class="super10-guide-legal-item purple">
+      <span class="super10-guide-legal-icon">
+        <span class="icon icon-lock"></span>
+      </span>
+      <div>
+        <strong>AMBIENTE SEGURO</strong>
+        <small>Dados protegidos e criptografados</small>
+      </div>
+    </div>
+
+    <div class="super10-guide-legal-separator"></div>
+
+    <div class="super10-guide-legal-item orange">
+      <span class="super10-guide-age-badge">18+</span>
+      <div>
+        <strong>JOGO LEGAL</strong>
+        <small>Proibido para menores de 18 anos</small>
+      </div>
+    </div>
+
+    <div class="super10-guide-legal-separator"></div>
+
+    <div class="super10-guide-legal-item blue">
+      <span class="super10-guide-legal-icon">
+        <span class="icon icon-shield"></span>
+      </span>
+      <div>
+        <strong>JOGUE COM RESPONSABILIDADE</strong>
+        <small>É entretenimento, não é investimento</small>
+      </div>
+    </div>
+
+  </section>
+
+</section>
+
+
+        </main>
+
+      </div>
+  </div>
+
+  <footer class="footer-bar">
+    <div class="footer">
+      <div class="footer-item">
+        <span class="footer-dot green"></span>
+        Ambiente seguro &amp; criptografado
+      </div>
+      <div class="footer-item red">
+        <span class="footer-dot red"></span>
+        Proibido para menores
+      </div>
+      <div class="footer-item orange">
+        <span class="footer-dot orange"></span>
+        Jogue com responsabilidade
+      </div>
+    </div>
+  </footer>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+</body>
+</html>
